@@ -1,0 +1,4 @@
+Objectivos Gerais
+
+Conceber cubos OLAP; 
+Analisar a informação presente nos cubos utilizando MDX.

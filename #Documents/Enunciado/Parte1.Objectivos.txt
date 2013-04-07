@@ -1,0 +1,4 @@
+Objectivos Gerais
+
+Conceber modelos dimensionais para suporte a armazéns de dados;
+Conceber e desenvolver processos de ETL.
