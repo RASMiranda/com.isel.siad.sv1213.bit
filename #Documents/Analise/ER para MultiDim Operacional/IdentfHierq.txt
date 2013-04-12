@@ -1,0 +1,15 @@
+Identificacao de hierarquias
+
+Distrito -> Concelho -> Freguesia -> Codigo Postal -> Morada -> Servico -> Entrega/Pagamento
+TipoServico -> Servico -> Entrega/Pagamento
+Pessoa -> Cliente/InfoDemografica -> Servico -> Entrega/Pagamento
+Pessoa -> Morada Servico -> Entrega/Pagamento
+Loja -> Funcionario -> Entrega/Pagamento
+Funcao -> Funcionario -> Entrega/Pagamento
+TipoPagamento -> Entrega/Pagamento
+
+Entidades Maximas:
+Distrito, TipoServico, Pessoa, Loja, Funcao, TipoPagamento
+
+Entidade Minimas:
+Entrega/Pagamento
