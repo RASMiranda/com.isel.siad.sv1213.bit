@@ -1,6 +1,6 @@
 Identificacao de hierarquias
 
-Distrito -> Concelho -> Freguesia -> Codigo Postal -> Morada -> Servico -> Entrega/Pagamento
+Distrito -> Concelho -> Freguesia -> CodigoPostal -> Morada -> Servico -> Entrega/Pagamento
 TipoServico -> Servico -> Entrega/Pagamento
 Pessoa -> Cliente/InfoDemografica -> Servico -> Entrega/Pagamento
 Pessoa -> Morada Servico -> Entrega/Pagamento
