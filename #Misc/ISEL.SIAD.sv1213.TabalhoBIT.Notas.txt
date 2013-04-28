@@ -1,0 +1,29 @@
+ISEL SIAD sv1213 Tabalho BIT Notas
+------------------------------------------------------------------------------------------------------
+Servidor Remoto SQL para DataStaging/DataWharehouse/Analysis Server, etc
+
+Server Name: 10.137.41.4\SQLEXPRESS
+User: siad_bit_dev
+Password: siad_bit_dev
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hostmachine (na cloud IESD)
+
+VPN: home.refertelecom.pt 
+Username:Cloud_10.137.41 
+Password:VhzdntQqVZUE
+
+Host-name: IESD-09-WServer2008-x64
+Host-ip: 10.137.41.4
+Login Administrator password: WindowsServer2008
+
+------------------------------------------------------------------------------------------------------
+
+Os dados necessários para desenvolver o trabalho prático estão disponíveis no servidor SQL2008 siad.e.ipl.pt:40022, na Base de dados BIT.
+
+Para se autenticarem, utilizem SQL authentication, com as seguintes credenciais:
+login: SIAD_DWCREATOR
+password: SIAD_DWCREATOR
+
+Todo o processamento de ETL não deve ser feito directamente sobre o referido servidor. Devem fazer uma cópia temporária para a vossa máquina de trabalho, sobre a qual será efectuado o processamento. 
+Diariamente são adicionados novos registos.
+A folha de cálculo que contém informações adicionais sobre os custos da empresa pode ser descarregada daqui: http://siad.e.ipl.pt/custos.xls

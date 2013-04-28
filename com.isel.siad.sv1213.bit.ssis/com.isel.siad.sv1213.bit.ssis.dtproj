@@ -14,6 +14,14 @@
       <Name>BIT.ds</Name>
       <FullPath>BIT.ds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>BITDW.ds</Name>
+      <FullPath>BITDW.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BITDW.DataStagingBIT.ds</Name>
+      <FullPath>BITDW.DataStagingBIT.ds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSourceViews />
   <MiningModels />
@@ -30,12 +38,32 @@
             <Name>BIT</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=siad.e.ipl.pt,40022;Password=;User ID=;Initial Catalog=BIT</Value>
           </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>BITDW</Id>
+            <Name>BITDW</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=10.137.41.4\SQLEXPRESS;Persist Security Info=True;Password=;User ID=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>BITDW.DataStagingBIT</Id>
+            <Name>BITDW.DataStagingBIT</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=10.137.41.4\SQLEXPRESS;Persist Security Info=True;Password=;User ID=;Initial Catalog=DataStagingBIT</Value>
+          </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings />
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>BIT</Id>
             <Name>BIT</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>BITDW</Id>
+            <Name>BITDW</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>BITDW.DataStagingBIT</Id>
+            <Name>BITDW.DataStagingBIT</Name>
             <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
