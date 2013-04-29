@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="OperationalPackage" GeneratedFromPackageID="{66A250C3-C445-4A21-A311-4CE782C15147}" GeneratedDate="29-04-2013 23:42:26"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[01-create_db-DataStagingBIT.sql].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\ISEL@Local\SIAD\com.isel.siad.sv1213.bit\#SQL\ETL\01-create_db-DataStagingBIT.sql</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[01-create_db-DataStagingBIT.sql].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[01-create_db-DataStagingBIT.sql].Properties[FileUsageType]" ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[01-create_db-DataStagingBIT.sql].Properties[Name]" ValueType="String">
+		<ConfiguredValue>01-create_db-DataStagingBIT.sql</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[01-create_db-DataStagingBIT.sql].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[EvaluateAsExpression]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Expression]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[IncludeInDebugDump]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Name]" ValueType="String">
+		<ConfiguredValue>SQLETLPath</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Namespace]" ValueType="String">
+		<ConfiguredValue>User</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[RaiseChangedEvent]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[ReadOnly]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\ISEL@Local\SIAD\com.isel.siad.sv1213.bit\#SQL\ETL\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

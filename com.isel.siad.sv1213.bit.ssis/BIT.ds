@@ -3,7 +3,7 @@
   <Name>BIT</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-  <ConnectionString>Provider=SQLNCLI10.1;Data Source=siad.e.ipl.pt,40022;Password=;User ID=;Initial Catalog=BIT</ConnectionString>
+  <ConnectionString>Provider=SQLNCLI10.1;Data Source=siad.e.ipl.pt,40022;Persist Security Info=True;Password=;User ID=;Initial Catalog=BIT</ConnectionString>
   <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
   <Timeout>PT0S</Timeout>
 </DataSource>

@@ -36,7 +36,7 @@
           <ConfigurationSetting>
             <Id>BIT</Id>
             <Name>BIT</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=siad.e.ipl.pt,40022;Password=;User ID=;Initial Catalog=BIT</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=siad.e.ipl.pt,40022;Persist Security Info=True;Password=;User ID=;Initial Catalog=BIT</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
             <Id>BITDW</Id>
