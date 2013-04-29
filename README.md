@@ -1,7 +1,7 @@
 # SIAD\com.isel.siad.sv1213.bit
 
 # Configuration Notes[PT]:
-Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes configurações
+Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes configuracoes
 No ficheiro:
 	"(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.dtsConfig"
 Substituir:
