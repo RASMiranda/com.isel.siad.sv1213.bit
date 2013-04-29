@@ -36,17 +36,16 @@ CREATE TABLE Operacoes.Morada
 (
 	keycol INT PRIMARY KEY IDENTITY,
 	oltp_id INT UNIQUE, --Morada.moradaid
-	rua  VARCHAR(302), --CodigoPorala.arteria_titulo 
-	numeroDaPorta VARCHAR(10),  --source: Morada.numPorta
-	nomeLocalidade VARCHAR(100) NOT NULL, --CodigoPostal.Nome_localidade
+	rua  NVARCHAR(100) NOT NULL, --CodigoPorala.arteria_titulo 
+	numeroDaPorta NVARCHAR(10) NOT NULL,  --source: Morada.numPorta
+	nomeLocalidade NVARCHAR(100) NOT NULL, --CodigoPostal.Nome_localidade
 	codigoPostal INT NOT NULL,	 --CodigoPostal.
 	extensaoCodigoPostal INT,  -- CodigoPostal.
-	designacaoPostal VARCHAR(100) NOT NULL, --CodigoPortal.
-	freguesia VARCHAR(50) ,  -- source: freguesia, a partir de codigoPostal
-	concelho  VARCHAR(50),  -- source: concelho, a partir de freguesia
-	distrito VARCHAR(50)     --source: distrito, a partir de concelho
+	designacaoPostal NVARCHAR(100) NOT NULL, --CodigoPortal.
+	freguesia NVARCHAR(50) NOT NULL,  -- source: freguesia, a partir de codigoPostal
+	concelho  NVARCHAR(50) NOT NULL,  -- source: concelho, a partir de freguesia
+	distrito NVARCHAR(50) NOT NULL     --source: distrito, a partir de concelho
 );
-
 /* carregamento: 
     Morada, com base na data de alteracao
 */
@@ -55,7 +54,7 @@ CREATE TABLE Operacoes.TipoServico
 (
 	keycol INT PRIMARY KEY IDENTITY,
 	oltp_id INT UNIQUE NOT NULL,
-	tipo  VARCHAR(50) NOT NULL	 --TipoServico.tipo
+	tipo  NVARCHAR(50) NOT NULL	 --TipoServico.tipo
 );
 /* carregamento:
     Tipo de Servico, com base na data de alteracao
@@ -66,8 +65,8 @@ CREATE TABLE Operacoes.Loja
 (
 	keycol INT PRIMARY KEY IDENTITY,
 	oltp_id INT UNIQUE NOT NULL,
-	nome  VARCHAR(50) NOT NULL,  --Loja.nome
-	localizacao  VARCHAR(50) NOT NULL	 --Loja.localizacao
+	nome  NVARCHAR(50) NOT NULL,  --Loja.nome
+	localizacao  NVARCHAR(50) NOT NULL	 --Loja.localizacao
 );
 /*
     tem de percorrer a tabela toda
@@ -78,22 +77,22 @@ CREATE TABLE Operacoes.Cliente
 (
 	keycol INT PRIMARY KEY IDENTITY,
 	oltp_id INT UNIQUE NOT NULL,
-	designacao   VARCHAR(100) NOT NULL, --Pessoa.designacao
-	nomeContacto VARCHAR(50) NOT NULL,  --Pessoa.
-	sobrenomeContacto  VARCHAR(50) NOT NULL, --Pessoa.
+	designacao   NVARCHAR(100) NOT NULL, --Pessoa.designacao
+	nomeContacto NVARCHAR(50) NOT NULL,  --Pessoa.
+	sobrenomeContacto  NVARCHAR(50) NOT NULL, --Pessoa.
 	singular  CHAR(1) NOT NULL,  --Pessoa.
-	cPostal   VARCHAR(4) NOT NULL,	  --Cliente.
+	cPostal   NVARCHAR(4) NOT NULL,	  --Cliente.
     activo    CHAR(1) NOT NULL  --Cliente.
     --InfoDemografica RM
     ,BirthDate DATETIME NULL
-    ,MaritalStatus VARCHAR(150) NULL
-    ,YearlyIncome VARCHAR(150) NULL
-    ,Gender VARCHAR(150) NULL
+    ,MaritalStatus NVARCHAR(150) NULL
+    ,YearlyIncome NVARCHAR(150) NULL
+    ,Gender NVARCHAR(150) NULL
     ,TotalChildren INT NULL
     ,NumberChildrenAtHome INT NULL
-    ,Education VARCHAR(150) NULL
-    ,Occupation VARCHAR(150) NULL
-    ,HomeOwnerFlag VARCHAR(150) NULL
+    ,Education NVARCHAR(150) NULL
+    ,Occupation NVARCHAR(150) NULL
+    ,HomeOwnerFlag NVARCHAR(150) NULL
     ,NumberCarsOwned INT NULL
     --,dataAlter datetime NULL
 );
@@ -108,16 +107,16 @@ CREATE TABLE Operacoes.Funcionario
 (
 	keycol INT PRIMARY KEY IDENTITY,
 	oltp_id INT UNIQUE NOT NULL,
-	funcao   VARCHAR(50) NOT NULL, -- Funcao.nome
+	funcao   NVARCHAR(50) NOT NULL, -- Funcao.nome
 	-- salarioBase DECIMAL(8,2) NOT NULL, -- so devera ter interesse para a parte Financeira
-	nome  VARCHAR(50) NOT NULL, --Pessoa.
-	sobrenome  VARCHAR(50) NOT NULL, -- Pessoa.
+	nome  NVARCHAR(50) NOT NULL, --Pessoa.
+	sobrenome  NVARCHAR(50) NOT NULL, -- Pessoa.
 	activo  CHAR(1) NOT NULL, --Funcionario.
-	lojaNome  VARCHAR(50) NOT NULL,  --Loja.nome
-	localizacao  VARCHAR(50) NOT NULL,	 --Loja.localizacao
-	chefeNome VARCHAR(50), --Funcionario.Nome relacao funcionarioId = reporta
-	chefeSobrenome  VARCHAR(50),
-	chefeFuncao   VARCHAR(50),	 
+	lojaNome  NVARCHAR(50) NOT NULL,  --Loja.nome
+	localizacao  NVARCHAR(50) NOT NULL,	 --Loja.localizacao
+	chefeNome NVARCHAR(50), --Funcionario.Nome relacao funcionarioId = reporta
+	chefeSobrenome  NVARCHAR(50),
+	chefeFuncao   NVARCHAR(50),	 
 	chefe_id INT
 );
 /* Carregamento:
@@ -132,17 +131,17 @@ CREATE TABLE Operacoes.Data
 	ano INT NOT NULL,
 	trimestre TINYINT NOT NULL,
 	mes TINYINT NOT NULL,
-	descricaoMes VARCHAR(15) NOT NULL,
+	descricaoMes NVARCHAR(15) NOT NULL,
 	diaSemana TINYINT NOT NULL,
-	descricaoDiaSemana VARCHAR(15) NOT NULL,
+	descricaoDiaSemana NVARCHAR(15) NOT NULL,
 	dia TINYINT NOT NULL	 
 );
 
 CREATE TABLE Operacoes.Hora
 (
 	keycol TINYINT PRIMARY KEY,
-	hora24 VARCHAR(5) NOT NULL,
-	hora12 VARCHAR(8) NOT NULL
+	hora24 NVARCHAR(5) NOT NULL,
+	hora12 NVARCHAR(8) NOT NULL
 );
 
 CREATE TABLE Operacoes.Servicos
@@ -160,7 +159,7 @@ CREATE TABLE Operacoes.Servicos
 	horaEntrega TINYINT REFERENCES Operacoes.Hora,
 	numeroEntregas INT NOT NULL, -- count( Entregas)
 	valor Decimal(8,2), -- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
-	tipoPagamento VARCHAR(50),-- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
+	tipoPagamento NVARCHAR(50),-- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
 	dentroDoSLA CHAR(1), --Entrega.Sucesso and dataTentativa <= servico.dataRequisicao + horaEntrega + 2:00
 	concluido Char(1) NOT NULL -- entrega.sucesso. dataTentativa
 );
@@ -209,7 +208,7 @@ IF OBJECT_ID('MonthDescr') IS NOT NULL
 CREATE TABLE MonthDescr
 (
 	keycol TINYINT PRIMARY KEY,	
-	nome VARCHAR(15) NOT NULL
+	nome NVARCHAR(15) NOT NULL
 );
 
 INSERT INTO MonthDescr VALUES(1,N'Janeiro')
@@ -232,7 +231,7 @@ IF OBJECT_ID('DiaSemanaDescr') IS NOT NULL
 CREATE TABLE DiaSemanaDescr
 (
 	keycol TINYINT PRIMARY KEY,	
-	nome VARCHAR(15) NOT NULL
+	nome NVARCHAR(15) NOT NULL
 );
 
 INSERT INTO DiaSemanaDescr VALUES(1,N'Domingo')
