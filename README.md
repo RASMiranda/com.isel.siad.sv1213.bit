@@ -10,4 +10,4 @@ Substituir:
 	</Configuration>
 Por:
 	"(local repositories)\com.isel.siad.sv1213.bit\#SQL\ETL\"
-Onde (local repositories) é o caminho para a pasta onde se encontra a pasta de repositorio local com.isel.siad.sv1213.bit
+Onde (local repositories) e o caminho para a pasta onde se encontra a pasta de repositorio local com.isel.siad.sv1213.bit
