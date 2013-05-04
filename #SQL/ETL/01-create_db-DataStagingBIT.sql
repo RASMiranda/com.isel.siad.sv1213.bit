@@ -169,6 +169,7 @@ CREATE TABLE Operacoes.Servicos
 CREATE TABLE Operacoes.Entregas
 (
 	keycol INT PRIMARY KEY IDENTITY,
+	oltp_id INT UNIQUE NOT NULL,
 	servico INT REFERENCES Operacoes.Servicos,
 	estafeta INT REFERENCES Operacoes.Funcionario,
 	dataTentativa INT REFERENCES Operacoes.Data,
