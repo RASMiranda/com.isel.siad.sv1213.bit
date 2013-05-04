@@ -53,7 +53,7 @@ CREATE TABLE Operacoes.Morada
 
 CREATE TABLE Operacoes.TipoServico
 (
-	keycol INT PRIMARY KEY IDENTITY,
+	keycol TINYINT PRIMARY KEY IDENTITY,
 	oltp_id TINYINT UNIQUE NOT NULL,
 	tipo  VARCHAR(50) NOT NULL	 --TipoServico.tipo
 );
@@ -152,7 +152,7 @@ CREATE TABLE Operacoes.Servicos
 	cliente INT REFERENCES Operacoes.Cliente,
 	moradaEntrega INT REFERENCES Operacoes.Morada,
 	moradaFacturacao INT REFERENCES Operacoes.Morada,
-	tipoServico INT REFERENCES Operacoes.TipoServico,
+	tipoServico TINYINT REFERENCES Operacoes.TipoServico,
 	dataRequisicao INT REFERENCES Operacoes.Data,
 	horaRequisicao TINYINT REFERENCES Operacoes.Hora,
 	dataConclusao INT REFERENCES Operacoes.Data,
@@ -161,8 +161,8 @@ CREATE TABLE Operacoes.Servicos
 	numeroEntregas INT NOT NULL, -- count( Entregas)
 	valor Decimal(8,2), -- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
 	--rmiranda:nao faz sentido, nao mesuravel--tipoPagamento VARCHAR(50),-- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
-	dentroDoSLA CHAR(1), --Entrega.Sucesso and dataTentativa <= servico.dataRequisicao + horaEntrega + 2:00
-	concluido Char(1) NOT NULL -- entrega.sucesso. dataTentativa
+	dentroDoSLA TINYINT, --Entrega.Sucesso and dataTentativa <= servico.dataRequisicao + horaEntrega + 2:00; 0-> NÂO, 1->SIM
+	concluido TINYINT NOT NULL -- entrega.sucesso. dataTentativa, 0 -> não conlcuido, ou com insucesso, 1 -> concluido com sucesso
 );
 	
 	
@@ -174,7 +174,7 @@ CREATE TABLE Operacoes.Entregas
 	estafeta INT REFERENCES Operacoes.Funcionario,
 	dataTentativa INT REFERENCES Operacoes.Data,
 	horaTentativa TINYINT REFERENCES Operacoes.Hora,
-	sucesso CHAR(1) NOT NULL
+	sucesso TINYINT NOT NULL -- 0 -> insucesso, 1 -> sucesso
 );
 
 
