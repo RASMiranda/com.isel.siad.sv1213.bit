@@ -54,7 +54,7 @@ CREATE TABLE Operacoes.Morada
 CREATE TABLE Operacoes.TipoServico
 (
 	keycol INT PRIMARY KEY IDENTITY,
-	oltp_id INT UNIQUE NOT NULL,
+	oltp_id TINYINT UNIQUE NOT NULL,
 	tipo  VARCHAR(50) NOT NULL	 --TipoServico.tipo
 );
 /* carregamento:
@@ -89,12 +89,12 @@ CREATE TABLE Operacoes.Cliente
     ,MaritalStatus VARCHAR(150) NULL
     ,YearlyIncome VARCHAR(150) NULL
     ,Gender VARCHAR(150) NULL
-    ,TotalChildren INT NULL
-    ,NumberChildrenAtHome INT NULL
+    ,TotalChildren VARCHAR(150) NULL
+    ,NumberChildrenAtHome VARCHAR(150) NULL
     ,Education VARCHAR(150) NULL
     ,Occupation VARCHAR(150) NULL
     ,HomeOwnerFlag VARCHAR(150) NULL
-    ,NumberCarsOwned INT NULL
+    ,NumberCarsOwned VARCHAR(150) NULL
     --,dataAlter datetime NULL
 );
 /* carregamento:
@@ -160,7 +160,7 @@ CREATE TABLE Operacoes.Servicos
 	horaEntrega TINYINT REFERENCES Operacoes.Hora,
 	numeroEntregas INT NOT NULL, -- count( Entregas)
 	valor Decimal(8,2), -- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
-	tipoPagamento VARCHAR(50),-- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
+	--rmiranda:nao faz sentido, nao mesuravel--tipoPagamento VARCHAR(50),-- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
 	dentroDoSLA CHAR(1), --Entrega.Sucesso and dataTentativa <= servico.dataRequisicao + horaEntrega + 2:00
 	concluido Char(1) NOT NULL -- entrega.sucesso. dataTentativa
 );
@@ -199,6 +199,18 @@ BEGIN
         DATENAME(month,@basedate),DATEPART(weekday, @basedate),DATENAME(weekday,@basedate),DAY(@basedate))
   SELECT @basedate = DATEADD(DAY, @offset, @basedate)
 END
+--rmiranda: Inserir valor representativo de data nula
+  declare @maxdateid int;
+  select @maxdateid = max(keycol) , @basedate = '01/01/1753'
+  from Operacoes.Data
+  INSERT INTO Operacoes.Data(keycol, data, ano, trimestre, mes,
+       descricaoMes, diaSemana, 
+       descricaoDiaSemana, dia) 
+  VALUES (@maxdateid+1 ,@basedate,Year(@basedate),DATEPART(quarter,@basedate),Month(@basedate),
+        DATENAME(month,@basedate),DATEPART(weekday, @basedate),DATENAME(weekday,@basedate),DAY(@basedate))
+  SELECT @basedate = DATEADD(DAY, @offset, @basedate)
+
+
 
 /*
 *   Helper databases
@@ -268,6 +280,7 @@ INSERT INTO Operacoes.HORA VALUES(20, N'20:00',N'08:00 PM' )
 INSERT INTO Operacoes.HORA VALUES(21, N'21:00',N'09:00 PM' )
 INSERT INTO Operacoes.HORA VALUES(22, N'22:00',N'10:00 PM' )
 INSERT INTO Operacoes.HORA VALUES(23, N'23:00',N'11:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(24, N'NA',N'NA' )--RMIRANDA, EXISTEM SERVICOS COM horaEntrega a null, para esses será esta a dimensão
 
 
 RAISERROR('... OK',0,1) --info
