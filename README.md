@@ -2,8 +2,7 @@
 
 # Configuration Notes[PT]:
 Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes configuracoes:
-Considerando que (local repositories) é o caminho para a pasta onde se encontra a pasta de repositorio local com.isel.siad.sv1213.bit
-No ficheiro:
+Considerando que (local repositories) Ã© o caminho para a pasta onde se encontra a pasta de repositorio local "com.isel.siad.sv1213.bit". No ficheiro:
 
 	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.SqlScripts.Path.dtsConfig
 	
