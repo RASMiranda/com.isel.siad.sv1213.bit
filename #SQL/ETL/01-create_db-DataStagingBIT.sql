@@ -211,6 +211,47 @@ END
         DATENAME(month,@basedate),DATEPART(weekday, @basedate),DATENAME(weekday,@basedate),DAY(@basedate))
   SELECT @basedate = DATEADD(DAY, @offset, @basedate)
 
+/* tabelas para a area financeira
+*/
+
+CREATE TABLE Operacoes.Meses
+(
+	keycol INT PRIMARY KEY IDENTITY,
+	ano INT NOT NULL,
+	trimestre TINYINT NOT NULL,
+	mes TINYINT NOT NULL,
+	descricaoMes VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE Operacoes.Rubrica
+(
+	keycol INT PRIMARY KEY IDENTITY,
+	classe VARCHAR(15) NOT NULL, -- pode ser Proveito ou Custo
+	nome VARCHAR(50) NOT NULL  -- nome da rubrica: Servicos, Material, Financeiro, Outros
+);
+
+CREATE TABLE Operacoes.Financeira
+(
+	keycol INT PRIMARY KEY IDENTITY,
+	meses INT REFERENCES Operacoes.Meses,
+	rubrica INT REFERENCES Operacoes.Rubrica,
+	valor DECIMAL( 10,2) NOT NULL
+);
+
+INSERT INTO Operacoes.Rubrica VALUES( 'Proveito', 'Servicos')
+INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Material')
+INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Financeiro')
+INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Outros')
+
+insert into Operacoes.Meses (ano, trimestre, mes, descricaoMes) 
+select ano, trimestre, mes, descricaoMes
+  from Operacoes.Data
+ where dia =1 and ano > 2000;
+
+
+
+
+
 
 
 /*
