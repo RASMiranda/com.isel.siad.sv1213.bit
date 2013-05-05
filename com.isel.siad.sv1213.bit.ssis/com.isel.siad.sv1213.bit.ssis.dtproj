@@ -78,6 +78,11 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
+      <Name>PreFinacialPackage.dtsx</Name>
+      <FullPath>PreFinacialPackage.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
       <Name>FinacialPackage.dtsx</Name>
       <FullPath>FinacialPackage.dtsx</FullPath>
       <References />
