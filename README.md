@@ -41,5 +41,27 @@ Por directoria:
 
 	(local repositories)\com.isel.siad.sv1213.bit\#SQL\ETL\	
 
+No ficheiro:
+
+	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\BitMainPackage.Connections.dtsConfig
+
+Substituir Connection String:
+	
+	Data Source=10.137.41.4\SQLEXPRESS;User ID=siad_bit_dev; Password=siad_bit_dev;Provider=SQLNCLI10.1;Persist Security Info=True;
+
+Pela Connection String desejada que aponta para o servidor onde ficará a base de dados de DataStaging.
+
+Nos ficheiros:
+
+	(path)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.Connections.dtsConfig
+	(path)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\FinancialPackage.Connections.dtsConfig
+
+Substituir Connection String:
+
+	Data Source=10.137.41.4\SQLEXPRESS;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;
+	
+Pela Connection String que aponta para o servidor onde se encontra a base de dados de DataStaging.
+	
 Ao abrir solução "com.isel.siad.sv1213.bit.sln" e durante a utilização, se for pedida alguma password colocar "siad_bit_dev" (sem aspas).
+
 Executar pacote BitMainPackage.dtsx (este pacote chamará os outros pacotes).
