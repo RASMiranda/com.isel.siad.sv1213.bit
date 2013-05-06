@@ -1,7 +1,9 @@
 # SIAD\com.isel.siad.sv1213.bit
 
 ## Requirements[PT]:
-Acesso à VPN "homer.refertelecom.pt". SQL Server Business Intelligence Development Studio 9 (2008) instalado e funcional.
+1. SQL Server Business Intelligence Development Studio 9 (2008) instalado e funcional.
+2. Acesso à Internet
+3. Acesso à VPN "homer.refertelecom.pt". 
 
 ## Configuration Notes[PT]:
 Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes configuracoes:
