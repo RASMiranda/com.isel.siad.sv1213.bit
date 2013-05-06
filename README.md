@@ -53,8 +53,8 @@ Pela Connection String desejada que aponta para o servidor onde ficará a base d
 
 Nos ficheiros:
 
-	(path)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.Connections.dtsConfig
-	(path)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\FinancialPackage.Connections.dtsConfig
+	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.Connections.dtsConfig
+	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\FinancialPackage.Connections.dtsConfig
 
 Substituir Connection String:
 
