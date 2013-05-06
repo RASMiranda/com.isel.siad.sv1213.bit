@@ -78,8 +78,8 @@
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">
-      <Name>PreFinacialPackage.dtsx</Name>
-      <FullPath>PreFinacialPackage.dtsx</FullPath>
+      <Name>BitMainPackage.dtsx</Name>
+      <FullPath>BitMainPackage.dtsx</FullPath>
       <References />
     </DtsPackage>
     <DtsPackage FormatVersion="3">

@@ -6,6 +6,7 @@
 *	Projecto BIT
 *        Criação das tabelas DW área de Stagging
 *   v0 -2013.04.27
+*   v1 -2013.05 (tabelas da financeira)
 */
 
 SET NOCOUNT ON;
@@ -241,6 +242,7 @@ CREATE TABLE Operacoes.Financeira
 INSERT INTO Operacoes.Rubrica VALUES( 'Proveito', 'Servicos')
 INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Material')
 INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Financeiro')
+INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Salarios')
 INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Outros')
 
 insert into Operacoes.Meses (ano, trimestre, mes, descricaoMes) 

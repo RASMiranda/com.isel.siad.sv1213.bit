@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <DTSConfiguration>
 	<DTSConfigurationHeading>
-		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="PreFinacialPackage" GeneratedFromPackageID="{50B6ECA2-1A10-47F8-AFB7-C3467E220937}" GeneratedDate="05-05-2013 02:05:03"/>
+		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="BitMainPackage" GeneratedFromPackageID="{3B66CFEB-82DA-4687-9593-2532C46E14AD}" GeneratedDate="06-05-2013 01:05:19"/>
 	</DTSConfigurationHeading>
 	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::CustosXlsFilePath_loc].Properties[Description]" ValueType="String">
 		<ConfiguredValue/>
@@ -83,5 +83,59 @@
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FinacialPackagePath].Properties[Value]" ValueType="String">
 		<ConfiguredValue>D:\ISEL@Local\SIAD\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\FinacialPackage.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[EvaluateAsExpression]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[Expression]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[IncludeInDebugDump]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[Name]" ValueType="String">
+		<ConfiguredValue>OperationalPackagePath</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[Namespace]" ValueType="String">
+		<ConfiguredValue>User</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[RaiseChangedEvent]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[ReadOnly]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OperationalPackagePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\ISEL@Local\SIAD\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[EvaluateAsExpression]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Expression]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[IncludeInDebugDump]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Name]" ValueType="String">
+		<ConfiguredValue>SQLETLPath</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Namespace]" ValueType="String">
+		<ConfiguredValue>User</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[RaiseChangedEvent]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[ReadOnly]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLETLPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\ISEL@Local\SIAD\com.isel.siad.sv1213.bit\#SQL\ETL\</ConfiguredValue>
 	</Configuration>
 </DTSConfiguration>
