@@ -7,6 +7,7 @@
 *        Criação das tabelas DW área de Stagging
 *   v0 -2013.04.27
 *   v1 -2013.05 (tabelas da financeira)
+*   v2 -2013.05 (schema financeiro, nome tabela financeira)
 */
 
 SET NOCOUNT ON;
@@ -75,29 +76,37 @@ CREATE TABLE Operacoes.Loja
 */
 */
 
-CREATE TABLE Operacoes.Cliente
+CREATE TABLE [Operacoes].[Cliente](
+	[keycol] [int] IDENTITY(1,1) NOT NULL,
+	[oltp_id] [int] NOT NULL,
+	[designacao] [varchar](100) NOT NULL,
+	[nomeContacto] [varchar](50) NOT NULL,
+	[sobrenomeContacto] [varchar](50) NOT NULL,
+	[singular] [char](1) NOT NULL,
+	[cPostal] [varchar](4) NOT NULL,
+	[activo] [char](1) NOT NULL,
+	[BirthDate] [datetime] NULL,
+	[MaritalStatus] [varchar](150) NULL,
+	[YearlyIncome] [varchar](150) NULL,
+	[Gender] [varchar](150) NULL,
+	[TotalChildren] [varchar](150) NULL,
+	[NumberChildrenAtHome] [varchar](150) NULL,
+	[Education] [varchar](150) NULL,
+	[Occupation] [varchar](150) NULL,
+	[HomeOwnerFlag] [varchar](150) NULL,
+	[NumberCarsOwned] [varchar](150) NULL,
+	[dataInicio] [datetime] NULL,
+	[dataFim] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
 (
-	keycol INT PRIMARY KEY IDENTITY,
-	oltp_id INT UNIQUE NOT NULL,
-	designacao   VARCHAR(100) NOT NULL, --Pessoa.designacao
-	nomeContacto VARCHAR(50) NOT NULL,  --Pessoa.
-	sobrenomeContacto  VARCHAR(50) NOT NULL, --Pessoa.
-	singular  CHAR(1) NOT NULL,  --Pessoa.
-	cPostal   VARCHAR(4) NOT NULL,	  --Cliente.
-    activo    CHAR(1) NOT NULL  --Cliente.
-    --InfoDemografica RM
-    ,BirthDate DATETIME NULL
-    ,MaritalStatus VARCHAR(150) NULL
-    ,YearlyIncome VARCHAR(150) NULL
-    ,Gender VARCHAR(150) NULL
-    ,TotalChildren VARCHAR(150) NULL
-    ,NumberChildrenAtHome VARCHAR(150) NULL
-    ,Education VARCHAR(150) NULL
-    ,Occupation VARCHAR(150) NULL
-    ,HomeOwnerFlag VARCHAR(150) NULL
-    ,NumberCarsOwned VARCHAR(150) NULL
-    --,dataAlter datetime NULL
-);
+	[keycol] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[oltp_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
 /* carregamento:
     base tabela de cliente, join pessoa
       com filtro por dataAlter
@@ -212,47 +221,32 @@ END
         DATENAME(month,@basedate),DATEPART(weekday, @basedate),DATENAME(weekday,@basedate),DAY(@basedate))
   SELECT @basedate = DATEADD(DAY, @offset, @basedate)
 
-/* tabelas para a area financeira
-*/
 
-CREATE TABLE Operacoes.Meses
-(
-	keycol INT PRIMARY KEY IDENTITY,
-	ano INT NOT NULL,
-	trimestre TINYINT NOT NULL,
-	mes TINYINT NOT NULL,
-	descricaoMes VARCHAR(15) NOT NULL
-);
-
-CREATE TABLE Operacoes.Rubrica
-(
-	keycol INT PRIMARY KEY IDENTITY,
-	classe VARCHAR(15) NOT NULL, -- pode ser Proveito ou Custo
-	nome VARCHAR(50) NOT NULL  -- nome da rubrica: Servicos, Material, Financeiro, Outros
-);
-
-CREATE TABLE Operacoes.Financeira
-(
-	keycol INT PRIMARY KEY IDENTITY,
-	meses INT REFERENCES Operacoes.Meses,
-	rubrica INT REFERENCES Operacoes.Rubrica,
-	valor DECIMAL( 10,2) NOT NULL
-);
-
-INSERT INTO Operacoes.Rubrica VALUES( 'Proveito', 'Servicos')
-INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Material')
-INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Financeiro')
-INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Salarios')
-INSERT INTO Operacoes.Rubrica VALUES( 'Custo', 'Outros')
-
-insert into Operacoes.Meses (ano, trimestre, mes, descricaoMes) 
-select ano, trimestre, mes, descricaoMes
-  from Operacoes.Data
- where dia =1 and ano > 2000;
-
-
-
-
+INSERT INTO Operacoes.HORA VALUES(0, N'00:00',N'00:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(1, N'01:00',N'01:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(2, N'02:00',N'02:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(3, N'03:00',N'03:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(4, N'04:00',N'04:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(5, N'05:00',N'05:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(6, N'06:00',N'06:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(7, N'07:00',N'07:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(8, N'08:00',N'08:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(9, N'09:00',N'09:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(10, N'10:00',N'10:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(11, N'11:00',N'11:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(12, N'12:00',N'12:00 AM' )
+INSERT INTO Operacoes.HORA VALUES(13, N'13:00',N'01:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(14, N'14:00',N'02:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(15, N'15:00',N'03:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(16, N'16:00',N'04:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(17, N'17:00',N'05:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(18, N'18:00',N'06:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(19, N'19:00',N'07:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(20, N'20:00',N'08:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(21, N'21:00',N'09:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(22, N'22:00',N'10:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(23, N'23:00',N'11:00 PM' )
+INSERT INTO Operacoes.HORA VALUES(24, N'NA',N'NA' )--RMIRANDA, EXISTEM SERVICOS COM horaEntrega a null, para esses será esta a dimensão
 
 
 
@@ -299,32 +293,49 @@ INSERT INTO DiaSemanaDescr VALUES(5,N'Quinta-Feira')
 INSERT INTO DiaSemanaDescr VALUES(6,N'Sexta-Feira')
 INSERT INTO DiaSemanaDescr VALUES(7,N'Sábado')
 INSERT INTO DiaSemanaDescr VALUES(0,N'????')
+GO
 
-INSERT INTO Operacoes.HORA VALUES(0, N'00:00',N'00:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(1, N'01:00',N'01:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(2, N'02:00',N'02:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(3, N'03:00',N'03:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(4, N'04:00',N'04:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(5, N'05:00',N'05:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(6, N'06:00',N'06:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(7, N'07:00',N'07:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(8, N'08:00',N'08:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(9, N'09:00',N'09:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(10, N'10:00',N'10:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(11, N'11:00',N'11:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(12, N'12:00',N'12:00 AM' )
-INSERT INTO Operacoes.HORA VALUES(13, N'13:00',N'01:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(14, N'14:00',N'02:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(15, N'15:00',N'03:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(16, N'16:00',N'04:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(17, N'17:00',N'05:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(18, N'18:00',N'06:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(19, N'19:00',N'07:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(20, N'20:00',N'08:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(21, N'21:00',N'09:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(22, N'22:00',N'10:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(23, N'23:00',N'11:00 PM' )
-INSERT INTO Operacoes.HORA VALUES(24, N'NA',N'NA' )--RMIRANDA, EXISTEM SERVICOS COM horaEntrega a null, para esses será esta a dimensão
+
+/* schema/tabelas para o processo financeiro 
+*/
+
+CREATE SCHEMA Financeiro;
+GO
+
+CREATE TABLE Financeiro.Meses
+(
+	keycol INT PRIMARY KEY IDENTITY,
+	ano INT NOT NULL,
+	trimestre TINYINT NOT NULL,
+	mes TINYINT NOT NULL,
+	descricaoMes VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE Financeiro.Rubrica
+(
+	keycol INT PRIMARY KEY IDENTITY,
+	classe VARCHAR(15) NOT NULL, -- pode ser Proveito ou Custo
+	nome VARCHAR(50) NOT NULL  -- nome da rubrica: Servicos, Material, Financeiro, Outros
+);
+
+CREATE TABLE Financeiro.Resultados
+(
+	keycol INT PRIMARY KEY IDENTITY,
+	meses INT REFERENCES Financeiro.Meses,
+	rubrica INT REFERENCES Financeiro.Rubrica,
+	valor DECIMAL( 10,2) NOT NULL
+);
+
+INSERT INTO Financeiro.Rubrica VALUES( 'Proveito', 'Servicos')
+INSERT INTO Financeiro.Rubrica VALUES( 'Custo', 'Material')
+INSERT INTO Financeiro.Rubrica VALUES( 'Custo', 'Financeiro')
+INSERT INTO Financeiro.Rubrica VALUES( 'Custo', 'Salarios')
+INSERT INTO Financeiro.Rubrica VALUES( 'Custo', 'Outros')
+
+insert into Financeiro.Meses (ano, trimestre, mes, descricaoMes) 
+select ano, trimestre, mes, descricaoMes
+  from Operacoes.Data
+ where dia =1 and ano > 2000;
 
 
 RAISERROR('... OK',0,1) --info

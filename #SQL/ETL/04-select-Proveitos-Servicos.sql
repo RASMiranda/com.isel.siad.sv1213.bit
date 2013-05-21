@@ -3,7 +3,7 @@ SELECT
 	, r.keycol AS rubrica_id
 	, p.Proveito AS proveito
 FROM            
-	Operacoes.Meses AS m 
+	Financeiro.Meses AS m 
 INNER JOIN(
 	SELECT        
 		YEAR(dataConclusao) AS Ano
@@ -14,6 +14,6 @@ INNER JOIN(
 	GROUP BY YEAR(dataConclusao), MONTH(dataConclusao)
 ) AS p ON m.mes = p.Mes AND m.ano = p.Ano 
 CROSS JOIN
-	Operacoes.Rubrica AS r
+	Financeiro.Rubrica AS r
 WHERE        
 	(r.nome = 'Servicos')
