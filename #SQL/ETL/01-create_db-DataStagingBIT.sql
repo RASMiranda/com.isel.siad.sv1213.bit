@@ -7,7 +7,7 @@
 *        Criação das tabelas DW área de Stagging
 *   v0 -2013.04.27
 *   v1 -2013.05 (tabelas da financeira)
-*   v2 -2013.05 (schema financeiro, nome tabela financeira)
+*   v2 -2013.05 (schema financeiro, nome tabela financeira, scd)
 */
 
 SET NOCOUNT ON;
@@ -100,10 +100,6 @@ CREATE TABLE [Operacoes].[Cliente](
 PRIMARY KEY CLUSTERED 
 (
 	[keycol] ASC
-)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
-UNIQUE NONCLUSTERED 
-(
-	[oltp_id] ASC
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
@@ -320,11 +316,19 @@ CREATE TABLE Financeiro.Rubrica
 
 CREATE TABLE Financeiro.Resultados
 (
-	keycol INT PRIMARY KEY IDENTITY,
+	keycol INT IDENTITY,
 	meses INT REFERENCES Financeiro.Meses,
 	rubrica INT REFERENCES Financeiro.Rubrica,
 	valor DECIMAL( 10,2) NOT NULL
-);
+ CONSTRAINT [PK_Resultados] PRIMARY KEY CLUSTERED 
+(
+    [keycol] ASC
+),
+CONSTRAINT [UQ_Resultados] UNIQUE NONCLUSTERED
+(
+    [meses], [rubrica], [valor]
+)
+) ON [PRIMARY]
 
 INSERT INTO Financeiro.Rubrica VALUES( 'Proveito', 'Servicos')
 INSERT INTO Financeiro.Rubrica VALUES( 'Custo', 'Material')
