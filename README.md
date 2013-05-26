@@ -7,7 +7,13 @@
 
 ## Configuration Notes[PT]:
 Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes configuracoes:
-Considerando que (local repositories) é o caminho para a pasta onde se encontra a pasta de repositorio local "com.isel.siad.sv1213.bit". No ficheiro:
+Considerando que (local repositories) é o caminho para a pasta onde se encontra a pasta de repositorio local "com.isel.siad.sv1213.bit". 
+
+No servidor SQL onde se situará a base de dados de DataStaging, executar o seguinte script:
+
+	(local repositories)\com.isel.siad.sv1213.bit\#SQL\ETL\01-create_db-DataStagingBIT.sql
+
+No ficheiro:
 
 	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\BitMainPackage.Variables.dtsConfig
 	
@@ -47,7 +53,7 @@ No ficheiro:
 
 Substituir Connection String:
 	
-	Data Source=10.137.41.4\SQLEXPRESS;User ID=siad_bit_dev; Password=siad_bit_dev;Provider=SQLNCLI10.1;Persist Security Info=True;
+	Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Provider=SQLNCLI10.1;Persist Security Info=True;
 
 Pela Connection String desejada que aponta para o servidor onde ficará a base de dados de DataStaging.
 
@@ -58,7 +64,7 @@ Nos ficheiros:
 
 Substituir Connection String:
 
-	Data Source=10.137.41.4\SQLEXPRESS;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;
+	Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;
 	
 Pela Connection String que aponta para o servidor onde se encontra a base de dados de DataStaging.
 	

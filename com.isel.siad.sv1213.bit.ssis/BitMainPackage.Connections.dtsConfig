@@ -4,7 +4,7 @@
 		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="BitMainPackage" GeneratedFromPackageID="{3B66CFEB-82DA-4687-9593-2532C46E14AD}" GeneratedDate="06-05-2013 13:19:46"/>
 	</DTSConfigurationHeading>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[ConnectionString]" ValueType="String">
-		<ConfiguredValue>Data Source=10.137.41.4\SQLEXPRESS;User ID=siad_bit_dev; Password=siad_bit_dev;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
+		<ConfiguredValue>Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[Description]" ValueType="String">
 		<ConfiguredValue/>
@@ -25,7 +25,7 @@
 		<ConfiguredValue>0</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[ServerName]" ValueType="String">
-		<ConfiguredValue>10.137.41.4\SQLEXPRESS</ConfiguredValue>
+		<ConfiguredValue>10.137.41.11</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[UserName]" ValueType="String">
 		<ConfiguredValue>siad_bit_dev</ConfiguredValue>
