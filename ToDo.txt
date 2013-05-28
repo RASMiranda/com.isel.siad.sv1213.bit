@@ -5,7 +5,7 @@ Parte2
 	Fase3 - Cubos SSAS ToComplete
 		1)Data Sources DONE
 			Data Staging BIT.ds
-		2)Data Source View ToComplete???
+		2)Data Source View ToComplete
 			Financeiro.dsv & Operacoes.dsv
 				Named Querys
 					Servicos dentro do SLA DONE
@@ -14,10 +14,10 @@ Parte2
 					Entregas com sucesso ToDo
 				New Named Calculations ???
 		3)Cubes ToComplete
-			Financeiro.cube(DONE) & Operacoes.cube(ToDo)
-				Add BI ???
-				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]
-				Criar métricas calculadas; [Enunciado]
+			Financeiro.cube(ToDo) & Operacoes.cube(ToDo)
+				Add BI ??? 
+				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado] 
+				Criar métricas calculadas; [Enunciado] 
 				Identificar a função de agregação para cada métrica definida; [Enunciado]
 				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado]
 				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado]
