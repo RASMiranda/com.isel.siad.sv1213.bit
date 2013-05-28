@@ -31,7 +31,7 @@
 		<ConfiguredValue>SIAD_DWCREATOR</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ConnectionString]" ValueType="String">
-		<ConfiguredValue>Data Source=10.137.41.4\SQLEXPRESS;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
+		<ConfiguredValue>Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Description]" ValueType="String">
 		<ConfiguredValue/>
@@ -52,7 +52,7 @@
 		<ConfiguredValue>0</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ServerName]" ValueType="String">
-		<ConfiguredValue>10.137.41.4\SQLEXPRESS</ConfiguredValue>
+		<ConfiguredValue>10.137.41.11</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[UserName]" ValueType="String">
 		<ConfiguredValue>siad_bit_dev</ConfiguredValue>
