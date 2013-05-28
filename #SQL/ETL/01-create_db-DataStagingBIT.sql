@@ -55,7 +55,7 @@ CREATE TABLE Operacoes.Morada
 
 CREATE TABLE Operacoes.TipoServico
 (
-	keycol TINYINT PRIMARY KEY IDENTITY,
+	keycol INT PRIMARY KEY IDENTITY,--keycol TINYINT PRIMARY KEY IDENTITY, --PROBLEMA: SSAS Converte para INT!
 	oltp_id TINYINT UNIQUE NOT NULL,
 	tipo  VARCHAR(50) NOT NULL	 --TipoServico.tipo
 );
@@ -158,7 +158,7 @@ CREATE TABLE Operacoes.Servicos
 	cliente INT REFERENCES Operacoes.Cliente,
 	moradaEntrega INT REFERENCES Operacoes.Morada,
 	moradaFacturacao INT REFERENCES Operacoes.Morada,
-	tipoServico TINYINT REFERENCES Operacoes.TipoServico,
+	tipoServico INT REFERENCES Operacoes.TipoServico,--tipoServico TINYINT REFERENCES Operacoes.TipoServico,--PROBLEMA: SSAS Converte Operacoes.TipoServico.keycol para INT!
 	dataRequisicao INT REFERENCES Operacoes.Data,
 	horaRequisicao TINYINT REFERENCES Operacoes.Hora,
 	dataConclusao INT REFERENCES Operacoes.Data,

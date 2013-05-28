@@ -1,0 +1,29 @@
+Connection Strings
+++++++++++++++++++
+->SIAD Server
+
+.BIT
+Data Source=siad.e.ipl.pt,40022;User ID=SIAD_DWCREATOR; Password=SIAD_DWCREATOR;Initial Catalog=BIT;Provider=SQLNCLI10.1;Persist Security Info=True;
+
+------------------
+->IESD Cloud Server
+
+.BITDW
+Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Provider=SQLNCLI10.1;Persist Security Info=True;
+
+.BITDW DataStagingBIT
+Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;
+
+------------------
+->Local Rui
+
+.BIT
+Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=BIT;
+
+
+.BITDW
+Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;
+
+.BITDW DataStagingBIT
+Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;
+
