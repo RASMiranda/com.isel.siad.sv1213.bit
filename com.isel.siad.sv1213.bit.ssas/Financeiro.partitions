@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="22e114b3-ed93-4291-ad98-2e18ed9d088a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Financeiro</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Meses</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7f8234e2-8d91-4da1-a071-d5a266744cd3">
+          <ID>Meses</ID>
+          <Name>Meses</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="56f03276-767f-4f6e-a3f9-ef52f5d67818">
+            <DataSourceViewID>Financeiro</DataSourceViewID>
+            <TableID>Financeiro_Meses</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Resultados</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3f4850f0-4f92-4219-b2a8-2458ff3e086e">
+          <ID>Resultados</ID>
+          <Name>Resultados</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="26cf088f-541e-49e5-a822-bb4573b5f8ab">
+            <DataSourceViewID>Financeiro</DataSourceViewID>
+            <TableID>Financeiro_Resultados</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Rubrica</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c554576e-4d2c-4ed2-9d05-3ce33a8fb9df">
+          <ID>Rubrica</ID>
+          <Name>Rubrica</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8fb9f218-d911-4412-9e90-b7ec97e642d0">
+            <DataSourceViewID>Financeiro</DataSourceViewID>
+            <TableID>Financeiro_Rubrica</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

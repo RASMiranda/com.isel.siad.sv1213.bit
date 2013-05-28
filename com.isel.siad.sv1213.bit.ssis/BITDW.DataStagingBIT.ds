@@ -3,7 +3,7 @@
   <Name>BITDW.DataStagingBIT</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-  <ConnectionString>Provider=SQLNCLI10.1;Data Source=10.137.41.4\SQLEXPRESS;Persist Security Info=True;Password=;User ID=;Initial Catalog=DataStagingBIT</ConnectionString>
+  <ConnectionString>Provider=SQLNCLI10.1;Data Source=10.137.41.11;Persist Security Info=True;Password=;User ID=;Initial Catalog=DataStagingBIT</ConnectionString>
   <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
   <Timeout>PT0S</Timeout>
 </DataSource>
