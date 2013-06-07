@@ -86,8 +86,16 @@ CREATE TABLE [Operacoes].[Cliente](
 	[cPostal] [varchar](4) NOT NULL,
 	[activo] [char](1) NOT NULL,
 	[BirthDate] [datetime] NULL,
+	[IntervaloIdadeID] [int] NOT NULL,
+	[IntervaloIdadeMinimo] [int] NOT NULL,
+	[IntervaloIdadeMaximo] [int] NOT NULL,
+	[IntervaloIdade] [varchar](50) NOT NULL,
+	[IntervaloIdadeNome] [varchar](50) NOT NULL,
 	[MaritalStatus] [varchar](150) NULL,
 	[YearlyIncome] [varchar](150) NULL,
+	[RendimentoID] [int] NOT NULL,
+	[IntervaloRendimentoCodigo] [varchar](50) NOT NULL,
+	[IntervaloRendimentoClasse] [varchar](50) NOT NULL,
 	[Gender] [varchar](150) NULL,
 	[TotalChildren] [varchar](150) NULL,
 	[NumberChildrenAtHome] [varchar](150) NULL,
@@ -103,6 +111,11 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+	--[keycol] [int] IDENTITY(1,1) NOT NULL,
+	--[valorMinimo] int NOT NULL,
+	--[valorMaximo] int NOT NULL,
+	--[intervalo] [varchar](50) NOT NULL,
+	--[nome] [varchar](50) NOT NULL
 /* carregamento:
     base tabela de cliente, join pessoa
       com filtro por dataAlter
@@ -151,6 +164,31 @@ CREATE TABLE Operacoes.Hora
 	hora12 VARCHAR(8) NOT NULL
 );
 
+CREATE TABLE [Operacoes].[IntervaloRendimento](
+	[keycol] [int] IDENTITY(1,1) NOT NULL,
+	[SalaryTypeXML] [varchar](50) NOT NULL,
+	[codigo] [varchar](50) NOT NULL,
+	[classe] [varchar](50) NOT NULL
+PRIMARY KEY CLUSTERED 
+(
+	[keycol] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [Operacoes].[IntervaloIdade](
+	[keycol] [int] IDENTITY(1,1) NOT NULL,
+	[valorMinimo] int NOT NULL,
+	[valorMaximo] int NOT NULL,
+	[intervalo] [varchar](50) NOT NULL,
+	[nome] [varchar](50) NOT NULL
+PRIMARY KEY CLUSTERED 
+(
+	[keycol] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
 CREATE TABLE Operacoes.Servicos
 (
 	keycol INT PRIMARY KEY IDENTITY,
@@ -164,6 +202,8 @@ CREATE TABLE Operacoes.Servicos
 	dataConclusao INT REFERENCES Operacoes.Data,
 	horaConclusao TINYINT REFERENCES Operacoes.Hora,
 	horaEntrega TINYINT REFERENCES Operacoes.Hora,
+	intervaloRendimentoCliente INT REFERENCES Operacoes.IntervaloRendimento,
+	intervaloIdadeCliente INT REFERENCES Operacoes.IntervaloIdade,
 	numeroEntregas INT NOT NULL, -- count( Entregas)
 	valor Decimal(8,2), -- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
 	--rmiranda:nao faz sentido, nao mesuravel--tipoPagamento VARCHAR(50),-- Pagamento.Valor usando Entrega.servicoid = servico.servicoid  and entrega.entregaid= tipo.entregaid
@@ -245,6 +285,22 @@ INSERT INTO Operacoes.HORA VALUES(23, N'23:00',N'11:00 PM' )
 INSERT INTO Operacoes.HORA VALUES(24, N'NA',N'NA' )--RMIRANDA, EXISTEM SERVICOS COM horaEntrega a null, para esses será esta a dimensão
 
 
+INSERT INTO [Operacoes].[IntervaloRendimento] VALUES(N'0-25000',N'D',N'baixa')
+INSERT INTO [Operacoes].[IntervaloRendimento] VALUES(N'25001-50000',N'C2',N'média-baixa')
+INSERT INTO [Operacoes].[IntervaloRendimento] VALUES(N'50001-75000',N'C1',N'média')
+INSERT INTO [Operacoes].[IntervaloRendimento] VALUES(N'75001-100000',N'B',N'média-alta')
+INSERT INTO [Operacoes].[IntervaloRendimento] VALUES(N'greater than 100000',N'A',N'alta')
+INSERT INTO [Operacoes].[IntervaloRendimento] VALUES(N'NA',N'NA',N'NA')
+GO
+
+INSERT INTO [Operacoes].[IntervaloIdade] VALUES(0,17,N'0-17',N'adolescente')
+INSERT INTO [Operacoes].[IntervaloIdade] VALUES(18,29,N'18-29',N'jovem adulto')
+INSERT INTO [Operacoes].[IntervaloIdade] VALUES(30,39,N'30-39',N'adulto')
+INSERT INTO [Operacoes].[IntervaloIdade] VALUES(40,64,N'40-64',N'meia idade')
+INSERT INTO [Operacoes].[IntervaloIdade] VALUES(65,150,N'65-150',N'senior')
+INSERT INTO [Operacoes].[IntervaloIdade] VALUES(-1,-1,N'NA',N'NA')
+GO
+
 
 /*
 *   Helper databases
@@ -290,7 +346,6 @@ INSERT INTO DiaSemanaDescr VALUES(6,N'Sexta-Feira')
 INSERT INTO DiaSemanaDescr VALUES(7,N'Sábado')
 INSERT INTO DiaSemanaDescr VALUES(0,N'????')
 GO
-
 
 /* schema/tabelas para o processo financeiro 
 */
