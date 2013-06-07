@@ -4,7 +4,8 @@ Parte1
 			Adicionadas as dimensões IntervaloRendimento e IntervaloIdade
 			Fururos melhoramentos: 
 				dataFim da dimensao cliente (scd) espelhar a alteração do objecto oltp que foi alterado (pessoa/cliente/moranda/infodemografica)			
-	Fase2 - ETL SSIS DONE?
+	Fase2 - ETL SSIS
+		Copia (selectiva?) do OLTP e só aí correr o ETL ToDo 
 		
 Parte2
 	Fase3 - Cubos SSAS ToComplete
@@ -32,4 +33,5 @@ Parte2
 				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado]
 				Desenhar e implementar pré-agregados; [Enunciado]
 				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado]
-	Fase4 - Interrogar ToDo
+	Fase4 - Interrogar locai
+		
