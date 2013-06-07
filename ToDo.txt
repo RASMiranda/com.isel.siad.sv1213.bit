@@ -5,8 +5,12 @@ Parte1
 			Fururos melhoramentos: 
 				dataFim da dimensao cliente (scd) espelhar a alteração do objecto oltp que foi alterado (pessoa/cliente/moranda/infodemografica)			
 	Fase2 - ETL SSIS
-		Copia (selectiva?) do OLTP e só aí correr o ETL ToDo 
-		
+		Pre-ETL: Copia (selectiva?) do OLTP e só aí correr o ETL ToDo 
+		OperationalPackage.dtsx
+			FACT Servicos V2
+				Lookup Cliente DIM
+					Está sempre a ir buscar o cliente mais antigo, cruzar datas para ir buscar o utente que fez a requisicao do servico?
+					Analyze: \com.isel.siad.sv1213.bit\#SQL\Analyze\olapCliente-oltpServico-SCD.sql		
 Parte2
 	Fase3 - Cubos SSAS ToComplete
 		1)Data Sources DONE
