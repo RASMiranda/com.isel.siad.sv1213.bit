@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6c00e771-e493-4bbc-8362-b3983edc88cd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2ef7982a-ded1-479e-a731-7a861ae8d46c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Financeiro</ID>
   <Name>Financeiro</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -6,6 +6,90 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5427" scrolltop="-2927" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23601" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Rubrica" left="6155" top="211" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Financeiro_Rubrica" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Resultados" left="755" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Financeiro_Resultados" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Mês" left="20" top="5125" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4471" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000771100004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Financeiro_Meses" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3455" top="963" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Resultado__rubri__49C3F6B7]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6155" y="1362" />
+              <point x="3755" y="1362" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1856" top="2425" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Resultado__meses__48CFD27E]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2255" y="5125" />
+              <point x="2255" y="2725" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +105,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-5427</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-2927</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -43,107 +127,46 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="34d940fe-6d12-4937-8c8a-5ba47654500f">
-      <ID>Meses</ID>
-      <Name>Meses</Name>
-      <DimensionID>Meses</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="01677307-6a8a-45c1-a1c7-8155adf8f68c">
-          <AttributeID>Keycol</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="9092d0f5-d92a-414e-87ab-b6564b9b0a16">
+    <Dimension dwd:design-time-name="fab3e194-99eb-49bd-a18c-eab4fcfd4f8e">
       <ID>Rubrica</ID>
       <Name>Rubrica</Name>
       <DimensionID>Rubrica</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="e8ecc1b4-eae4-4017-a5aa-bd4eff67c2a7">
+        <Attribute dwd:design-time-name="ec31db39-5093-485d-828c-d583e61b65d9">
           <AttributeID>Keycol</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-  </Dimensions>
-  <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="631c99cf-8109-48d1-adfb-7149226257c6">
+    <Dimension dwd:design-time-name="1250b7c9-e7cd-4f6b-a7fb-da5fb15b18c3">
       <ID>Meses</ID>
       <Name>Meses</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Measures>
-        <Measure dwd:design-time-name="4639ddd6-fec9-41a7-a182-8f3e520fbddd">
-          <ID>Ano</ID>
-          <Name>Ano</Name>
-          <Source dwd:design-time-name="d2549912-eb7c-48c7-b21b-bf9014a2ae56">
-            <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a7b869a3-9ac1-4e74-8ae0-ad5ada4808df">
-              <TableID>Financeiro_Meses</TableID>
-              <ColumnID>ano</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="5f08babb-c9ce-4138-b78d-cd1c40f2f20d">
-          <ID>Trimestre</ID>
-          <Name>Trimestre</Name>
-          <Source dwd:design-time-name="63f41040-98e4-42a8-9148-fcaad14cb50b">
-            <DataType>UnsignedInt</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="c128bd59-2729-421b-af19-08129c5c2b31">
-              <TableID>Financeiro_Meses</TableID>
-              <ColumnID>trimestre</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="6911869e-2817-474e-a102-52d62c14e49d">
-          <ID>Mes</ID>
-          <Name>Mes</Name>
-          <Source dwd:design-time-name="9c866598-5d2d-4fda-a93b-c3a4236c75ba">
-            <DataType>UnsignedInt</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="ddeeb07b-6ed6-4392-921c-57019475542e">
-              <TableID>Financeiro_Meses</TableID>
-              <ColumnID>mes</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="9ecb7a3e-ceaf-483a-8b1e-11fe419b1ea8">
-          <ID>Meses Count</ID>
-          <Name>Meses Count</Name>
-          <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="a7fefec2-60ad-4734-b3c3-5fb3fa851dc1">
-            <DataType>Integer</DataType>
-            <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="5b7568ff-13b4-43ca-acc2-f40ba0959879">
-              <TableID>Financeiro_Meses</TableID>
-            </Source>
-          </Source>
-        </Measure>
-      </Measures>
-      <StorageMode>Molap</StorageMode>
-      <ProcessingMode>Regular</ProcessingMode>
-      <Dimensions>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="326aa05b-b887-4475-8fd9-267c21933471">
-          <CubeDimensionID>Meses</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="028b33be-c0f3-4537-b63a-2b18f28cc3f9">
-              <AttributeID>Keycol</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="e92a7297-14a4-424b-804b-b09c1d27238a">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bdaaefda-c79e-4717-abf4-4fce56b8b609">
-                    <TableID>Financeiro_Meses</TableID>
-                    <ColumnID>keycol</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-      </Dimensions>
-      <Partitions />
-    </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="6749e618-b449-4859-9e39-791c82381fbc">
+      <DimensionID>Meses</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="241559c6-3939-4d80-8853-54d7aee69c5d">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="635d262f-762d-4dfb-867e-4fceacabf772">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57a989a8-3209-4059-859d-bd558dd69e04">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d9ed534-8295-4684-a9df-fad2e1575215">
+          <AttributeID>Mês Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ca113b2-683f-41e6-afd2-1c58fe55ab6c">
+          <AttributeID>Mês Nome</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="bc5182e7-a663-402f-a3cd-d9439e0b48c1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ab3f69e1-406b-46a2-bde3-0c1e5a264479">
       <ID>Resultados</ID>
       <Name>Resultados</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -151,25 +174,27 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="819539b3-f120-4fc2-88e1-f63f42698179">
+        <Measure dwd:design-time-name="332f77a1-f665-44ac-bcb2-fedd79f31cd9">
           <ID>Valor</ID>
           <Name>Valor</Name>
-          <Source dwd:design-time-name="33f89219-cc1b-4c64-9fd4-cd14ca08cdcb">
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="6de15d48-e749-4ac2-9d6e-2c12546927d0">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="863acfa0-7406-4069-9e72-ea1a49b06775">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e3fbc001-06f0-4a31-991c-2925de1527fd">
               <TableID>Financeiro_Resultados</TableID>
               <ColumnID>valor</ColumnID>
             </Source>
           </Source>
+          <FormatString>#.##0,00 €;-#.##0,00 €</FormatString>
         </Measure>
-        <Measure dwd:design-time-name="4ae8f408-bdc6-4b70-8e00-3a3a0416312c">
+        <Measure dwd:design-time-name="1e990cff-a1ce-438f-b853-7f6e3bc14c90">
           <ID>Resultados Count</ID>
           <Name>Resultados Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="2c2f3182-129b-4c39-bde1-6cd2281e718f">
+          <Source dwd:design-time-name="75031730-a1a9-4afc-8452-8864c850cf38">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="9f36a82a-7fda-40e1-93a5-ffe779de3961">
+            <Source xsi:type="RowBinding" dwd:design-time-name="0fe27aa7-db1d-4b8a-900c-8141501665d4">
               <TableID>Financeiro_Resultados</TableID>
             </Source>
           </Source>
@@ -178,35 +203,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ddf42fd0-669e-4fe9-b3c2-2c5a47dbb2c6">
-          <CubeDimensionID>Meses</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="9389a8f1-416d-4896-98ad-050d7ae34e1f">
-              <AttributeID>Keycol</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="4433eb23-e413-44bf-8cbf-1aef4300daf7">
-                  <DataType>Integer</DataType>
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e2273955-e734-43dc-9a58-8d1e33dcc30f">
-                    <TableID>Financeiro_Resultados</TableID>
-                    <ColumnID>meses</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="102311b4-c987-45b9-bb3d-11946e02eb47">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="18888a57-79be-45d5-bdc0-a19f0c3a9fab">
           <CubeDimensionID>Rubrica</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="e8b7c08c-c63d-4caa-b5fb-81d0bf99f082">
+            <Attribute dwd:design-time-name="d5f832a5-abd7-473f-8c35-2f7bdc44e58a">
               <AttributeID>Keycol</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b6e8153d-e425-406d-ab2b-5f10beff7c10">
-                  <DataType>Integer</DataType>
+                <KeyColumn dwd:design-time-name="2a4e1e3c-4bf2-433b-af16-f0076bd898be">
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="576ad8dc-b2fa-4881-8a4d-1a5685985ded">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="baca36af-8fb5-47d1-9fb8-f45c7a92cddc">
                     <TableID>Financeiro_Resultados</TableID>
                     <ColumnID>rubrica</ColumnID>
                   </Source>
@@ -216,44 +222,18 @@
             </Attribute>
           </Attributes>
         </Dimension>
-      </Dimensions>
-      <Partitions />
-    </MeasureGroup>
-    <MeasureGroup dwd:design-time-name="749ebdb8-a7cc-4457-90ba-a204bac66ad8">
-      <ID>Rubrica</ID>
-      <Name>Rubrica</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Measures>
-        <Measure dwd:design-time-name="3cd9d7d0-f660-4371-b981-932ff12290ad">
-          <ID>Rubrica Count</ID>
-          <Name>Rubrica Count</Name>
-          <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="848b2318-776d-4d77-9d1b-ad4e1c2b2704">
-            <DataType>Integer</DataType>
-            <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="4338262c-3348-4c55-9907-3b5a52a25f56">
-              <TableID>Financeiro_Rubrica</TableID>
-            </Source>
-          </Source>
-        </Measure>
-      </Measures>
-      <StorageMode>Molap</StorageMode>
-      <ProcessingMode>Regular</ProcessingMode>
-      <Dimensions>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1a7e99dc-1ab0-46ed-82e6-06a845683c36">
-          <CubeDimensionID>Rubrica</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cf63bac2-e33f-44bd-9827-c36590214cba">
+          <CubeDimensionID>Meses</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="95ce4304-967e-41cb-afaa-8223c40db2ad">
+            <Attribute dwd:design-time-name="52096470-b26d-458f-b1e5-946e253d148b">
               <AttributeID>Keycol</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="a92fbdca-c724-4ceb-8886-cbedcb33ae90">
+                <KeyColumn dwd:design-time-name="b81cdbf2-fe6c-4381-bf82-e951f6cbc07f">
+                  <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4604ffaf-9eb9-4fb7-8189-e50a3014c2ba">
-                    <TableID>Financeiro_Rubrica</TableID>
-                    <ColumnID>keycol</ColumnID>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d0fd9b2-465e-40eb-bc2a-e9c2f3be6a89">
+                    <TableID>Financeiro_Resultados</TableID>
+                    <ColumnID>meses</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -265,7 +245,7 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="ac06f736-0df2-4e33-955a-2531775e7314">
+  <Source dwd:design-time-name="c3a662da-fe93-496e-a212-87858866c02d">
     <DataSourceViewID>Financeiro</DataSourceViewID>
   </Source>
 </Cube>

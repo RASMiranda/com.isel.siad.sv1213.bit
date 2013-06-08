@@ -20,12 +20,12 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Meses.dim</Name>
-      <FullPath>Meses.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Rubrica.dim</Name>
       <FullPath>Rubrica.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Meses.dim</Name>
+      <FullPath>Meses.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -38,10 +38,6 @@
     <ProjectItem>
       <Name>Financeiro.dsv</Name>
       <FullPath>Financeiro.dsv</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Operacoes.dsv</Name>
-      <FullPath>Operacoes.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>

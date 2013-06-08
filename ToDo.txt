@@ -20,22 +20,39 @@ Parte2
 			Operacoes.dsv ToDo				
 		3)Cubes ToComplete
 			Financeiro.cube(ToDo)
-				Add BI ??? 
-				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado] 
-				Criar métricas calculadas; [Enunciado] 
-				Identificar a função de agregação para cada métrica definida; [Enunciado]
-				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado]
-				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado]
-				Desenhar e implementar pré-agregados; [Enunciado]
-				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado]
+				Add BI ToDo??? 
+				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]  ToDo
+				Criar métricas calculadas; [Enunciado] ToDo
+				Identificar a função de agregação para cada métrica definida; [Enunciado] ToDo
+				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado] ToDo
+					Mes.AnoTrimMes DONE
+				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado] ToDo
+				Desenhar e implementar pré-agregados; [Enunciado] ToDo
+				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] ToDo
 			Operacoes.cube(ToDo)
-				Add BI ??? 
-				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado] 
-				Criar métricas calculadas; [Enunciado] 
-				Identificar a função de agregação para cada métrica definida; [Enunciado]
-				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado]
-				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado]
-				Desenhar e implementar pré-agregados; [Enunciado]
-				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado]
+				Add BI ToDo??? 
+				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]  ToDo
+				Criar métricas calculadas; [Enunciado]  ToDo
+				Identificar a função de agregação para cada métrica definida; [Enunciado] ToDo
+				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado] ToDo
+				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado] ToDo
+				Desenhar e implementar pré-agregados; [Enunciado] ToDo
+				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] ToDo
 	Fase4 - Interrogar locai
+		Operacoes:
+			As análises pretendidas consistem na observação da evolução das entregas por
+			tipo, loja, região, freguesia, cliente*, ano, mês, trimestre, semana, dia da
+			semana e hora do dia. Serão efectuadas análises sobre o número de entregas
+			por estafeta, quantas ficam pendentes e o qual número médio de tentativas
+			necessárias para efectuar a entrega. É também importante saber o número
+			de entregas programadas cujo horário não é cumprido. [Enunciado] ToDo
+		Financeito:
+			Pretende-se também disponibilizar informação sobre o balanço mensal, que
+			engloba os custos salariais (em bruto), os custos fixos 2 e o valor dos pagamentos.
+			Pretende-se efectuar análises por mês, trimestre ano tipo de custo.	[Enunciado] ToDo	  
+		
+*Normalmente os clientes são segmentados segundo os seus rendimentos. Geralmente
+assume-se a categorização nas classes alta (A), média-alta (B), média (C1), média-baixa
+(C2) e baixa (D). No entanto, podem ser feitas análises onde entram outras variáveis sóciodemográficas,
+como por exemplo, o género e idade		
 		

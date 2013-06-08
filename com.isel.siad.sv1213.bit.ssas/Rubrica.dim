@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="21c5de85-4b23-4f36-aa01-036846d61488" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3501450a-6fa8-4982-823c-04f26119154d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Rubrica</ID>
   <Name>Rubrica</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,26 +42,26 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="325c50c2-8fe7-4d49-8dc9-ae73ff57f64f">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="da7d8ef8-e262-4250-a94d-3dbce73fadef">
     <DataSourceViewID>Financeiro</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="e35fb8ca-b1ef-4f95-ab98-35c6c21d94fb">
+  <ErrorConfiguration dwd:design-time-name="9ad337ed-db07-4d9a-8354-54c464d57476">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="31f104ee-e7ca-4e9e-9c7d-0b9c63add16f">
+    <Attribute dwd:design-time-name="26dbc3fe-fd49-49ce-93d5-f1ec7f186d1b">
       <ID>Keycol</ID>
       <Name>Keycol</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5442ea39-7b69-4e2d-bd34-4f9c0fdd3406">
-          <DataType>Integer</DataType>
+        <KeyColumn dwd:design-time-name="618b3c56-e6a6-437c-bd73-3229fcfabf27">
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="541f9177-a982-40f8-94b6-491b1ca187fc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="802de8ac-a74d-4b24-b1d1-5b0bbe787fff">
             <TableID>Financeiro_Rubrica</TableID>
             <ColumnID>keycol</ColumnID>
           </Source>
