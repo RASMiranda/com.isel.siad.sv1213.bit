@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1515" scrolltop="-5490" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8599" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1515" scrolltop="-5490" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6853" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -73,12 +73,27 @@
             <Shape Id="Keycol" Expanded="true">
               <Attributes>
                 <Attribute Id="Keycol" />
-                <Attribute Id="Ano" />
                 <Attribute Id="Mês Nome" />
-                <Attribute Id="Mês Número" />
-                <Attribute Id="Trimestre" />
               </Attributes>
               <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Mês Número" Expanded="false">
+              <Attributes>
+                <Attribute Id="Mês Número" />
+              </Attributes>
+              <Position x="167" y="20" />
+            </Shape>
+            <Shape Id="Trimestre" Expanded="false">
+              <Attributes>
+                <Attribute Id="Trimestre" />
+              </Attributes>
+              <Position x="315" y="20" />
+            </Shape>
+            <Shape Id="Ano" Expanded="false">
+              <Attributes>
+                <Attribute Id="Ano" />
+              </Attributes>
+              <Position x="462" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -113,21 +128,13 @@
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="fc50f9e3-5a66-4e4f-8e23-94e852fcfd16">
-          <AttributeID>Mês Número</AttributeID>
-          <Name>Mês Número</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b8bd8eca-fd08-46af-811f-468c25a2f0b9">
-          <AttributeID>Trimestre</AttributeID>
-          <Name>Trimestre</Name>
-        </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="45b39a63-030b-4afa-b91a-de2a47f5bb38">
           <AttributeID>Mês Nome</AttributeID>
           <Name>Mês Nome</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f3faabbd-b7ea-4720-9aad-131a9bd1bb5f">
-          <AttributeID>Ano</AttributeID>
-          <Name>Ano</Name>
+        <AttributeRelationship dwd:design-time-name="227bae22-e1c4-42c0-9372-bed1e4d86756">
+          <AttributeID>Mês Número</AttributeID>
+          <Name>Mês Número</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -137,9 +144,9 @@
       <ID>Ano</ID>
       <Name>Ano</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1fc5226c-bbec-44a1-b78d-ff3342946f47">
+        <KeyColumn dwd:design-time-name="b23e5de9-a705-4dd4-9384-c3402e9f7119">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="81f6aef5-d78d-4774-94b9-4214d4c259c4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33810fbb-6e3b-4b85-9556-b6490ffd536b">
             <TableID>Financeiro_Meses</TableID>
             <ColumnID>ano</ColumnID>
           </Source>
@@ -158,28 +165,78 @@
       <ID>Trimestre</ID>
       <Name>Trimestre</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1ae2b057-38ea-41b2-9389-9d7c674ac6b1">
+        <KeyColumn dwd:design-time-name="74ff5a3e-91b7-4faa-8dbf-94a351483945">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbea30a3-b223-45d4-acba-761cc3c5c974">
+            <TableID>Financeiro_Meses</TableID>
+            <ColumnID>ano</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="68ed00eb-9cb9-407a-8a36-165b3980b987">
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f610af0-6fc3-4877-b503-d39d693f31db">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8652693-7ffe-4ff3-83e3-d1a7097421dc">
             <TableID>Financeiro_Meses</TableID>
             <ColumnID>trimestre</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="a2b9d284-c4d0-4ef9-8add-f863a2ad5a47">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a9b22600-36ad-478a-b946-87b1125d4bae">
+          <TableID>Financeiro_Meses</TableID>
+          <ColumnID>trimestre</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ec4edd13-f29a-4884-a90b-8637bd4327ce">
+          <AttributeID>Ano</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Ano</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="f875d210-d3a0-410c-ba35-632033310858">
       <ID>Mês Número</ID>
       <Name>Mês Número</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b53727ac-1973-436d-9104-0cb36a37afbb">
+        <KeyColumn dwd:design-time-name="bda04527-e644-4b66-b5cb-eed95832009d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="765eedef-ade2-4db1-87d5-56ee470c0ebc">
+            <TableID>Financeiro_Meses</TableID>
+            <ColumnID>ano</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6744fa1a-3508-4363-af86-b4b50c1f8619">
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d308938b-a5ce-46ef-b36b-ae967aafeeba">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23b88e31-37f6-409d-99d2-e5d319f5b02c">
+            <TableID>Financeiro_Meses</TableID>
+            <ColumnID>trimestre</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="0c8ed274-628d-48e6-af87-570ef4b4f8f7">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62868e49-567f-486d-85de-7e5d93898cb3">
             <TableID>Financeiro_Meses</TableID>
             <ColumnID>mes</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="f9dfe5b7-25b4-4d17-900c-d1ffbe085268">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9418d6e6-e4e0-4527-ac4c-55957138e7b5">
+          <TableID>Financeiro_Meses</TableID>
+          <ColumnID>mes</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bcb3fd8a-4168-4855-ba36-eee237dd5dc3">
+          <AttributeID>Trimestre</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Trimestre</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>

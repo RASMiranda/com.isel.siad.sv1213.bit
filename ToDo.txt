@@ -15,13 +15,18 @@ Parte2
 			Operacoes.dsv ToDo				
 		3)Cubes ToComplete
 			Financeiro.cube(ToDo)
-				Add BI ToDo??? 
-				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]  ToDo
+				Add BI: Define account intelligence (Custo=Expense;Proveito=Income) DONE 
+				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]  ToDo??? Molap???
 				Criar métricas calculadas; [Enunciado] ToDo
 				Identificar a função de agregação para cada métrica definida; [Enunciado] ToDo
 				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado] ToDo
 					Mes.AnoTrimMes DONE
-				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado] ToDo
+					Rubrica.ClasseNome DONE
+				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado]
+					Mes.Mes-Trim-Ano DONE
+						Imapacto -> Relatorio ToDo
+					Rubrica.Nome-Classe DONE
+						Imapacto -> Relatorio ToDo
 				Desenhar e implementar pré-agregados; [Enunciado] ToDo
 				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] ToDo
 			Operacoes.cube(ToDo)
