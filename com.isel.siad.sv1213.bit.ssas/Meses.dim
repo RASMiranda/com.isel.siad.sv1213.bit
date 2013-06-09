@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1515" scrolltop="-5490" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6853" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1515" scrolltop="-5490" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10266" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -117,6 +117,7 @@
       <ID>Keycol</ID>
       <Name>Keycol</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>48</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7f69e092-afc6-4013-84f5-07154f251c66">
           <NullProcessing>UnknownMember</NullProcessing>
@@ -143,6 +144,7 @@
     <Attribute dwd:design-time-name="fcb407e9-7f6c-4d78-97c4-ba26f9f80a6f">
       <ID>Ano</ID>
       <Name>Ano</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="b23e5de9-a705-4dd4-9384-c3402e9f7119">
           <DataType>Integer</DataType>
@@ -164,6 +166,7 @@
     <Attribute dwd:design-time-name="7351f431-7f47-4ca0-a159-bd92675b19aa">
       <ID>Trimestre</ID>
       <Name>Trimestre</Name>
+      <EstimatedCount>16</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="74ff5a3e-91b7-4faa-8dbf-94a351483945">
           <DataType>Integer</DataType>
@@ -199,6 +202,7 @@
     <Attribute dwd:design-time-name="f875d210-d3a0-410c-ba35-632033310858">
       <ID>Mês Número</ID>
       <Name>Mês Número</Name>
+      <EstimatedCount>48</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="bda04527-e644-4b66-b5cb-eed95832009d">
           <DataType>Integer</DataType>
