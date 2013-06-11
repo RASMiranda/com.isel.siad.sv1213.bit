@@ -17,6 +17,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Operacoes.cube</Name>
+      <FullPath>Operacoes.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Operacoes.partitions</Name>
+          <FullPath>Operacoes.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -26,6 +36,42 @@
     <ProjectItem>
       <Name>Meses.dim</Name>
       <FullPath>Meses.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Data.dim</Name>
+      <FullPath>Data.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hora.dim</Name>
+      <FullPath>Hora.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Funcionario.dim</Name>
+      <FullPath>Funcionario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servicos.dim</Name>
+      <FullPath>Servicos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Morada.dim</Name>
+      <FullPath>Morada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Intervalo Idade Na Requisição.dim</Name>
+      <FullPath>Intervalo Idade Na Requisição.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Servico.dim</Name>
+      <FullPath>Tipo Servico.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Intervalo Rendimento Na Requisição.dim</Name>
+      <FullPath>Intervalo Rendimento Na Requisição.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cliente.dim</Name>
+      <FullPath>Cliente.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -38,6 +84,10 @@
     <ProjectItem>
       <Name>Financeiro.dsv</Name>
       <FullPath>Financeiro.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Operacoes.dsv</Name>
+      <FullPath>Operacoes.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>

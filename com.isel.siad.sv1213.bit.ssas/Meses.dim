@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1515" scrolltop="-5490" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10266" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1515" scrolltop="-5490" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8017" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -105,6 +105,7 @@
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="37b1d769-944e-4d46-8e9b-7ca51fce31b1">
     <DataSourceViewID>Financeiro</DataSourceViewID>
   </Source>
+  <Type>Time</Type>
   <UnknownMember>Visible</UnknownMember>
   <ErrorConfiguration dwd:design-time-name="20690dba-083c-4a3c-a0fd-e94ef6b875d4">
     <KeyNotFound>ReportAndStop</KeyNotFound>
@@ -112,6 +113,7 @@
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>2070</Language>
   <Attributes>
     <Attribute dwd:design-time-name="e24bf25b-5ebf-4e8b-b8e0-54a7052f31a4">
       <ID>Keycol</ID>
@@ -139,11 +141,13 @@
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="fcb407e9-7f6c-4d78-97c4-ba26f9f80a6f">
       <ID>Ano</ID>
       <Name>Ano</Name>
+      <Type>Years</Type>
       <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="b23e5de9-a705-4dd4-9384-c3402e9f7119">
@@ -161,11 +165,13 @@
           <ColumnID>ano</ColumnID>
         </Source>
       </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="7351f431-7f47-4ca0-a159-bd92675b19aa">
       <ID>Trimestre</ID>
       <Name>Trimestre</Name>
+      <Type>Trimesters</Type>
       <EstimatedCount>16</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="74ff5a3e-91b7-4faa-8dbf-94a351483945">
@@ -197,11 +203,13 @@
           <Name>Ano</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="f875d210-d3a0-410c-ba35-632033310858">
       <ID>Mês Número</ID>
       <Name>Mês Número</Name>
+      <Type>Months</Type>
       <EstimatedCount>48</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="bda04527-e644-4b66-b5cb-eed95832009d">
@@ -242,6 +250,7 @@
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="abd5fb6e-c03d-450e-9412-1298a5530700">
@@ -271,7 +280,7 @@
   <Hierarchies>
     <Hierarchy dwd:design-time-name="5e5f211c-afd1-4369-93e1-084eb0db9c7f">
       <ID>Hierarchy</ID>
-      <Name>AnoTrimMes</Name>
+      <Name>Ano - Mês Número</Name>
       <Levels>
         <Level dwd:design-time-name="cf0cd8c3-0d0a-44cd-928d-8fa9ee0e7d76">
           <ID>Ano</ID>

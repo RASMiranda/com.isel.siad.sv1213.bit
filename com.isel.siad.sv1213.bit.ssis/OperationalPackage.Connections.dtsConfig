@@ -4,7 +4,7 @@
 		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="OperationalPackage" GeneratedFromPackageID="{66A250C3-C445-4A21-A311-4CE782C15147}" GeneratedDate="06-05-2013 15:36:44"/>
 	</DTSConfigurationHeading>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ConnectionString]" ValueType="String">
-		<ConfiguredValue>Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=BIT;</ConfiguredValue>
+		<ConfiguredValue>Data Source=siad.e.ipl.pt,40022;User ID=SIAD_DWCREATOR; Password=SIAD_DWCREATOR;Initial Catalog=BIT;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Description]" ValueType="String">
 		<ConfiguredValue/>
@@ -25,13 +25,13 @@
 		<ConfiguredValue>0</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ServerName]" ValueType="String">
-		<ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue>
+		<ConfiguredValue>siad.e.ipl.pt,40022</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[UserName]" ValueType="String">
-		<ConfiguredValue></ConfiguredValue>
+		<ConfiguredValue>SIAD_DWCREATOR</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ConnectionString]" ValueType="String">
-		<ConfiguredValue>Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+		<ConfiguredValue>Data Source=10.137.41.11;User ID=siad_bit_dev; Password=siad_bit_dev;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Description]" ValueType="String">
 		<ConfiguredValue/>
@@ -52,9 +52,9 @@
 		<ConfiguredValue>0</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ServerName]" ValueType="String">
-		<ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue>
+		<ConfiguredValue>10.137.41.11</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[UserName]" ValueType="String">
-		<ConfiguredValue></ConfiguredValue>
+		<ConfiguredValue>siad_bit_dev</ConfiguredValue>
 	</Configuration>
 </DTSConfiguration>

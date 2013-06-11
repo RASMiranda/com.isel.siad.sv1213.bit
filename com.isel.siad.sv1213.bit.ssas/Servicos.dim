@@ -1,0 +1,297 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="27f09bea-fe95-4787-80ce-5e9caff3c5b4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Servicos</ID>
+  <Name>Servicos</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3251c3d1-381a-4b60-983b-004d5cd5e918">
+    <DataSourceViewID>Operacoes</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="5a714923-a57b-4027-bc72-4a8cf5738e69">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="93624374-b825-4b85-b6d9-012211dc8670">
+      <ID>Keycol</ID>
+      <Name>Keycol</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>96599</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a7e3d4d2-326d-4357-9a2e-893f05f7b326">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a932cb6-f024-4891-8bb2-082b3124295c">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>keycol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d329177c-6d20-4668-b188-5bcd59a67b61">
+          <AttributeID>Data Conclusao</AttributeID>
+          <Name>Data Conclusao</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1042be1f-0ac7-4738-8387-5fb055784ed5">
+          <AttributeID>Morada Entrega</AttributeID>
+          <Name>Morada Entrega</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5c70cbb8-b33b-4334-b985-83ab90b2c5d4">
+          <AttributeID>Intervalo Idade Cliente</AttributeID>
+          <Name>Intervalo Idade Cliente</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f32e49bb-ace6-4470-b0df-a808ca824ff7">
+          <AttributeID>Hora Entrega</AttributeID>
+          <Name>Hora Entrega</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dd044f61-2fa5-4d35-9476-38ca46122a6f">
+          <AttributeID>Tipo Servico</AttributeID>
+          <Name>Tipo Servico</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="312b1f46-0c62-4265-86c9-9c297bb528c3">
+          <AttributeID>Hora Conclusao</AttributeID>
+          <Name>Hora Conclusao</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e707e1b5-9b87-4308-af6e-bc5aa42c6289">
+          <AttributeID>Morada Facturacao</AttributeID>
+          <Name>Morada Facturacao</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="08a53f15-d2d0-48ac-b59e-9547d2bcc7d7">
+          <AttributeID>Hora Requisicao</AttributeID>
+          <Name>Hora Requisicao</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4890fd4d-00af-4639-969f-0ba997d82816">
+          <AttributeID>Data Requisicao</AttributeID>
+          <Name>Data Requisicao</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="15d291b5-7a4d-4c81-864a-f5dae3a74b70">
+          <AttributeID>Intervalo Rendimento Cliente</AttributeID>
+          <Name>Intervalo Rendimento Cliente</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c1d96364-34ef-4835-b241-5824faea365f">
+          <AttributeID>Cliente</AttributeID>
+          <Name>Cliente</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="71ebb524-3940-4171-9187-1515d25b90db">
+      <ID>Data Conclusao</ID>
+      <Name>Data Conclusao</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afe7afec-6451-48c0-937e-c21178b43d1f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ac92a2b-9ce3-4484-a015-150ffe0a3e29">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>dataConclusao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5200e4e0-7fd1-4ad0-a33f-41997c1fd27a">
+      <ID>Morada Entrega</ID>
+      <Name>Morada Entrega</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5af0f71c-2df0-4caa-a77e-0bda91cdc3e8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="01e264b8-24e5-49ee-8601-19bc36dbcd4d">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>moradaEntrega</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9b666ee1-ade1-42b7-90ea-da3c5582daf5">
+      <ID>Intervalo Idade Cliente</ID>
+      <Name>Intervalo Idade Cliente</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80d08fb2-9d09-40b7-a827-df050d65daea">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9038a36c-fa6d-4217-b62e-b96df14a8840">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>intervaloIdadeCliente</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a52388c0-dd5b-4a95-bc26-d094634c45e9">
+      <ID>Hora Entrega</ID>
+      <Name>Hora Entrega</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80b85ebb-2e4b-4073-84d4-726b1daed018">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ace6977-e08b-486f-9446-e588c1ddbf5e">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>horaEntrega</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="19dd48ae-fba7-4e61-8dfc-8b0a10d1765f">
+      <ID>Tipo Servico</ID>
+      <Name>Tipo Servico</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3590689e-7612-4c7d-a1f5-bf05d7e493d6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b097f09-1cb9-44d2-96f3-7e03fd0d0749">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>tipoServico</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4529a0bc-594c-4720-bebb-7168169e60be">
+      <ID>Hora Conclusao</ID>
+      <Name>Hora Conclusao</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="523b4040-aed9-4f69-8083-3cbf2477201d">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="587d5a6c-d130-4919-9f8f-09899b6bd147">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>horaConclusao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d2de35a-21c5-45b9-83b7-9ffacf26ea16">
+      <ID>Morada Facturacao</ID>
+      <Name>Morada Facturacao</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2bd8839f-9626-4f98-a9de-0833f94a4442">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79d497ae-632e-4e1b-98e5-564c510bd896">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>moradaFacturacao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5074b44d-165c-4967-bd50-16aa6a22ea13">
+      <ID>Hora Requisicao</ID>
+      <Name>Hora Requisicao</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="408a3e1f-6e3a-47b2-92cf-81549b2e662e">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c09daaea-6e51-424e-b60e-78a777929150">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>horaRequisicao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbf50252-d1d9-4060-8cb1-c967e8508eb2">
+      <ID>Data Requisicao</ID>
+      <Name>Data Requisicao</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2c043ec-f6cf-4fd9-bfcb-7e94412ca62b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b083230-63be-4625-b80b-a9afe266c24b">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>dataRequisicao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd29c3d2-f8ae-46b4-9863-bdf0fb64559f">
+      <ID>Intervalo Rendimento Cliente</ID>
+      <Name>Intervalo Rendimento Cliente</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af32ab5d-6446-45fb-9caf-5f1af6d658f2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf4802b3-7b04-4627-afd4-a30d476c017b">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>intervaloRendimentoCliente</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d26375d2-7d6b-4c81-baa6-d81117db90dd">
+      <ID>Cliente</ID>
+      <Name>Cliente</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a09e39b3-40b6-4a70-9769-0993fc3d5081">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f60374d-847f-4120-8003-cb47bdbf6970">
+            <TableID>Operacoes_Servicos</TableID>
+            <ColumnID>cliente</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1906" scrolltop="-5913" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10266" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1906" scrolltop="-5913" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8017" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -106,6 +106,7 @@
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>2070</Language>
   <Attributes>
     <Attribute dwd:design-time-name="26dbc3fe-fd49-49ce-93d5-f1ec7f186d1b">
       <ID>Keycol</ID>
@@ -129,6 +130,7 @@
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="4c74d9fe-bd10-4994-82f9-b5466e3a1020">
@@ -191,7 +193,7 @@
   <Hierarchies>
     <Hierarchy dwd:design-time-name="2b58631d-7255-43e7-a3d2-a2d9d9d05416">
       <ID>Hierarchy</ID>
-      <Name>ClasseNome</Name>
+      <Name>Classe - Nome</Name>
       <Levels>
         <Level dwd:design-time-name="aa3c9945-e76f-4678-b487-ee15ef349b64">
           <ID>Classe</ID>

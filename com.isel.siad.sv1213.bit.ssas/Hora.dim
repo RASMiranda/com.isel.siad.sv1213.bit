@@ -1,0 +1,162 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fe4c58f3-ee07-43c1-b8cf-ba17991d5910" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hora</ID>
+  <Name>Hora</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2268" scrolltop="-5913" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8017" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Hora" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000700d0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Hora" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2268</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5913</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="88955c03-0d9a-40f2-82f5-06b90b2c9c95">
+    <DataSourceViewID>Operacoes</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="24d95e7b-a6a4-4264-bccd-9a47787f95d7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DependsOnDimensionID>Data</DependsOnDimensionID>
+  <Language>2070</Language>
+  <Attributes>
+    <Attribute dwd:design-time-name="47f5983b-e6a1-4194-997e-29bf6ec272fc">
+      <ID>Keycol</ID>
+      <Name>Keycol</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>25</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23b6f83c-95de-4db3-b03a-528545cf1abd">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="555fcda0-fa28-484e-bc4b-ad2d07a9e4d0">
+            <TableID>Operacoes_Hora</TableID>
+            <ColumnID>keycol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e1de787c-ce58-492d-a847-ec604ad69c13">
+          <AttributeID>Hora 24h</AttributeID>
+          <Name>Hora 24h</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="75cdaed2-6622-4be7-afbd-d7051a6bec13">
+          <AttributeID>Hora 12h</AttributeID>
+          <Name>Hora 12h</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63bec1e2-3dff-4f69-9a6b-8c0a9e836edb">
+      <ID>Hora 24h</ID>
+      <Name>Hora 24h</Name>
+      <Type>Hours</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41b47395-7811-4fa5-8195-db245457f8ef">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24f90f33-649e-490e-b1b8-b62f68656f8a">
+            <TableID>Operacoes_Hora</TableID>
+            <ColumnID>hora24</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34ed4f15-a172-4517-adc3-8885d3241453">
+      <ID>Hora 12h</ID>
+      <Name>Hora 12h</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8f4111d-ab2a-485b-9ce1-aebf0923f157">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="061300cd-feb0-494f-b157-a4009523f762">
+            <TableID>Operacoes_Hora</TableID>
+            <ColumnID>hora24</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6ea9e97c-c40b-41ff-91d8-93ed42899812">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7b664b5-2d54-4d5e-b2c6-102da48e35b1">
+            <TableID>Operacoes_Hora</TableID>
+            <ColumnID>hora12</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ba792e17-be8e-4123-826d-dba0e9d89ef2">
+        <DataType>WChar</DataType>
+        <DataSize>8</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2cfa6129-7721-49dd-9f65-ebaebad4af9c">
+          <TableID>Operacoes_Hora</TableID>
+          <ColumnID>hora12</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

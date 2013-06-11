@@ -12,10 +12,12 @@ Parte2
 			Data Staging BIT.ds
 		2)Data Source View ToComplete
 			Financeiro.dsv DONE 
-			Operacoes.dsv ToDo				
+			Operacoes.dsv DONE				
 		3)Cubes ToComplete
 			Financeiro.cube(ToDo)
-				Add BI: Define account intelligence (Custo=Expense;Proveito=Income) DONE 
+				Add BI
+					Define account intelligence (Custo=Expense;Proveito=Income) DONE 
+					Dimension Meses como Time DONE
 				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]  
 					Molap -> Explicar porque no relatorio ToDo
 				Criar métricas calculadas & Identificar a função de agregação para cada métrica definida; [Enunciado]
@@ -31,15 +33,38 @@ Parte2
 				Desenhar e implementar pré-agregados; [Enunciado] DONE
 				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] NA
 			Operacoes.cube(ToDo)
-				Add BI ToDo??? 
+				Add BI DONE
+					Dimension Data como Time DONE
+					Dimension Morada como geography DONE
+					Dimension Cliente como Costumer DONE
 				Identificar correctamente o tipo de armazenamento para cada um do(s) cubo(s); [Enunciado]
 					Molap -> Explicar porque no relatorio ToDo
 				Criar métricas calculadas & Identificar a função de agregação para cada métrica definida; [Enunciado]
 					Calculations ToDo???
-				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado] ToDo
-				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado] ToDo
-				Desenhar e implementar pré-agregados; [Enunciado] ToDo
-				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] ToDo
+				Identificar e implementar as hierarquias necessárias para dar suporte aos requisitos do sistema; [Enunciado] DONE
+					Data.dim DONE
+					Hora.dim DONE
+					Funcionario.dim DONE
+					Servicos.dim ???? FAZ SENTIDO EXISTIR??? todo Apagar?
+					Morada.dim DONE
+					IntervaloIdade.dim DONE
+					TipoServico.dim DONE
+					IntervaloRendimento.dim DONE
+					Cliente.dim DONE
+				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado] DONE
+					Data.dim DONE
+					Hora.dim DONE
+					Funcionario.dim DONE
+					Servicos.dim ???? FAZ SENTIDO EXISTIR??? todo Apagar?
+					Morada.dim DONE
+					IntervaloIdade.dim DONE
+					TipoServico.dim DONE
+					IntervaloRendimento.dim DONE
+					Cliente.dim DONE
+				Desenhar e implementar pré-agregados; [Enunciado] DONE
+				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] DONE
+					Entregas de Funcionarios DONE
+					Servicos de Clientes DONE
 	Fase4 - Interrogar locai
 		Operacoes:
 			As análises pretendidas consistem na observação da evolução das entregas por

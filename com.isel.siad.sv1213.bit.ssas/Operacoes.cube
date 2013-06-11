@@ -1,0 +1,2458 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1125e2b1-7b94-47bb-954e-cfec7b986bba" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Operacoes</ID>
+  <Name>Operacoes</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="52" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1765" scrolltop="3963" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24368" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Cliente" left="20" top="9593" logicalid="26" controlid="1" masterid="0" hint1="0" hint2="0" width="8361" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000a920000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Cliente" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Entregas" left="23663" top="7242" logicalid="27" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Entregas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Intervalo Rendimento na requisição" left="11522" top="4468" logicalid="28" controlid="3" masterid="0" hint1="0" hint2="0" width="4498" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0008000092110000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_IntervaloRendimento" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Intervalo Idade na requisição" left="19161" top="21037" logicalid="29" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_IntervaloIdade" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Funcionario" left="25001" top="13637" logicalid="30" controlid="5" masterid="0" hint1="0" hint2="0" width="6165" height="6622" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0008000015180000de190000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Funcionario" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Morada" left="5408" top="16993" logicalid="31" controlid="6" masterid="0" hint1="0" hint2="0" width="5953" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004117000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Morada" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Hora" left="19161" top="13637" logicalid="32" controlid="7" masterid="0" hint1="0" hint2="0" width="3440" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000700d0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Hora" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="TipoServico" left="13761" top="16993" logicalid="33" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_TipoServico" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Servicos" left="10781" top="9593" logicalid="34" controlid="9" masterid="0" hint1="0" hint2="0" width="5980" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800005c17000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Servicos" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data" left="21803" top="0" logicalid="35" controlid="10" masterid="0" hint1="0" hint2="0" width="6720" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000401a0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Data" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8081" top="11694" logicalid="36" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__client__2B3F6F97]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="9" sourceattachpoint="39" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8381" y="12093" />
+              <point x="10781" y="12093" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="24764" top="4343" logicalid="37" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Entregas__dataTe__3E52440B]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="2" sourceattachpoint="11" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="25163" y="4842" />
+              <point x="25163" y="7242" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="20482" top="10937" logicalid="38" controlid="13" masterid="0" hint1="0" hint2="0" width="3881" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Entregas__horaTe__3F466844]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20881" y="13637" />
+              <point x="20881" y="12437" />
+              <point x="24063" y="12437" />
+              <point x="24063" y="11237" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="25413" top="10937" logicalid="39" controlid="14" masterid="0" hint1="0" hint2="0" width="3070" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Entregas__estafe__3D5E1FD2]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="10" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="28083" y="13637" />
+              <point x="28083" y="12437" />
+              <point x="25713" y="12437" />
+              <point x="25713" y="11237" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="8939" logicalid="40" controlid="15" masterid="0" hint1="0" hint2="0" width="7502" height="3004" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Entregas__servic__3C69FB99]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="2" sourceattachpoint="29" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16761" y="11543" />
+              <point x="20212" y="11543" />
+              <point x="20212" y="9239" />
+              <point x="23663" y="9239" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13372" top="6694" logicalid="41" controlid="16" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__interv__33D4B598]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="9" sourceattachpoint="7" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13771" y="7193" />
+              <point x="13771" y="9593" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="13443" logicalid="42" controlid="17" masterid="0" hint1="0" hint2="0" width="3000" height="9568" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__interv__34C8D9D1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="9" sourceattachpoint="14" destattachpoint="37" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19161" y="22611" />
+              <point x="17961" y="22611" />
+              <point x="17961" y="13743" />
+              <point x="16761" y="13743" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6885" top="14293" logicalid="43" controlid="18" masterid="0" hint1="0" hint2="0" width="7186" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__morada__2C3393D0]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="9" sourceattachpoint="6" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7284" y="16993" />
+              <point x="7284" y="15793" />
+              <point x="13771" y="15793" />
+              <point x="13771" y="14593" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8535" top="14293" logicalid="44" controlid="19" masterid="0" hint1="0" hint2="0" width="3886" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__morada__2D27B809]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="9" sourceattachpoint="12" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8934" y="16993" />
+              <point x="8934" y="15793" />
+              <point x="12121" y="15793" />
+              <point x="12121" y="14593" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="11793" logicalid="45" controlid="20" masterid="0" hint1="0" hint2="0" width="3000" height="2845" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__horaEn__32E0915F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="9" sourceattachpoint="10" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19161" y="14238" />
+              <point x="17961" y="14238" />
+              <point x="17961" y="12093" />
+              <point x="16761" y="12093" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="12343" logicalid="46" controlid="21" masterid="0" hint1="0" hint2="0" width="3000" height="2845" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__horaCo__31EC6D26]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="9" sourceattachpoint="12" destattachpoint="33" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19161" y="14788" />
+              <point x="17961" y="14788" />
+              <point x="17961" y="12643" />
+              <point x="16761" y="12643" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="12893" logicalid="47" controlid="22" masterid="0" hint1="0" hint2="0" width="3000" height="2845" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__horaRe__300424B4]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="9" sourceattachpoint="14" destattachpoint="35" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19161" y="15338" />
+              <point x="17961" y="15338" />
+              <point x="17961" y="13193" />
+              <point x="16761" y="13193" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14862" top="14293" logicalid="48" controlid="23" masterid="0" hint1="0" hint2="0" width="859" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__tipoSe__2E1BDC42]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="9" sourceattachpoint="4" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15261" y="16993" />
+              <point x="15261" y="15793" />
+              <point x="15421" y="15793" />
+              <point x="15421" y="14593" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="2572" logicalid="49" controlid="24" masterid="0" hint1="0" hint2="0" width="5642" height="8721" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__dataCo__30F848ED]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="9" sourceattachpoint="32" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21803" y="2971" />
+              <point x="19282" y="2971" />
+              <point x="19282" y="10993" />
+              <point x="16761" y="10993" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16461" top="922" logicalid="50" controlid="25" masterid="0" hint1="0" hint2="0" width="5642" height="9821" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Servicos__dataRe__2F10007B]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="9" sourceattachpoint="26" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21803" y="1321" />
+              <point x="19282" y="1321" />
+              <point x="19282" y="10443" />
+              <point x="16761" y="10443" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>1765</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>3963</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Language>2070</Language>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6a7f900f-e197-4674-a6c4-0655022ef112">
+      <ID>Data Tentativa</ID>
+      <Name>Data Tentativa</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="df423ef8-ff6b-4640-8213-cd42900458a4">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c955394e-e6f6-4f3f-9604-0ce8cbed8c64">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="286cefc6-53d1-42ae-b046-c329586146ff">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9165546e-1e8b-4acb-ba7a-f201ef6d976f">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b2b1392-a6da-41c4-a0e9-1c6ab6e06d50">
+          <AttributeID>Mês Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e378f083-dfbe-4d1b-b5f9-5660bcf2a15e">
+          <AttributeID>Mês Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3ccdc5f-67da-4369-bd7b-64c3ebe75afa">
+          <AttributeID>Dia Da Semana Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6915e84-538d-45dc-81a3-8b9c3cfcb843">
+          <AttributeID>Dia Da Semana Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e3312fcd-297c-44be-827a-7fe6eba3086a">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c21474cd-f6f1-4c5b-a456-af744af4ed08">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ea10615f-667e-47da-99d4-6977997c1cb0">
+      <ID>Hora Tentativa</ID>
+      <Name>Hora Tentativa</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="edc0f210-2eed-4e46-a4f7-fcc715128901">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="15d2f1dc-3524-4aa9-aaee-851c0a196938">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="270823cf-8ea9-4e21-83b3-acf9470356fa">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ad2273b-3443-4fb5-8a5b-eb826e51cc25">
+      <ID>Servicos</ID>
+      <Name>Servicos</Name>
+      <DimensionID>Servicos</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c665a612-b6ba-48ea-ae56-63beee1916fb">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e233d36-5185-472b-9a81-a901b4eb1302">
+          <AttributeID>Data Conclusao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd25fd94-d636-4eb0-a257-5ec4fe34377b">
+          <AttributeID>Morada Entrega</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b372688d-45c7-4181-9be0-599cf6c7905b">
+          <AttributeID>Intervalo Idade Cliente</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56cbd777-c625-4032-8457-d3e5dd4aa16b">
+          <AttributeID>Hora Entrega</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14ce5f75-8d7f-49a3-90a5-03632971dc7b">
+          <AttributeID>Tipo Servico</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e6d7fc7-0e6f-44f1-ad24-8b1973677101">
+          <AttributeID>Hora Conclusao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8be7b5d7-dfa3-4a98-a221-780306933136">
+          <AttributeID>Morada Facturacao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f91b0602-0947-4d9e-ab68-6ea6733e9ff5">
+          <AttributeID>Hora Requisicao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d615a494-1788-4ffc-997a-898f0879faad">
+          <AttributeID>Data Requisicao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95e2f8e7-ac76-4f7d-8a9a-93785337dc8c">
+          <AttributeID>Intervalo Rendimento Cliente</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c4967422-26ec-42a2-81bd-b078959ad938">
+          <AttributeID>Cliente</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="eecebed9-c23a-4511-8177-89dd0556ea08">
+      <ID>Data Conclusao</ID>
+      <Name>Data Conclusao</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4ce4a9e0-dc32-4010-b1b1-67aa939e277c">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d2da8563-e26a-43de-899c-6373d50273ee">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c403fa4-c9a5-40e4-871b-bbf0608ab60e">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e38125bd-ac21-465e-b659-69e1f69a546a">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b56c6123-3577-42f4-ae0a-d46f7c5c3b45">
+          <AttributeID>Mês Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84d948cf-e018-480a-a252-5193d68d158c">
+          <AttributeID>Mês Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08997888-4932-431f-852c-c1b942e72663">
+          <AttributeID>Dia Da Semana Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="795a27c2-ba4a-4a58-a3f2-e7e89a667c1a">
+          <AttributeID>Dia Da Semana Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bcfb9149-4ea2-4cc5-b9c5-1acba954a32a">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9b096048-1476-4f88-b33d-8eca7355c958">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f7787dd3-63ef-47dc-beb6-e4b2dc91a9c0">
+      <ID>Morada Entrega</ID>
+      <Name>Morada Entrega</Name>
+      <DimensionID>Morada</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="df3cba56-b5b5-48e4-afb0-aa56770f222d">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77c762f7-1af1-4765-93b6-bd7fe7e6290f">
+          <AttributeID>Rua</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="831a16b9-8ac9-410b-81f1-734b7880ad42">
+          <AttributeID>Número Da Porta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24562302-c13a-45a2-b52c-22e57e745f43">
+          <AttributeID>Localidade</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4619295f-466c-4f33-a8c5-cd9307e71f37">
+          <AttributeID>Designação Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0f59e9e-845b-4b69-bdd7-d712c70e511b">
+          <AttributeID>Freguesia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc9a8454-9875-4239-be78-27b026c81503">
+          <AttributeID>Concelho</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b961586-3d9b-44d9-83cf-8e72ee857e40">
+          <AttributeID>Distrito</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9add058e-94be-48d1-8d6d-12f660be02b0">
+          <AttributeID>Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1644aa95-8013-49fe-9a49-528cef6b5a71">
+          <AttributeID>Extensão Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c8930f02-fd42-41f7-8613-6cb7f9df83f5">
+          <AttributeID>Código Postal Completo</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e5bd46cb-ced9-41da-b7a5-fc9ccf680c02">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="24dfb047-3edc-4abf-bcd5-7834f0a4274f">
+      <ID>Hora Entrega</ID>
+      <Name>Hora Entrega</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ae6fbb3f-9a48-4359-83b9-e94ab4cd6eba">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e452c35-9769-46cd-8fa5-15f540adf972">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b26ce72-56a0-47bc-b16f-159ee75e8d22">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1f074c2e-41f7-46b4-a9b8-3d612311e6c2">
+      <ID>Tipo Servico</ID>
+      <Name>Tipo Servico</Name>
+      <DimensionID>Tipo Servico</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5e70d668-c9e1-47b4-8927-fecf961c1812">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dad5298-4565-410e-b1a8-ed272c831c09">
+          <AttributeID>Tipo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="590ccaea-6584-4c09-83b7-88d583f8e5c6">
+      <ID>Hora Conclusao</ID>
+      <Name>Hora Conclusao</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4b181616-622c-44f0-a865-9cf9a0b363eb">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eca1df24-9113-4b2e-bc55-803e0e8a0a43">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d6b99eef-3ba9-4592-9d8c-a34d9e55748f">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9a2aaa3d-f750-4955-a814-a83ba0912546">
+      <ID>Morada Facturacao</ID>
+      <Name>Morada Facturacao</Name>
+      <DimensionID>Morada</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c75f0bd5-c568-48e4-bdd9-4b4b512b2912">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31d969d3-d187-4160-a084-f39ab0545b25">
+          <AttributeID>Rua</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ebbd5b6e-9b0b-4d86-8c33-56e575d4319a">
+          <AttributeID>Número Da Porta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="300671f4-478d-4cf7-9215-fe28160d0ac1">
+          <AttributeID>Localidade</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d2ed362-f316-4dd7-b6a8-d5461dad62e7">
+          <AttributeID>Designação Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="13d854a2-cb52-4468-b26e-5d9ad24718fa">
+          <AttributeID>Freguesia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54249280-4856-4b48-9a81-62002c7409db">
+          <AttributeID>Concelho</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1e3d9b1c-e134-434e-8a27-bef42fc98844">
+          <AttributeID>Distrito</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a5c90e5-fcc5-4146-a8c7-a1c0ebddca9d">
+          <AttributeID>Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fcbf5893-a1b4-4d45-94b1-3fb0b7fba9cd">
+          <AttributeID>Extensão Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81ef288c-e87b-479f-b5c0-bfd739e70d50">
+          <AttributeID>Código Postal Completo</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5282ca23-70e2-4e83-99a6-fb6011830f4c">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e73412ec-5508-43c9-94bf-85829bb04960">
+      <ID>Hora Requisicao</ID>
+      <Name>Hora Requisicao</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f45dc4c3-f50f-4d60-9423-32d674131418">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="266c4c07-6ccf-4a83-a569-eaa502ea85a8">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66c73e82-62b9-4544-b61a-5a3304a70cfa">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0f251148-b3b8-4eae-8637-11608f2be968">
+      <ID>Data Requisicao</ID>
+      <Name>Data Requisicao</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="38422429-3e0d-4d80-af86-5d96bc8b10f2">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87454e5f-b8e5-44de-a837-7a41460573eb">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="159a7c8a-3f01-41b6-bc66-ef714d6b0a11">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0935a943-bd39-42e7-89c8-52c5342bde41">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="46aa1fbc-7fc3-4ce0-9b1c-5f41ee5d24cd">
+          <AttributeID>Mês Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1178b181-674a-418e-a83e-da0e70c53e86">
+          <AttributeID>Mês Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e932f04d-3268-4cb0-b226-144c57463edb">
+          <AttributeID>Dia Da Semana Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1f6fd361-f8f2-46c9-bdf8-8f55c5fa2f02">
+          <AttributeID>Dia Da Semana Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="251bb444-ad21-477d-a339-c72601f8b84a">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="805c6048-6a8d-4eb1-821f-3346d6d51af7">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="51178955-4fbd-4375-bf64-d31cba2bfe6a">
+      <ID>Cliente</ID>
+      <Name>Cliente</Name>
+      <DimensionID>Cliente</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="25553a99-2a8f-48c5-8aa2-3764c798996a">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="662b4a4d-0497-4d86-925d-5c0ed0686599">
+          <AttributeID>Designacao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="50d8b3f2-05b4-406b-948d-db1c3b414aa5">
+          <AttributeID>Nome De Contacto</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="82903439-fa90-46e5-83eb-2e6b6e37d87f">
+          <AttributeID>Sobrenome De Contacto</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cc7ed0c-20c6-460c-8a98-39218cf142a0">
+          <AttributeID>Singular</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b77ba9f0-5c5b-43ec-a5e9-0006d29270cc">
+          <AttributeID>Codigo Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6af347f0-e031-4368-9e06-bdd24c0e0fd2">
+          <AttributeID>Activo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6801c970-9782-4240-99a9-86c5e448d400">
+          <AttributeID>Intervalo Idade</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="131ed09c-6080-498a-9666-482c26f8da54">
+          <AttributeID>Intervalo Idade Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fbe8579f-5722-4807-bfe0-2338a494ed1c">
+          <AttributeID>Estado Civil</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4cabde9b-93e3-4a77-8271-00b00791b6f5">
+          <AttributeID>Intervalo Rendimento</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49811f3a-c83f-4857-ba42-64145fcf94fc">
+          <AttributeID>Intervalo Rendimento Codigo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a6d9c9e-4d77-4cde-86a0-7d97e4a25c80">
+          <AttributeID>Intervalo Rendimento Classe</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6db0f0c8-6503-44c2-8b21-34379e45d52b">
+          <AttributeID>Género</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e4385e0-bbe0-42de-af7f-edb63427437b">
+          <AttributeID>Número De Filhos</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb417e08-6345-4ba0-a401-0065d1d83242">
+          <AttributeID>Número De Filhos Em Casa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a5f8161-2de6-4ede-9fdd-611a73adb976">
+          <AttributeID>Educação</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57edb94d-7c27-4d9d-bf33-c59027068501">
+          <AttributeID>Ocupação</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="34ac5b13-dd28-4dbf-858b-1f9e78b93d60">
+          <AttributeID>Possui Casa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="12b3c288-270e-4ee7-9521-d531accbd8af">
+          <AttributeID>Número De Carros Possuidos</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b4f6cb2c-3b7c-4218-9949-0ba37bc19ec7">
+          <AttributeID>Nome Completo De Contacto</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7491227e-81ff-4c71-9d6d-a85671176881">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e5407788-8b29-4235-9a1c-81aa159a6633">
+      <ID>Servico - Data Conclusao</ID>
+      <Name>Servico - Data Conclusao</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1f4a95fd-9481-4c6a-8d57-e8979bf6373a">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f2a04a7f-bfa3-4552-93f4-4f0d7ff54d93">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="038ce497-d531-43f1-a459-789e80f8bae0">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c225db74-0eca-4798-85d1-2fcccd713c92">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0996293b-2206-40d5-a3e7-09b4b0584781">
+          <AttributeID>Mês Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e1662b65-292a-4b35-bc32-abe67370e34c">
+          <AttributeID>Mês Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6caf4214-c879-40dd-a310-7b4a504412fb">
+          <AttributeID>Dia Da Semana Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="954ccbc6-4263-4fb3-bfcf-6b9026222af8">
+          <AttributeID>Dia Da Semana Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c82a6c9f-fc96-499f-a125-0a5180a2313c">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7d13b013-b1c1-4bff-95c2-2e02079b2f21">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f1b6e5cd-cf12-4715-b424-9aea281cce6f">
+      <ID>Servico - Morada Entrega</ID>
+      <Name>Servico - Morada Entrega</Name>
+      <DimensionID>Morada</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="735e67f6-2aff-4e47-aa17-cddcd8239740">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7b983427-32ec-4561-9f1b-dcc349848ea2">
+          <AttributeID>Rua</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e708415-65c4-4a3b-bad3-27671c32c034">
+          <AttributeID>Número Da Porta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d851384e-8a7a-411d-b631-e2c4cf89e5df">
+          <AttributeID>Localidade</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c95c1524-3444-4370-9c29-ba562d145db5">
+          <AttributeID>Designação Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a166bc63-d9b3-4de2-b5cc-dc7df4624eaf">
+          <AttributeID>Freguesia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="656eb147-d29d-4080-801a-abb38e67629a">
+          <AttributeID>Concelho</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d6d4033e-d7e9-4fee-b9e4-5a9f7f600779">
+          <AttributeID>Distrito</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2701ccd9-283f-497a-a608-97f591f85e42">
+          <AttributeID>Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1fb0921c-bd24-4595-bbe4-63b13be66a8b">
+          <AttributeID>Extensão Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c6e534e-25d9-49f3-abd2-9be6cf1ee987">
+          <AttributeID>Código Postal Completo</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7a414374-f0b1-4df8-9074-2749a7f9b5aa">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4442a684-bae9-48a2-a8cc-b35616525770">
+      <ID>Servico - Hora Entrega</ID>
+      <Name>Servico - Hora Entrega</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="75dcfebf-cb66-4772-9772-ec66133a7cf0">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc95081b-353c-4125-a4db-43958614b507">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="79d671c8-4d9e-420d-a39b-1f8714ecb8d6">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6f1c8502-3c2e-4489-9338-1ba4044d9852">
+      <ID>Servico - Hora Conclusao</ID>
+      <Name>Servico - Hora Conclusao</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="467d2a00-d8a2-4276-bf9f-093d0af5c6f1">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bfbeb2e5-f8d7-4e70-bd99-42f396825b4e">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae2c787f-9ba0-43af-b53d-35f76fac0277">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5e9c0a61-c772-4856-8f1d-d4ae94a9f866">
+      <ID>Servico - Morada Facturacao</ID>
+      <Name>Servico - Morada Facturacao</Name>
+      <DimensionID>Morada</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="638f6b9b-ece8-4856-a79f-9384aab72f79">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b8ed63d-292d-4167-9ff6-a1ff8cbb50bf">
+          <AttributeID>Rua</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="33be55ee-9e72-4d66-842f-4f022b9c7cfe">
+          <AttributeID>Número Da Porta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60ac8c51-280b-4819-8ee5-7297739bb638">
+          <AttributeID>Localidade</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0c075459-aacf-4e5e-a36f-1059f85aeaa1">
+          <AttributeID>Designação Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="468c7a3b-637d-4f18-84a1-38c7117718a4">
+          <AttributeID>Freguesia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c70a497-2423-40e1-b4b8-2fb79c44cac2">
+          <AttributeID>Concelho</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dfca2c65-1548-4b3a-ad4e-29cadb035714">
+          <AttributeID>Distrito</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08ef8270-dcde-4a05-a9a8-94d8f4d5dfa8">
+          <AttributeID>Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58264de8-25d0-48e1-aedb-6a4a1a9ccda7">
+          <AttributeID>Extensão Código Postal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c134deeb-e89e-42d1-8c8a-874fb48e7d9a">
+          <AttributeID>Código Postal Completo</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8c84badb-cf0e-4003-9783-0db53fe5865e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="55a42a16-81f7-4116-85f7-6244ec7d9e82">
+      <ID>Servico - Hora Requisicao</ID>
+      <Name>Servico - Hora Requisicao</Name>
+      <DimensionID>Hora</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="28433863-0b5e-48e6-9403-108c61d8dc43">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2f8013f-e170-482c-9be6-107b90c12c51">
+          <AttributeID>Hora 24h</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9930d5f9-a58a-4e63-9064-6a4ab659d66f">
+          <AttributeID>Hora 12h</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="15204f80-2edb-436e-8da0-c4a2b3efa902">
+      <ID>Servico - Data Requisicao</ID>
+      <Name>Servico - Data Requisicao</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7e774f1a-199c-4b24-94ec-389904206e40">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b018a388-4f60-4e92-a350-fe67b19b0ca7">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a1bb633-84fb-47bb-9ff0-2b4deeec9e90">
+          <AttributeID>Ano</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e4d8951-72da-4cd1-9c9b-8ed23362c4f6">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e5bdeb3-82c5-4f33-86fd-11f1029afa7b">
+          <AttributeID>Mês Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8eb974b-9427-4a65-9da6-6fe82005f53f">
+          <AttributeID>Mês Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35d6beef-839b-4fe9-8373-f18334621d24">
+          <AttributeID>Dia Da Semana Número</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae889d8e-30d0-4ed5-9dfa-830fe984d580">
+          <AttributeID>Dia Da Semana Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="90f5c7c3-9036-4dd9-ab04-1aaea01d70e6">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c9ae6634-9a9c-4004-b824-3621fbc27b75">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="69584fd1-236b-435b-9a0a-b5df7b151e5e">
+      <ID>Funcionario</ID>
+      <Name>Funcionario</Name>
+      <DimensionID>Funcionario</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="41fd3b7a-2269-4243-9a53-464818aeaedb">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f4e28e6-0d1e-4758-b087-d2005aa3b56c">
+          <AttributeID>Função</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ac67f1f-366d-42d8-8cf8-5e2c2baea23b">
+          <AttributeID>Nome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b5079ab-2fd0-4951-bac4-318ceb93aaf4">
+          <AttributeID>Sobrenome</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e8b30f44-cd8e-4837-8e4c-1318244e341f">
+          <AttributeID>Activo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44880d0f-3729-445c-a721-716036679ef6">
+          <AttributeID>Loja</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c0479d62-6273-4b0f-9b9a-eb0fddee6a19">
+          <AttributeID>Localizacao</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3c3a23cc-6c71-4e30-a99a-3dbed96b34fb">
+          <AttributeID>Nome Do Chefe</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8051aea-46f8-4947-b0fb-e8c9afbb7006">
+          <AttributeID>Sobrenome Do Chefe</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f04fb81e-46b0-4286-9e07-3894bd16bf18">
+          <AttributeID>Função Do Chefe</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd33ccb8-c575-4e60-9a43-4221d3fea1d1">
+          <AttributeID>Nome Completo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b0d3b0c-78ff-4e62-84fe-a1812b410908">
+          <AttributeID>Nome Completo Do Chefe</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6e17d9af-5d6e-4445-9a23-77c481c4ea6e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e1a17c08-5e83-4956-b768-fb76f628c35f">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="8c5aa9e7-1eb4-41b1-aea5-396e95bc1eb9">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c84c4504-e788-46d8-9d63-6e1c1d9da04e">
+      <ID>Intervalo Idade Na Requisição</ID>
+      <Name>Intervalo Idade Na Requisição</Name>
+      <DimensionID>Intervalo Idade Na Requisição</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="471d9ef0-ceac-4258-944e-afd093b5e0e7">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45d2eb34-36b6-4592-a238-27407b559871">
+          <AttributeID>Intervalo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c89f1a1-388f-4206-ab57-921e19bb8ab8">
+          <AttributeID>Nome</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3db5eff0-f1b4-427b-a424-b7853fc222ca">
+      <ID>Intervalo Rendimento Na Requisição</ID>
+      <Name>Intervalo Rendimento Na Requisição</Name>
+      <DimensionID>Intervalo Rendimento Na Requisição</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0947b871-6d50-4e9d-83c1-4852a1413803">
+          <AttributeID>Keycol</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e551da2f-a4e2-4f9a-871c-dd25422c45d6">
+          <AttributeID>Intervalo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="03683ba2-f626-471d-8d72-74bc3bb68a53">
+          <AttributeID>Codigo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ee824b0-354b-4bb9-af4a-cebd58a16ae0">
+          <AttributeID>Classe</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="1666401c-8f88-4889-8434-2640be8adaa4">
+      <ID>Perspective</ID>
+      <Name>Entregas de Funcionarios</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="85f32c08-4018-4772-acd3-76706fd8291b">
+          <CubeDimensionID>Data Tentativa</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4693453a-1b96-4390-bccf-fbf8f432fadc">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="cd6f6b41-a7ec-4a42-a546-783fbf065ae8">
+              <AttributeID>Data</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="659adae3-4da6-4c69-bc6b-d052fb90a78c">
+              <AttributeID>Ano</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8e8f6a17-5662-40e2-8265-4c69e471fc27">
+              <AttributeID>Trimestre</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="03cbd38c-3d1a-4eb0-9c46-71dd37cbe28d">
+              <AttributeID>Mês Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5f502cd3-ce69-4c37-893b-e0788d8e4022">
+              <AttributeID>Mês Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="47fdccd9-2343-4138-93da-fb1a882a7d5d">
+              <AttributeID>Dia Da Semana Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4f3fecad-a0db-4a16-beee-783ef5c9d2b2">
+              <AttributeID>Dia Da Semana Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8edbdbb1-ce1b-4a5d-9fb3-66fcbf887e7a">
+              <AttributeID>Dia</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="5779d645-22b5-4fd0-96c8-8196e7d07c22">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="abd52fc6-77b2-469c-9daa-d2b4ecc28d50">
+          <CubeDimensionID>Hora Tentativa</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b77ffc35-0a16-4586-8b39-9848b36115f2">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3764cbda-4243-4795-b1c2-b214cc98c67b">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6e58130d-6459-4c15-9645-a3481a4ead62">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="242eb661-b7a6-4c90-ab8f-b271f5c0fe12">
+          <CubeDimensionID>Funcionario</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="354e0693-3872-46b6-9843-e3afaa6f6e81">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8d40daf0-0972-48b9-b4f0-e470e2e81a3c">
+              <AttributeID>Função</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ca1c0d7c-5309-4fef-91c7-ff1cc447f2e5">
+              <AttributeID>Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="db0dd4d4-9455-4a27-8d4a-68da2e8c19ef">
+              <AttributeID>Sobrenome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="763f6875-e50a-4b41-8110-ecf901422c11">
+              <AttributeID>Activo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="90a1fd74-8667-4426-85b4-558a6fc87606">
+              <AttributeID>Loja</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="68e64d51-57c6-4056-b81d-797c17d975e1">
+              <AttributeID>Localizacao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="983d03b5-9a6d-4df8-93b3-422566f22de6">
+              <AttributeID>Nome Do Chefe</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d20333a0-d132-4954-8223-4b64f7b23987">
+              <AttributeID>Sobrenome Do Chefe</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ac9e2336-f06a-45f6-a7c3-e17331c6c04b">
+              <AttributeID>Função Do Chefe</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="83dd0ab7-f4a4-4df5-98af-b40e0def2551">
+              <AttributeID>Nome Completo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="cfbe82e1-d03f-47c1-975e-2b6cbe39d688">
+              <AttributeID>Nome Completo Do Chefe</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="e570bf33-1327-4121-bd7d-7911a4ff1970">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+            <Hierarchy dwd:design-time-name="bd350d4b-bfb9-4d7a-b9ec-89ce2cfb4e07">
+              <HierarchyID>Hierarchy 1</HierarchyID>
+            </Hierarchy>
+            <Hierarchy dwd:design-time-name="7b01a026-0023-4f93-a0af-5d475b89eb75">
+              <HierarchyID>Hierarchy 2</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="b968c4bd-b613-4595-b0ae-b795cce8947f">
+          <MeasureGroupID>Entregas</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="525bbf45-6421-49b8-a5c0-c53f9c726b95">
+              <MeasureID>Sucesso</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="344fe2bb-4d0b-4ac3-a422-c727f1ad8f3d">
+              <MeasureID>Entregas Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <DefaultMeasure>[Measures].[Contagem de Entregas]</DefaultMeasure>
+    </Perspective>
+    <Perspective dwd:design-time-name="4eb87885-06a1-438e-a0c4-a3debc9883d1">
+      <ID>Perspective 1</ID>
+      <Name>Servicos de Clientes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="d31ef13b-f82e-435b-9479-296ae1f0a650">
+          <CubeDimensionID>Servicos</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c1e53338-4bbd-43f2-ba03-60238b8b611c">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="24ba79fe-acd4-4c97-a6ce-24659f05c692">
+              <AttributeID>Data Conclusao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e5b603d9-6525-4d38-8f82-64e5f148c48e">
+              <AttributeID>Morada Entrega</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="963ee515-d3a9-4847-a523-a092b3e82667">
+              <AttributeID>Intervalo Idade Cliente</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7536baec-ccba-4629-a904-37783353fdcb">
+              <AttributeID>Hora Entrega</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f055c717-a612-49a1-812e-fdd49af97d04">
+              <AttributeID>Tipo Servico</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2b0e84ad-c054-46e0-944a-eb0ea9e7ba09">
+              <AttributeID>Hora Conclusao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d54034d1-1a03-4c39-9aa4-7a8e7fdea0d0">
+              <AttributeID>Morada Facturacao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="05868023-8b0d-46f5-8703-c0d584842511">
+              <AttributeID>Hora Requisicao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fb020bdc-031e-4e7e-8a12-21146aeda093">
+              <AttributeID>Data Requisicao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="61ea6373-b859-413f-970e-73b050f2c558">
+              <AttributeID>Intervalo Rendimento Cliente</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e7eb35a3-c2e9-4e2a-8925-a05074323996">
+              <AttributeID>Cliente</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="d6a1a29d-e6b5-47b3-8b0a-fe151a3e7b2b">
+          <CubeDimensionID>Data Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0129bfff-71ce-4125-a58e-7d5dd5bbc3ff">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7ac5d57b-d16e-4002-8468-50a57799848e">
+              <AttributeID>Data</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="89822120-ba40-4753-b2b2-3a21e6b7537a">
+              <AttributeID>Ano</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d0fe7781-2b64-40b5-855f-1f2f5264f98a">
+              <AttributeID>Trimestre</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1d764fd3-15ee-41c0-97dc-f3546979be97">
+              <AttributeID>Mês Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c8df205d-bfd5-4afa-8e06-e2afa19b1fda">
+              <AttributeID>Mês Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f1f7a94e-0031-4352-be93-5b9ae3b37265">
+              <AttributeID>Dia Da Semana Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="519c68fd-b25b-4075-b3f3-4bf1b40e6ba4">
+              <AttributeID>Dia Da Semana Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="029a51b6-231c-432e-916c-8af389cd7e62">
+              <AttributeID>Dia</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="c1345758-8c31-4229-a747-2070afc79d0e">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="da68b247-3077-49d3-9566-95be04e12696">
+          <CubeDimensionID>Morada Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4df50e9a-e853-431f-b3bd-a2b38a0c2aa0">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ac1772c2-5290-4db6-9d32-4f1b3b82fc73">
+              <AttributeID>Rua</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e741e443-088d-4dfd-b08d-30fe76182f0c">
+              <AttributeID>Número Da Porta</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d582b97d-b731-42ae-b507-e27850c2d24e">
+              <AttributeID>Localidade</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fb088500-6838-40f4-9cb9-2e91973f4a60">
+              <AttributeID>Designação Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f97defdc-c2b3-4588-bd79-4bc7f5cde93f">
+              <AttributeID>Freguesia</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7ce77e2b-6cde-4b27-aa6f-8771410b8d90">
+              <AttributeID>Concelho</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ae6529bb-c6ec-4a82-ad63-deff3b096fb8">
+              <AttributeID>Distrito</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1b8e5f46-bb0c-44ea-ae47-ddc34e94fe2d">
+              <AttributeID>Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="add18d3c-e4ef-43a9-85fc-e3eeb41ddafc">
+              <AttributeID>Extensão Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dc37b8d9-e756-47c6-aaed-6fdd57e4fedd">
+              <AttributeID>Código Postal Completo</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="ff1c6b50-8f7e-48e1-8442-6e7ccf779f42">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="746b194e-3649-42eb-a9d3-75110a4d4df8">
+          <CubeDimensionID>Tipo Servico</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="de43a129-fd81-4f17-ac39-73cb31897692">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f1a67adc-1b77-428b-b65a-562c7a32cf2b">
+              <AttributeID>Tipo</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="1bb6f366-d90b-43ff-8c64-f0df23ce7a81">
+          <CubeDimensionID>Hora Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba873eec-7ea8-4b77-b9b1-3b637647fb7a">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9b5b69b0-b09e-4024-9ca3-6f6ddf93d1c2">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="58585eb5-9e04-486e-be32-3048456406ff">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="e0e854e4-e70a-4ec1-b97a-bae30439cd1b">
+          <CubeDimensionID>Morada Facturacao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="64665158-0372-4e8c-804c-492301973de4">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2992c1a9-4621-4368-915b-7f953b25095b">
+              <AttributeID>Rua</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1f368b7f-d779-43bd-9ce7-5e49fc5eb5df">
+              <AttributeID>Número Da Porta</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="876290c4-5482-46d3-9173-df3f8450a653">
+              <AttributeID>Localidade</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9335103d-6fd1-4484-b8c9-7f6a752b4ebf">
+              <AttributeID>Designação Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b6e98b2c-cb71-4494-ae08-4358279bdb51">
+              <AttributeID>Freguesia</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="de3fe692-3e8c-4a21-8aa2-e48bc6cc559d">
+              <AttributeID>Concelho</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d0b5fbb3-f2d7-43f4-addc-d6f342fda25e">
+              <AttributeID>Distrito</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9715c9fc-6b35-4339-aeef-088d98142e23">
+              <AttributeID>Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="01fee720-5ead-41cc-b70d-57023cf370ca">
+              <AttributeID>Extensão Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9c606ecf-3a83-4ee2-bc44-b00ffb222ba5">
+              <AttributeID>Código Postal Completo</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="a223e011-4b76-45d7-af07-52349dabed0c">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="02d45fdc-81f9-4c99-8e63-68955b6c06a3">
+          <CubeDimensionID>Hora Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47399f73-1016-4b3c-b134-e3142874bced">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a0608e21-0073-43eb-9c74-09029221bca0">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="26300dc8-628a-456d-a670-1a42209d3679">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="031dd4d6-1744-4cf0-85d4-a4a0f79740fd">
+          <CubeDimensionID>Data Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b5a0daa-2376-43ec-9bc0-4ce27c012c28">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c808eb6b-6d70-4753-8956-73c9f7f411dc">
+              <AttributeID>Data</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7dafbb16-67fd-4a49-a655-62f3a94d47df">
+              <AttributeID>Ano</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c83c2bc6-34b8-4fd5-b62d-73f378c0970b">
+              <AttributeID>Trimestre</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6d158132-d8d8-4ceb-9cab-6028486bd34c">
+              <AttributeID>Mês Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5f0adbb3-45f5-48c4-9c82-b120ad7d400f">
+              <AttributeID>Mês Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2652df68-9821-40ee-bc3f-c80ce40cb9d8">
+              <AttributeID>Dia Da Semana Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f113bd52-7b21-43f5-97b2-3b7727cfe963">
+              <AttributeID>Dia Da Semana Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5ba12fcf-c381-46e8-aefa-7406e14ccfe0">
+              <AttributeID>Dia</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="c7bc1409-9a88-4b65-bddd-e6ad05ad6f3c">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="6e3b1153-a52f-46bb-a2dc-5304f56291d3">
+          <CubeDimensionID>Cliente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e2fb66bd-664a-4706-bdce-1e121ff223c4">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e4cc5d42-aaca-417d-aeea-880e8807bb75">
+              <AttributeID>Designacao</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="06fa67d2-adaa-451b-a6e4-91384b9cef9a">
+              <AttributeID>Nome De Contacto</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f1727b1f-2f6d-4f14-beb6-26d3e9e592fc">
+              <AttributeID>Sobrenome De Contacto</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="036c61f5-31ba-4edd-83ab-1978c4872f1b">
+              <AttributeID>Singular</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="97522a78-7907-47af-80cd-e1fa0037dece">
+              <AttributeID>Codigo Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2aaca115-5777-4319-8bd9-9c8dda3c6192">
+              <AttributeID>Activo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9be5ff52-30dd-4b78-af67-3297005401fc">
+              <AttributeID>Intervalo Idade</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="280092ed-d780-4df8-a6ac-d02712bb86de">
+              <AttributeID>Intervalo Idade Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8f0db135-f774-4bd0-a8fd-766cfb73e111">
+              <AttributeID>Estado Civil</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9c9d1602-8a17-4c61-9744-4cdc25391269">
+              <AttributeID>Intervalo Rendimento</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="50e6bfec-76b2-471f-8e76-30a12f276dd8">
+              <AttributeID>Intervalo Rendimento Codigo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="12df83ac-e2a7-409a-8f62-22ba2b9b96e0">
+              <AttributeID>Intervalo Rendimento Classe</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3df476da-4519-4143-b7e7-17c64ef49ced">
+              <AttributeID>Género</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0a6dc91d-f01e-4153-8c6e-44da9e458a2b">
+              <AttributeID>Número De Filhos</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="25b2539b-feaa-4b6a-a7c4-4adff4b3b4d1">
+              <AttributeID>Número De Filhos Em Casa</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="226700fd-f892-45f0-b489-88bc5fb38294">
+              <AttributeID>Educação</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4275c4ee-d620-4a06-bfb5-bd56443071cc">
+              <AttributeID>Ocupação</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="715cd3f2-e4e4-4f74-8a8d-c95fbf7e6839">
+              <AttributeID>Possui Casa</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="18b685ac-1bda-40e6-89f0-fbc18f7832eb">
+              <AttributeID>Número De Carros Possuidos</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2aeda2e5-d153-4c7a-8ab4-86c5ffefbea6">
+              <AttributeID>Nome Completo De Contacto</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="c22e75a6-de27-46fd-a78e-bdad074641c9">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="bc06c007-098c-4586-b5f9-97a97c0bb655">
+          <CubeDimensionID>Servico - Data Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d79a97af-1126-4a4c-a683-4d33a4a0f0e7">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5ac49b78-645b-47af-a109-cc75602a1472">
+              <AttributeID>Data</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="17bd059e-5aea-4d73-a090-65f3b9637766">
+              <AttributeID>Ano</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e08f5cd3-3e1b-47ba-94a7-e206f5aa51d9">
+              <AttributeID>Trimestre</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="77b23527-5f3a-4bc6-a4a8-d10775236cce">
+              <AttributeID>Mês Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="27a03655-45d5-476b-a6e4-e56632d7cc41">
+              <AttributeID>Mês Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d68b56e7-91f0-4a01-8e0d-547754a0caf8">
+              <AttributeID>Dia Da Semana Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5d0265a2-7d46-4f12-ae8f-d09afaebb3ce">
+              <AttributeID>Dia Da Semana Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a6c9ed80-fa5c-424e-96f3-41936cced942">
+              <AttributeID>Dia</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="585824b0-29ca-4ac3-8f4e-ad0e2ed392c3">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="ceb279dc-68f5-4566-a3bf-6471fff2978f">
+          <CubeDimensionID>Servico - Morada Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="de979d49-c018-4f18-89d2-916dd51a3983">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ddaa0878-0b45-4097-9a4e-5419ae3efbfc">
+              <AttributeID>Rua</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0158ca06-c8d2-4a27-a196-6787b05a1556">
+              <AttributeID>Número Da Porta</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="80c3f876-02e3-4119-bc0b-40a3604c19e6">
+              <AttributeID>Localidade</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="05feea22-59a5-41cd-8546-79b683f47046">
+              <AttributeID>Designação Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7df67ccf-949d-41c8-af1d-a1e5aa293fce">
+              <AttributeID>Freguesia</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7a1bd45f-fbb1-4dfd-a886-7571ac9738c2">
+              <AttributeID>Concelho</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5b6b3cce-978b-43e6-9646-a56517931ff8">
+              <AttributeID>Distrito</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fb19404f-fb71-46f6-b5ae-2a049092db4f">
+              <AttributeID>Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="634d4b3f-f97c-4200-bc22-f01c48915872">
+              <AttributeID>Extensão Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6980444e-7597-4b95-88ce-64be0cc7255c">
+              <AttributeID>Código Postal Completo</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="663e2135-9274-47df-97ec-eb4276077aa8">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="8cb82afa-0ba6-43ce-8336-bc2628f9e45c">
+          <CubeDimensionID>Servico - Hora Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6da968c2-03d2-4687-909d-4ab29e7c9cda">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ae3771e6-33c0-4bba-8ef4-f152db6e9857">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="861003e2-72ea-4356-a485-da675ce8a3b1">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="bee99d18-4c61-46ad-b890-a837bab7563e">
+          <CubeDimensionID>Servico - Hora Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="17fb2884-8073-4a7b-b24a-feb8cc5bc4b3">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b55046eb-4e12-4753-bfdd-8a7a9d444a16">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ee5b4436-cee0-4036-957d-80a9feff55b0">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="7ef54bf4-034d-452a-bbcd-8a8a89be3d26">
+          <CubeDimensionID>Servico - Morada Facturacao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f7a5ba34-ce03-4a6b-b2e7-c91418234bc7">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e01537fe-3891-49a7-b2ba-1cdec59cc902">
+              <AttributeID>Rua</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6466447b-4544-4dea-b3d2-75ad4b127fef">
+              <AttributeID>Número Da Porta</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a444bb5b-a5c8-45f7-9d44-5c3e02798e51">
+              <AttributeID>Localidade</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6eb92de4-e1d5-47b5-aa71-6b2469d5affb">
+              <AttributeID>Designação Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a0d92dd5-a14c-450a-aa20-fc3481f42dba">
+              <AttributeID>Freguesia</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="68877577-4333-4292-8395-3e27f757b9a0">
+              <AttributeID>Concelho</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="69ec0eee-389b-460b-b231-37f888a62a15">
+              <AttributeID>Distrito</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f73b8db3-b293-4e78-bb18-7ad8eef85c42">
+              <AttributeID>Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="971f2c91-e401-4364-aa50-dc4d6f3585bd">
+              <AttributeID>Extensão Código Postal</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ff4f8cbd-781b-4b4e-b7cd-e427cfc49677">
+              <AttributeID>Código Postal Completo</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="3601e552-2835-49e1-8649-2bec93dfa198">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="7e6e6c80-5ffa-4acd-8bff-93a9bf8dd2a6">
+          <CubeDimensionID>Servico - Hora Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47ededce-72d2-46d6-8029-2e2ac21d1f2a">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f1b267bd-0f26-427a-ad04-26d83d4828fa">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="29a04764-1575-4dba-bbff-fa68aa1bd335">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="d55e0969-e0c2-4304-adf7-d0f942f93a46">
+          <CubeDimensionID>Servico - Data Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d8c1087c-b483-454f-9d1f-f101b1e333ec">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7e1b1a2e-dad0-40c0-9e04-ec24cb2048b7">
+              <AttributeID>Data</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="cc524858-eca6-41f8-8201-5cbb91e9c4a2">
+              <AttributeID>Ano</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fc7f22c1-32e2-4d13-a2f6-b10081cba941">
+              <AttributeID>Trimestre</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e3e51c36-0580-49dc-b44a-b9c91226a4c3">
+              <AttributeID>Mês Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ff9102e1-7701-48dd-804a-16f92a8ca357">
+              <AttributeID>Mês Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0c95dfe3-bc8a-4556-a25e-5a387a98ab4d">
+              <AttributeID>Dia Da Semana Número</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c793702e-6604-448f-8e86-b92b47ade2f7">
+              <AttributeID>Dia Da Semana Nome</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="71ab639b-9942-49e5-aa11-998d484d7494">
+              <AttributeID>Dia</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="4dd7a36e-35ca-42d7-9748-4b41c303e83d">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="f63f1b3c-51fd-486d-b393-e965e2086e73">
+          <CubeDimensionID>Intervalo Idade Na Requisição</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eceecf96-e927-422a-8ab7-07f8e5801eb2">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0f14621e-8ee4-4d44-a1e7-690a4c270540">
+              <AttributeID>Intervalo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="63bb77ac-1d24-4eaf-88e7-b0025180f251">
+              <AttributeID>Nome</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="f2dcc619-9083-47e5-bf3f-97d18dedfbe8">
+          <CubeDimensionID>Intervalo Rendimento Na Requisição</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="28a7225c-9353-4f46-bda5-18d883e264c0">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8fface1c-a751-4bf6-b73c-2091e7d1a6de">
+              <AttributeID>Intervalo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ef804fb6-f139-4a1b-bafe-0404f110d785">
+              <AttributeID>Codigo</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="014a329c-cc92-4976-9db5-aaad1330c1ed">
+              <AttributeID>Classe</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="145db17c-fffe-4726-80e0-d923eaa7c1d2">
+          <CubeDimensionID>Hora Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cd5eaff0-b445-4bb9-9f5c-5cf1f2ca4b85">
+              <AttributeID>Keycol</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6c6dfc0a-67ae-4fc1-ad9d-cd7e002ce151">
+              <AttributeID>Hora 24h</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1aac1583-5ce8-449d-abb7-209b02448b1c">
+              <AttributeID>Hora 12h</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="34784a54-ca3c-4065-872f-71028f933ad8">
+          <MeasureGroupID>Servicos</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="cb1405af-544b-4ca7-92cf-9311f0092efe">
+              <MeasureID>Número De Entregas</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="2be0a6bb-f045-4b91-907b-666da6a72537">
+              <MeasureID>Valor</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="a63a8e20-220d-449d-b3ac-37b8bdd24a53">
+              <MeasureID>Dentro Do SLA</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="4437ed1a-7a63-4516-a036-f8b25d85c31e">
+              <MeasureID>Concluido</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="4a80a420-b68a-4295-a048-e012a45f9065">
+              <MeasureID>Servicos Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <DefaultMeasure>[Measures].[Contagem de Servicos]</DefaultMeasure>
+    </Perspective>
+  </Perspectives>
+  <DefaultMeasure>[Measures].[Sucesso]</DefaultMeasure>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="71fdb527-c527-4e87-8aa7-04baa7368a6d">
+      <ID>Entregas</ID>
+      <Name>Entregas</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9778e1c6-7802-45fe-b23d-9c305734c51c">
+          <ID>Sucesso</ID>
+          <Name>Sucesso</Name>
+          <Source dwd:design-time-name="0936699e-2559-43fb-931c-c017f4c4f879">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4c2b1ad7-dec5-4d47-94b8-967d9a4002c6">
+              <TableID>Operacoes_Entregas</TableID>
+              <ColumnID>sucesso</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c2fbcfeb-396d-4255-9b44-efc3b7746974">
+          <ID>Entregas Count</ID>
+          <Name>Contagem de Entregas</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="582bf713-b843-4341-9345-14d0b07c9402">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d2e6919e-ebdf-40c0-97be-12c14e251f61">
+              <TableID>Operacoes_Entregas</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>108912</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cc6a0030-53e0-4950-a22f-da5ce7d96d61">
+          <CubeDimensionID>Data Tentativa</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a9de93ec-5744-4122-96ae-6812040d1a6b">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f6fcb153-3f30-4a38-98ef-b26b5d2e2dbe">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4e13b5ec-21f4-4ec9-bf81-cab8bda1104b">
+                    <TableID>Operacoes_Entregas</TableID>
+                    <ColumnID>dataTentativa</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="346ba8da-7037-4a2b-9f01-bc05eba36288">
+          <CubeDimensionID>Hora Tentativa</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3dda5feb-899f-43c5-ada4-745bb697179a">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="513ce5a6-7e36-4eee-90c6-6de606eb29f0">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2bb678c4-c72c-4003-9d00-11ffec036bac">
+                    <TableID>Operacoes_Entregas</TableID>
+                    <ColumnID>horaTentativa</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d7668abd-28cd-42e3-9096-65f67e60c267">
+          <CubeDimensionID>Funcionario</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bbf5e6cd-675b-4e20-a692-baed61c03e7c">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="79d61e87-ac56-4bfb-add9-046be9394ba2">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bff9b3d8-a781-4ff6-acdc-9a85f8161413">
+                    <TableID>Operacoes_Entregas</TableID>
+                    <ColumnID>estafeta</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ab4404d-0ca0-4ab3-86e1-463f8cb9a390">
+          <CubeDimensionID>Servicos</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="de27195d-d8ef-4251-9f20-980011684ab2">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="99bc793a-623e-49cd-a17c-447a9fce648c">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="376a704a-686c-45fa-8625-a28c20b5ad80">
+                    <TableID>Operacoes_Entregas</TableID>
+                    <ColumnID>servico</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2d3e3231-8521-4556-a9cf-ea57fb52acaf">
+          <CubeDimensionID>Servico - Data Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="08e7f0cc-c0d8-4ee6-8082-8ec54c255d22">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Data Conclusao</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6dd710bc-f159-4698-923b-aea33e1a718f">
+          <CubeDimensionID>Servico - Morada Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dd92bf5f-cc5b-461d-af8b-f3c730ee397c">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Morada Entrega</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="26a3931d-46a5-48a4-8c93-98ed6b7069b0">
+          <CubeDimensionID>Intervalo Idade Na Requisição</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="22e5577e-5f3a-4f67-b51c-84e1f7dd0918">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Intervalo Idade Cliente</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="246d8649-a8b5-4018-8545-7870501e9f5d">
+          <CubeDimensionID>Servico - Hora Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="455834ac-be86-4e44-9b0a-fbd8795c5096">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Hora Entrega</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="caa80d71-bea7-4940-91de-0fe27a5ddc1b">
+          <CubeDimensionID>Tipo Servico</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="977919e6-eb96-4b12-9c43-f3a841e4c205">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Tipo Servico</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="cf13c23c-c2d6-4ff0-87b1-42bf3a310d9c">
+          <CubeDimensionID>Servico - Hora Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cf0449f5-b41a-4537-a2b7-aa4d5777e724">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Hora Conclusao</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="1c931abb-45bf-45ce-adce-4ae137d7daae">
+          <CubeDimensionID>Servico - Morada Facturacao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b511954-d083-4f97-b3c3-d84e5e0efd56">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Morada Facturacao</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="525adea0-26b7-4ca5-8f26-a653e1af78aa">
+          <CubeDimensionID>Servico - Hora Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="960288f1-7ce4-43ff-8174-6f54e9a20595">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Hora Requisicao</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fddfe18e-609e-482d-be17-167016cd5eef">
+          <CubeDimensionID>Servico - Data Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65f32a9c-2402-4ee8-a777-d661fd6dae60">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Data Requisicao</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e8c014bc-23e1-4289-872e-94720ac0c6d7">
+          <CubeDimensionID>Intervalo Rendimento Na Requisição</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c400d344-30a5-474e-b2b1-9f6ddf118d9b">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Intervalo Rendimento Cliente</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c36493a5-51fd-40dc-97c7-f73022425b99">
+          <CubeDimensionID>Cliente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f2fa4966-391b-4380-aa35-d68a24322e24">
+              <AttributeID>Keycol</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Servicos</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Cliente</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="f5f2c3bf-ebe2-4411-93cc-45f444651e3b">
+      <ID>Servicos</ID>
+      <Name>Servicos</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="65864c9f-8025-4754-a390-7c54209e561c">
+          <ID>Número De Entregas</ID>
+          <Name>Número De Entregas</Name>
+          <Source dwd:design-time-name="c94c60bb-1093-46a9-83d5-d1ea7f41bf9d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="878151f1-a691-4d15-8ea4-48793d62a382">
+              <TableID>Operacoes_Servicos</TableID>
+              <ColumnID>numeroEntregas</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="73a41c5f-1889-4758-9fdd-41baf234e715">
+          <ID>Valor</ID>
+          <Name>Valor</Name>
+          <Source dwd:design-time-name="6c0dcc30-a63b-4b46-a843-94088a8822e7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8526dfd6-66ec-4649-9eab-2177747c2de9">
+              <TableID>Operacoes_Servicos</TableID>
+              <ColumnID>valor</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#.##0,00 €;-#.##0,00 €</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="aeb7d30c-2c91-4b72-ad6b-52a06ddd71ec">
+          <ID>Dentro Do SLA</ID>
+          <Name>Dentro Do SLA</Name>
+          <Source dwd:design-time-name="8ab1c99a-acb2-41b5-9495-ca2a818849eb">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5d165178-10d0-4389-b4dd-d5c49d349daa">
+              <TableID>Operacoes_Servicos</TableID>
+              <ColumnID>dentroDoSLA</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6d967ff6-2e63-478c-8724-0ec7ecf83907">
+          <ID>Concluido</ID>
+          <Name>Concluido</Name>
+          <Source dwd:design-time-name="4c96b0e2-7216-4fcc-a079-8ee21fd7fe26">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e3321a18-ff80-4513-8835-eb0091e90d74">
+              <TableID>Operacoes_Servicos</TableID>
+              <ColumnID>concluido</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bb754db2-0e47-4354-af2b-52b1735e2e47">
+          <ID>Servicos Count</ID>
+          <Name>Contagem de Servicos</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9ff73888-55f5-44ff-9359-268e737d7198">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="10a09d13-9e1f-4acb-8004-6c107429b607">
+              <TableID>Operacoes_Servicos</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>96599</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="37cb333b-4649-4414-a0b8-392b4add853c">
+          <CubeDimensionID>Servicos</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef5f24a6-1af4-4594-a1df-cd14053f5845">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="45e50e91-41b1-4635-a08a-66dc16e7d2cb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="acbd294a-09f2-42f3-ae07-0a80057071cf">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>keycol</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5d1d3abf-8820-4b5a-8c55-02e1596fec27">
+          <CubeDimensionID>Data Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cb6cb410-ebb7-4e80-9508-0d30dd6cc5a0">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8a77c87c-4014-410e-98e2-30703c963949">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f086a736-b188-46be-9ecf-f310f17dc575">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>dataConclusao</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8bc36bc5-3841-411a-8a7c-937ca977b921">
+          <CubeDimensionID>Morada Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2bca45f1-0775-4bb1-a436-851f384d7092">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9b1669b8-16c0-4403-9867-869199e25705">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5a968e08-8cae-4f65-97ca-74ad4d9b70e8">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>moradaEntrega</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3a654d93-cbab-4f22-a4ba-223dde0c5d88">
+          <CubeDimensionID>Intervalo Idade Na Requisição</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d83ce319-4569-4228-9c71-5d6ba0751b65">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75c83cb1-df90-40f1-83a0-36fc5b5f81af">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b65bea1a-ab6c-4b39-9367-a59a516cf7df">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>intervaloIdadeCliente</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eeaae1d8-a115-47d6-a7d5-99eff0994e44">
+          <CubeDimensionID>Hora Entrega</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e636383b-7d86-4c90-bbce-dc39b9862042">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7301cade-461e-4068-b975-db4dc26792c5">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ae1028b6-642a-491e-88c3-8a3f79e82aff">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>horaEntrega</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a5eccc3f-bf5d-4627-a1be-2331cecbfab2">
+          <CubeDimensionID>Tipo Servico</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a6fa692e-50dd-4a0b-b90f-0d595b237714">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7aba962d-c0d0-441b-8aed-62c68af50ac0">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="02d74768-6bcb-470b-ae8e-9e081d1e0a7d">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>tipoServico</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="38dddc3f-8cc9-446b-8ad5-ecd092020201">
+          <CubeDimensionID>Hora Conclusao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d597fbed-3fc7-4752-bf34-957766e2e32b">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3a4c6de5-8009-4a40-ad07-586d608acdc2">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e003f465-8056-4d48-98f8-77a470166377">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>horaConclusao</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="382256a6-9e1f-462e-b401-187ee53d448e">
+          <CubeDimensionID>Morada Facturacao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="59d56221-dcbb-4a80-86c0-32bce05f60c4">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="30b4ba12-fbc6-4c30-8ce7-92a6414c86bf">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05592891-fe9f-4be6-b613-2837ad02a813">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>moradaFacturacao</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ec095456-2053-45e1-8f6c-4643e075b1f8">
+          <CubeDimensionID>Hora Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8a265e7d-449d-4b9d-899e-dfb174f3f4f6">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59ebf55e-b11c-4fe1-9249-6725ff751ad2">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7e31d5d8-f1fc-46a9-be57-b5b9ce370ee4">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>horaRequisicao</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3be46b0f-9abb-4647-8d08-ed081c254f60">
+          <CubeDimensionID>Data Requisicao</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="62cec90b-3eab-459f-b707-1cc8dec9eb96">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="310c606e-2d6b-4ff7-be3a-0c3987f46a9d">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="69720f34-23c0-4168-b94a-191972c95224">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>dataRequisicao</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="80b10468-01f6-4a8d-a120-2cedae739d07">
+          <CubeDimensionID>Intervalo Rendimento Na Requisição</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65a87569-5678-47ba-9c0b-eb93e33468d9">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a4920a74-ca57-42bd-af29-88dbde8d5524">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5d1be1e-8a88-4286-b37c-38afd3df874f">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>intervaloRendimentoCliente</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="56819a59-d3d3-469c-8009-5dc2dc720e52">
+          <CubeDimensionID>Cliente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="02d0cc0e-ee55-4663-b959-07604c17a6c6">
+              <AttributeID>Keycol</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="faaea671-2e6e-4088-982a-eb28b6ad7264">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bdba5b41-7c8a-4264-9a5b-e8b0e06c6b17">
+                    <TableID>Operacoes_Servicos</TableID>
+                    <ColumnID>cliente</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="1ecbbe1c-afad-4840-a461-b068136d0013">
+    <DataSourceViewID>Operacoes</DataSourceViewID>
+  </Source>
+</Cube>

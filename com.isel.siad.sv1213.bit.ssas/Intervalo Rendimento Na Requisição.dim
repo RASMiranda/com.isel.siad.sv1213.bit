@@ -1,0 +1,180 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6bc6b25d-5c4b-4c3d-a22a-73fe11157537" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Intervalo Rendimento Na Requisição</ID>
+  <Name>Intervalo Rendimento Na Requisição</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1805" scrolltop="-5702" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8361" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Intervalo Rendimento na requisição" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4498" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0008000092110000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_IntervaloRendimento" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1805</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5702</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="99">
+            <Shape Id="Keycol" Expanded="true">
+              <Attributes>
+                <Attribute Id="Keycol" />
+                <Attribute Id="Classe" />
+                <Attribute Id="Codigo" />
+                <Attribute Id="Intervalo" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="12f4966d-ce60-4d38-b914-437a44279918">
+    <DataSourceViewID>Operacoes</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="9de02472-7b3d-4be6-8447-2ce50aca979c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>2070</Language>
+  <Attributes>
+    <Attribute dwd:design-time-name="dd9c6e65-369c-43b2-ae18-65c932c07254">
+      <ID>Keycol</ID>
+      <Name>Keycol</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="795a0317-c586-48f5-b961-884cd3de2dd8">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41cb71ef-3eea-4994-a145-0aa72fea9846">
+            <TableID>Operacoes_IntervaloRendimento</TableID>
+            <ColumnID>keycol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b86cbd5a-124d-4e40-aeff-31401dcaf305">
+          <AttributeID>Intervalo</AttributeID>
+          <Name>Intervalo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0cd01581-ab34-4585-b94e-1c0534218997">
+          <AttributeID>Codigo</AttributeID>
+          <Name>Codigo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6130da3b-5ff6-45ca-aa86-a475e2535f40">
+          <AttributeID>Classe</AttributeID>
+          <Name>Classe</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f1012028-6823-435c-b064-42e5524f8aa8">
+      <ID>Intervalo</ID>
+      <Name>Intervalo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a051f1a-81b3-496d-90d1-a752b72065ce">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0973a1b8-2b95-4ad4-9795-b815dc79aec5">
+            <TableID>Operacoes_IntervaloRendimento</TableID>
+            <ColumnID>SalaryTypeXML</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5f21bb43-51df-4619-b14a-c991e53f0e2f">
+      <ID>Codigo</ID>
+      <Name>Codigo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9691c6e7-fd0b-4fdb-9863-c1f3b9c22333">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca4ae063-ca13-475a-a18b-5384c74a455e">
+            <TableID>Operacoes_IntervaloRendimento</TableID>
+            <ColumnID>codigo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="792cccd6-9b4e-47a6-8cf8-8c586f3fa911">
+      <ID>Classe</ID>
+      <Name>Classe</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73dc51ae-40b6-4aa7-a859-4d9843475a74">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37b3f3ee-16ec-462a-8e46-66148aa70e71">
+            <TableID>Operacoes_IntervaloRendimento</TableID>
+            <ColumnID>classe</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>
