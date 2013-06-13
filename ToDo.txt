@@ -6,6 +6,7 @@ Parte1
 				dataFim da dimensao cliente (scd) espelhar a alteração do objecto oltp que foi alterado (pessoa/cliente/moranda/infodemografica)			
 	Fase2 - ETL SSIS
 		Pre-ETL: Copia (selectiva?) do OLTP e só aí correr o ETL ToDo 
+		Adicionada tarefa para processamento dos cubos DONE
 Parte2
 	Fase3 - Cubos SSAS ToComplete
 		1)Data Sources DONE
@@ -65,7 +66,17 @@ Parte2
 				Criar perspectivas de análises relevantes no domínio do problema. [Enunciado] DONE
 					Entregas de Funcionarios DONE
 					Servicos de Clientes DONE
-	Fase4 - Interrogar locai
+	Fase4 - Interrogar ToDo	
+		• Criar interrogações que apresentem a informação de forma perceptível
+		aos analistas;
+		• Implementar interrogações que facilitem a parametrização;
+		• Utilizar o Excel como cliente do SSAS, considerando também interrogações
+		ad-hoc;
+		• Implementar correctamente Named Sets nas interrogações MDX;
+		• Escolher correctamente o tempo de vida e localização de membros calculados
+		que suportem as funcionalidades pretendidas;
+		• Saber utilizar funções MDX, especialmente a função Filter, Parallel-
+		Period, e funções de navegação (e.g. Parent);	
 		Operacoes:
 			As análises pretendidas consistem na observação da evolução das entregas por
 			tipo, loja, região, freguesia, cliente*, ano, mês, trimestre, semana, dia da
@@ -73,11 +84,25 @@ Parte2
 			por estafeta, quantas ficam pendentes e o qual número médio de tentativas
 			necessárias para efectuar a entrega. É também importante saber o número
 			de entregas programadas cujo horário não é cumprido. [Enunciado] ToDo
+			• O volume de facturação realizado em 2012, por mês e tipo de entrega,
+			contabilizando apenas as freguesias da Baixa Pombalina;(http://pt.wikipedia.org/wiki/Baixa_de_Lisboa)
+				Madalena
+				Mártires
+				Sacramento
+				Santa Justa
+				São Nicolau
+				São Cristóvão
+				São Lourenço *Não existe no OLTP para Lisboa>Lisboa
+			• O número de entregas médio por horas do dia no último mês;
+			• A percentagem de crescimento das entregas urgentes, no último trimestre,
+			para as freguesias com volume de facturação superior a 1500 e;
+			• O estafeta que mais entregas programadas fez fora de horas no último
+			mês;		
 		Financeiro:
 			Pretende-se também disponibilizar informação sobre o balanço mensal, que
 			engloba os custos salariais (em bruto), os custos fixos (excel) e o valor dos pagamentos.
-			Pretende-se efectuar análises por mês, trimestre ano tipo de custo.	[Enunciado] ToDo	  
-		
+			Pretende-se efectuar análises por mês, trimestre ano tipo de custo.	[Enunciado] ToDo	  		
+
 *Normalmente os clientes são segmentados segundo os seus rendimentos. Geralmente
 assume-se a categorização nas classes alta (A), média-alta (B), média (C1), média-baixa
 (C2) e baixa (D). No entanto, podem ser feitas análises onde entram outras variáveis sóciodemográficas,

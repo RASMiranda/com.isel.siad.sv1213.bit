@@ -1,10 +1,37 @@
 <?xml version="1.0"?>
 <DTSConfiguration>
 	<DTSConfigurationHeading>
-		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="BitMainPackage" GeneratedFromPackageID="{3B66CFEB-82DA-4687-9593-2532C46E14AD}" GeneratedDate="06-05-2013 13:19:46"/>
+		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="BitMainPackage" GeneratedFromPackageID="{3B66CFEB-82DA-4687-9593-2532C46E14AD}" GeneratedDate="13-06-2013 17:39:52"/>
 	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=.\SQLSERVER2008R2;Initial Catalog=com isel siad sv1213 bit ssas;Provider=MSOLAP;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[InitialCatalog]" ValueType="String">
+		<ConfiguredValue>com isel siad sv1213 bit ssas</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[Name]" ValueType="String">
+		<ConfiguredValue>.\SQLSERVER2008R2.com isel siad sv1213 bit ssas</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[Password]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[RetainSameConnection]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[ServerName]" ValueType="String">
+		<ConfiguredValue>.\SQLSERVER2008R2</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[.\SQLSERVER2008R2.com isel siad sv1213 bit ssas].Properties[UserName]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[ConnectionString]" ValueType="String">
-		<ConfiguredValue>Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;</ConfiguredValue>
+		<ConfiguredValue>Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;User ID=;Initial Catalog=;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[Description]" ValueType="String">
 		<ConfiguredValue/>
@@ -28,6 +55,6 @@
 		<ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue>
 	</Configuration>
 	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW].Properties[UserName]" ValueType="String">
-		<ConfiguredValue></ConfiguredValue>
+		<ConfiguredValue/>
 	</Configuration>
 </DTSConfiguration>

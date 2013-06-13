@@ -57,6 +57,12 @@ Substituir Connection String:
 
 Pela Connection String desejada que aponta para o servidor onde ficará a base de dados de DataStaging.
 
+Substituir Connection String:
+	
+	Data Source=.\SQLSERVER2008R2;Initial Catalog=com isel siad sv1213 bit ssas;Provider=MSOLAP;</
+
+Pela Connection String desejada que aponta para o servidor onde ficará a base de dados do Analysis Services.
+
 Nos ficheiros:
 
 	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.Connections.dtsConfig
