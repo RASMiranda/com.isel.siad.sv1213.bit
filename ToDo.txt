@@ -67,16 +67,12 @@ Parte2
 					Entregas de Funcionarios DONE
 					Servicos de Clientes DONE
 	Fase4 - Interrogar ToDo	
-		• Criar interrogações que apresentem a informação de forma perceptível
-		aos analistas;
+		• Criar interrogações que apresentem a informação de forma perceptível aos analistas;
 		• Implementar interrogações que facilitem a parametrização;
-		• Utilizar o Excel como cliente do SSAS, considerando também interrogações
-		ad-hoc;
+		• Utilizar o Excel como cliente do SSAS, considerando também interrogações ad-hoc;
 		• Implementar correctamente Named Sets nas interrogações MDX;
-		• Escolher correctamente o tempo de vida e localização de membros calculados
-		que suportem as funcionalidades pretendidas;
-		• Saber utilizar funções MDX, especialmente a função Filter, Parallel-
-		Period, e funções de navegação (e.g. Parent);	
+		• Escolher correctamente o tempo de vida e localização de membros calculados que suportem as funcionalidades pretendidas;
+		• Saber utilizar funções MDX, especialmente a função Filter, Parallel-Period, e funções de navegação (e.g. Parent);	
 		Operacoes:
 			As análises pretendidas consistem na observação da evolução das entregas por
 			tipo, loja, região, freguesia, cliente*, ano, mês, trimestre, semana, dia da
@@ -84,7 +80,7 @@ Parte2
 			por estafeta, quantas ficam pendentes e o qual número médio de tentativas
 			necessárias para efectuar a entrega. É também importante saber o número
 			de entregas programadas cujo horário não é cumprido. [Enunciado] ToDo
-			• O volume de facturação realizado em 2012, por mês e tipo de entrega,
+			• O volume de facturação realizado em 2012, por mês e tipo de entrega, 
 			contabilizando apenas as freguesias da Baixa Pombalina;(http://pt.wikipedia.org/wiki/Baixa_de_Lisboa)
 				Madalena
 				Mártires
@@ -93,6 +89,7 @@ Parte2
 				São Nicolau
 				São Cristóvão
 				São Lourenço *Não existe no OLTP para Lisboa>Lisboa
+					DONE MDX,xlsx
 			• O número de entregas médio por horas do dia no último mês;
 			• A percentagem de crescimento das entregas urgentes, no último trimestre,
 			para as freguesias com volume de facturação superior a 1500 e;
