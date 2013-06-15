@@ -1,0 +1,15 @@
+select 
+	NON EMPTY {([Tipo Servico].[Tipo].members)} on columns
+	,NON EMPTY {([Data Requisicao].[Ano - Dia].[Ano].&[2012],[Data Requisicao].[Mês Nome].members)} on rows
+from [Servicos de Clientes]
+where 
+(
+	{--http://pt.wikipedia.org/wiki/Baixa_de_Lisboa (Baixa Pombalina)
+		[Morada Facturacao].[Distrito - Número Da Porta].[Freguesia].&[Lisboa]&[Lisboa]&[São Nicolau]
+		,[Morada Facturacao].[Distrito - Número Da Porta].[Freguesia].&[Lisboa]&[Lisboa]&[São Cristóvão]
+		,[Morada Facturacao].[Distrito - Número Da Porta].[Freguesia].&[Lisboa]&[Lisboa]&[Santa Justa]
+		,[Morada Facturacao].[Distrito - Número Da Porta].[Freguesia].&[Lisboa]&[Lisboa]&[Sacramento]
+		,[Morada Facturacao].[Distrito - Número Da Porta].[Freguesia].&[Lisboa]&[Lisboa]&[Madalena]
+		,[Morada Facturacao].[Distrito - Número Da Porta].[Freguesia].&[Lisboa]&[Lisboa]&[Mártires]
+	},([Measures].[Valor])
+)
