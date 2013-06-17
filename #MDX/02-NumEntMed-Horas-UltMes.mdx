@@ -1,0 +1,11 @@
+WITH MEMBER [Hora Tentativa].[Hora 24h].[Entregas Avg] AS
+AVG ([Hora Tentativa].[Hora 24h].[Hora 24h],[Measures].[Contagem de Entregas])
+
+
+select {([Data Tentativa].[Ano - Dia].members)} on columns
+from [Entregas de Funcionarios]
+where 
+	--({[Data Tentativa].[Ano - Dia].[Mês Número].&[2013]&[4]&[12]},([Measures].[Contagem de Entregas]))
+	[Hora Tentativa].[Hora 24h].[Entregas Avg]
+	
+

@@ -1,7 +1,7 @@
 select 
 	NON EMPTY {([Tipo Servico].[Tipo].members)} on columns
 	,NON EMPTY {([Data Requisicao].[Ano - Dia].[Ano].&[2012],[Data Requisicao].[Mês Nome].members)} on rows
-from [Servicos de Clientes]
+from [Servicos apenas]
 where 
 (
 	{--http://pt.wikipedia.org/wiki/Baixa_de_Lisboa (Baixa Pombalina)
