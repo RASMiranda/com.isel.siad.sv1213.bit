@@ -7,6 +7,8 @@ Parte1
 	Fase2 - ETL SSIS
 		Pre-ETL: Copia (selectiva?) do OLTP e só aí correr o ETL ToDo 
 		Adicionada tarefa para processamento dos cubos DONE
+	ToDo Relatorios
+		Alteracoes feitas à parte 1
 Parte2
 	Fase3 - Cubos SSAS ToComplete
 		1)Data Sources DONE
@@ -89,12 +91,21 @@ Parte2
 				São Nicolau
 				São Cristóvão
 				São Lourenço *Não existe no OLTP para Lisboa>Lisboa
-					DONE MDX,xlsx
+					DONE MDX & xlsx 01-FacturacaoBaixaLisboa2012-Mes-Tipo
 			• O número de entregas médio por horas do dia no último mês;
+				02-NumEntMed-Horas-UltMes
+					xlsx DONE?
+					mdx ToDo
 			• A percentagem de crescimento das entregas urgentes, no último trimestre,
-			para as freguesias com volume de facturação superior a 1500 e;
+			para as freguesias com volume de facturação (total de sempre?) superior a 1500 e;
+				03-CrescEnt-Urg-UltTri-Fact1.5K
+					xlsx DONE?
+					mdx ToDo
 			• O estafeta que mais entregas programadas fez fora de horas no último
 			mês;		
+				04-EstafMaisEnt-ForaHor-UltMes
+					xlsx DONE?
+					mdx ToDo
 		Financeiro:
 			Pretende-se também disponibilizar informação sobre o balanço mensal, que
 			engloba os custos salariais (em bruto), os custos fixos (excel) e o valor dos pagamentos.
