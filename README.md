@@ -45,7 +45,7 @@ Substituir directoria:
 	
 Por directoria:
 
-	(local repositories)\com.isel.siad.sv1213.bit\#SQL\ETL\	
+	(local repositories)\com.isel.siad.sv1213.bit\com.isel.siad.sv1213.bit.ssis\OperationalPackage.dtsx
 
 No ficheiro:
 
