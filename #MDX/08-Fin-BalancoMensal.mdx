@@ -1,0 +1,5 @@
+select 
+	NON EMPTY([Rubrica].[Classe - Nome].[Nome].members) on columns
+	,NON EMPTY([Meses].[Ano - Mês Número].members) on rows
+from [Financeiro]
+where [Measures].[Valor]
