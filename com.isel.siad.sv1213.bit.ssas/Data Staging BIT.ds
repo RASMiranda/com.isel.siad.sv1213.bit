@@ -3,11 +3,11 @@
   <Name>Data Staging BIT</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-  <ConnectionString>Provider=SQLNCLI10.1;Data Source=.\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=DataStagingBIT</ConnectionString>
+  <ConnectionString>Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=DataStagingBIT</ConnectionString>
   <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
   <ImpersonationInfo>
     <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
-    <Account>Rui Miranda</Account>
+    <Account>MIRANDA-LAPTOP\Rui Miranda</Account>
     <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
   </ImpersonationInfo>
   <Timeout>PT0S</Timeout>

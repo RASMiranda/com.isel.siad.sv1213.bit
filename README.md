@@ -20,6 +20,12 @@ Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes con
 	FinacialPackage.dtsx
 	OperationalPackage.Connections.dtsConfig
 	OperationalPackage.dtsx
+	02-create-com isel siad sv1213 bit ssas.xmla
+	
+	Notas: 
+		BIT será a conexão para a base de dados onde se encontra os dados do OLTP sobre a qual correrá o ETL
+		BITDW será a conexão para o servidor sql onde se encontra a base de dados de Data Staginng
+		BITDW.DataStaging/Data Staging BIT será a conexão para a base de dados de Data Staging
 
 Ao abrir a solucao:
 

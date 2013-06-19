@@ -94,7 +94,7 @@
           <ConfigurationSetting>
             <Id>Data Staging BIT</Id>
             <Name>Data Staging BIT</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=.\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=DataStagingBIT</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=DataStagingBIT</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
@@ -104,6 +104,7 @@
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
+        <RemovePasswords>false</RemovePasswords>
       </Options>
     </Configuration>
   </Configurations>
