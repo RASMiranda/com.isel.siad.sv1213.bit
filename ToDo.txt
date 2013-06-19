@@ -59,7 +59,6 @@ Parte2
 					Data.dim DONE
 					Hora.dim DONE
 					Funcionario.dim DONE
-					Servicos.dim ???? FAZ SENTIDO EXISTIR??? todo Apagar?
 					Morada.dim DONE
 					IntervaloIdade.dim DONE
 					TipoServico.dim DONE
@@ -69,7 +68,6 @@ Parte2
 					Data.dim DONE
 					Hora.dim DONE
 					Funcionario.dim DONE
-					Servicos.dim ???? FAZ SENTIDO EXISTIR??? todo Apagar?
 					Morada.dim DONE
 					IntervaloIdade.dim DONE
 					TipoServico.dim DONE
@@ -114,7 +112,7 @@ Parte2
 					mdx ToDo
 			É também importante saber o número de entregas programadas cujo horário não é cumprido. 
 				05-Entr-Prog-ForaSla
-					xlsx ToDo
+					xlsx DONE?
 					mdx ToDo
 			Serão efectuadas análises sobre o número de entregas por estafeta, quantas ficam pendentes 
 				06-Entr-Estaf-Pend
