@@ -50,10 +50,6 @@
       <FullPath>Funcionario.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Servicos.dim</Name>
-      <FullPath>Servicos.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Morada.dim</Name>
       <FullPath>Morada.dim</FullPath>
     </ProjectItem>
