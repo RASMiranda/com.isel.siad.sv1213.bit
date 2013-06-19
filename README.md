@@ -7,6 +7,8 @@
 ## Configuration Notes[PT]:
 Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes configuracoes:
 
+0) Correr batch set_paths_env (Run As Administrator)
+
 1) Executar o script \#SQL\ETL\00-create_db-DataStagingBIT.sql no Database Engine
 
 2) Executar o script \#XMLA\01-create-com isel siad sv1213 bit ssas.xmla no Analisys Services
