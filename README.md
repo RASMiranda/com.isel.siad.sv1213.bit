@@ -11,7 +11,7 @@ Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes con
 
 2) Através da linha de comandos executar batch RUNMESQL.cmd passando como parâmetro a instância onde ficará o Data Wharehouse
 
-4) Configurar os servidores alvos, e directorias locais nos ficheiros:
+3) Configurar os servidores alvos, e directorias locais nos ficheiros:
 	\com.isel.siad.sv1213.bit.ssis\BitMainPackage.Connections.dtsConfig
 	\com.isel.siad.sv1213.bit.ssis\BitMainPackage.Variables.dtsConfig
 	\com.isel.siad.sv1213.bit.ssis\FinacialPackage.Connections.dtsConfig
@@ -25,7 +25,7 @@ Antes de abrir a solucao com.isel.siad.sv1213.bit.sln, efectuar as seguintes con
 	FinacialPackagePath: caminho completo para o ficheiro \com.isel.siad.sv1213.bit.ssis\FinacialPackage.dtsx
 	OperationalPackagePath: caminho completo para o ficheiro \com.isel.siad.sv1213.bit.ssis\OperationalPackage.dtsx
 
-5) Executar o script \#XMLA\02-create-com isel siad sv1213 bit ssas.xmla sobre o Analisys Services do DataWharehouse
+4) Executar o script \#XMLA\02-create-com isel siad sv1213 bit ssas.xmla sobre o Analisys Services do DataWharehouse
 
 Ao abrir a solucao:
 
