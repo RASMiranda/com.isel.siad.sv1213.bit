@@ -1,1 +1,60 @@
-<?xml version="1.0"?><DTSConfiguration><DTSConfigurationHeading><DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="OperationalPackage" GeneratedFromPackageID="{66A250C3-C445-4A21-A311-4CE782C15147}" GeneratedDate="19-06-2013 01:46:29"/></DTSConfigurationHeading><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>Data Source=.\SQLSERVER2008R2;Initial Catalog=BIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Description]" ValueType="String"><ConfiguredValue></ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[InitialCatalog]" ValueType="String"><ConfiguredValue>BIT</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Name]" ValueType="String"><ConfiguredValue>BIT</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Password]" ValueType="String"><ConfiguredValue></ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ProtectionLevel]" ValueType="Int32"><ConfiguredValue>1</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[RetainSameConnection]" ValueType="Boolean"><ConfiguredValue>0</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ServerName]" ValueType="String"><ConfiguredValue>.\SQLSERVER2008R2</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[UserName]" ValueType="String"><ConfiguredValue></ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;User ID=;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Description]" ValueType="String"><ConfiguredValue></ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[InitialCatalog]" ValueType="String"><ConfiguredValue>DataStagingBIT</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Name]" ValueType="String"><ConfiguredValue>BITDW.DataStagingBIT</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Password]" ValueType="String"><ConfiguredValue></ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ProtectionLevel]" ValueType="Int32"><ConfiguredValue>1</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[RetainSameConnection]" ValueType="Boolean"><ConfiguredValue>0</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ServerName]" ValueType="String"><ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[UserName]" ValueType="String"><ConfiguredValue></ConfiguredValue></Configuration></DTSConfiguration>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="OperationalPackage" GeneratedFromPackageID="{66A250C3-C445-4A21-A311-4CE782C15147}" GeneratedDate="19-06-2013 01:46:29"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=siad.e.ipl.pt,40022;User ID=SIAD_DWCREATOR; Password=SIAD_DWCREATOR;Initial Catalog=BIT;Provider=SQLNCLI10.1;Persist Security Info=True;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[InitialCatalog]" ValueType="String">
+		<ConfiguredValue>BIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Name]" ValueType="String">
+		<ConfiguredValue>BIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Password]" ValueType="String">
+		<ConfiguredValue>SIAD_DWCREATOR</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[RetainSameConnection]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ServerName]" ValueType="String">
+		<ConfiguredValue>siad.e.ipl.pt,40022</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[UserName]" ValueType="String">
+		<ConfiguredValue>SIAD_DWCREATOR</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;User ID=;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[InitialCatalog]" ValueType="String">
+		<ConfiguredValue>DataStagingBIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Name]" ValueType="String">
+		<ConfiguredValue>BITDW.DataStagingBIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Password]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[RetainSameConnection]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ServerName]" ValueType="String">
+		<ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[UserName]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+</DTSConfiguration>
