@@ -33,4 +33,6 @@ Ao abrir a solucao:
 
 .se for perguntando para actualizar a connection string fechar essa janela de dialogo, NUNCA FAZER OK!
 
+.ignorar erros
+
 .para simular o processamento do ETL basta executar o BitMainPackage.dtsx

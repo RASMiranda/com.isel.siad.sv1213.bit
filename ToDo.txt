@@ -5,7 +5,7 @@ Parte1
 			Fururos melhoramentos: 
 				dataFim da dimensao cliente (scd) espelhar a alteração do objecto oltp que foi alterado (pessoa/cliente/moranda/infodemografica)			
 	Fase2 - ETL SSIS
-		Pre-ETL: Copia (selectiva?) do OLTP e só aí correr o ETL ToDo 
+		Pre-ETL: Copia (selectiva?) do OLTP e só aí correr o ETL DONE 
 		Adicionada tarefa para processamento dos cubos DONE
 	ToDo Relatorios
 		Alteracoes feitas à parte 1
@@ -116,22 +116,27 @@ Parte2
 					mdx ToDo
 			Serão efectuadas análises sobre o número de entregas por estafeta, quantas ficam pendentes 
 				06-Entr-Estaf-Pend
-					xlsx ToDo
+					xlsx DONE?
 					mdx ToDo
 			qual número médio de tentativas	necessárias para efectuar a entrega
 				07-Media-Entr-ServConcluido
-					xlsx ToDo
+					xlsx DONE?
 					mdx ToDo
-			evolução das entregas por tipo, loja, região, freguesia, cliente*, ano, mês, trimestre, 
-			semana, dia da semana e hora do dia.
-				07-EvolEntre
-					xlsx ToDo
+			evolução das entregas por:
+				tipo, loja, região
+				freguesia, cliente rendimentos
+				freguesia, cliente género
+				freguesia, cliente idade
+				ano, mês, trimestre
+				dia da semana e hora do dia.
+				08-EvolEntre
+					xlsx DONE?
 					mdx ToDo
 		Financeiro:
 			Pretende-se também disponibilizar informação sobre o balanço mensal, que
 			engloba os custos salariais (em bruto), os custos fixos (excel) e o valor dos pagamentos.
 			Pretende-se efectuar análises por mês, trimestre ano tipo de custo.	[Enunciado] ToDo	
-				08-Fin-BalancoMensal	
+				09-Fin-BalancoMensal	
 					xlsx DONE?
 					mdx DONE?
 
