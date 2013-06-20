@@ -31,6 +31,6 @@ Ao abrir a solucao:
 
 .sempre que for pedida a password: siad_bit_dev
 
-.se for perguntando para actualizar a connection string fechar essa janela de dialogo
+.se for perguntando para actualizar a connection string fechar essa janela de dialogo, NUNCA FAZER OK!
 
 .para simular o processamento do ETL basta executar o BitMainPackage.dtsx

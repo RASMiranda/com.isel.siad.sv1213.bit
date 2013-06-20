@@ -1,3 +1,6 @@
+@setlocal enableextensions
+@cd /d "%~dp0"
+
 @echo off
 if "%1"=="" goto err
 cls
