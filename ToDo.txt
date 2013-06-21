@@ -60,9 +60,6 @@ Parte2
 					Hora.dim DONE
 					Funcionario.dim DONE
 					Morada.dim DONE
-					IntervaloIdade.dim DONE
-					TipoServico.dim DONE
-					IntervaloRendimento.dim DONE
 					Cliente.dim DONE
 				Definir relações entre atributos, percebendo o impacto que estas têm na geração de pré-agregados; [Enunciado] DONE
 					Data.dim DONE
