@@ -92,33 +92,36 @@ Parte2
 				São Nicolau
 				São Cristóvão
 				São Lourenço *Não existe no OLTP para Lisboa>Lisboa
-					DONE MDX & xlsx 01-FacturacaoBaixaLisboa2012-Mes-Tipo
+					01-FacturacaoBaixaLisboa2012-Mes-Tipo	
+						xlsx DONE?
+						mdx DONE?
 			• O número de entregas médio por horas do dia no último mês;
-				02-NumEntMed-Horas-UltMes
+				02-NumEntMed-Horas-UltMes	
 					xlsx DONE?
-					mdx ToDo
+					mdx DONE?
 			• A percentagem de crescimento das entregas urgentes, no último trimestre,
 			para as freguesias com volume de facturação (total de sempre?) superior a 1500 e;
-				03-CrescEnt-Urg-UltTri-Fact1.5K
+				03-CrescEnt-Urg-UltTri-Fact1.5K	
 					xlsx DONE?
-					mdx ToDo
+					mdx DONE?
 			• O estafeta que mais entregas programadas fez fora de horas no último
 			mês;		
+				Assumindo que fora de horas, são as horas: 0 até 8, e 18 até 23
 				04-EstafMaisEnt-ForaHor-UltMes
 					xlsx DONE?
-					mdx ToDo
+					mdx Done, mas não e possivel remover os nulls logo nao da para fazer TopOne!
 			É também importante saber o número de entregas programadas cujo horário não é cumprido. 
 				05-Entr-Prog-ForaSla
 					xlsx DONE?
-					mdx ToDo
+					mdx ToDo(Opt)
 			Serão efectuadas análises sobre o número de entregas por estafeta, quantas ficam pendentes 
 				06-Entr-Estaf-Pend
 					xlsx DONE?
-					mdx ToDo
+					mdx ToDo(Opt)
 			qual número médio de tentativas	necessárias para efectuar a entrega
 				07-Media-Entr-ServConcluido
 					xlsx DONE?
-					mdx ToDo
+					mdx ToDo(Opt)
 			evolução das entregas por:
 				tipo, loja, região
 				freguesia, cliente rendimentos
@@ -128,7 +131,7 @@ Parte2
 				dia da semana e hora do dia.
 				08-EvolEntre
 					xlsx DONE?
-					mdx ToDo
+					mdx ToDo(Opt)
 		Financeiro:
 			Pretende-se também disponibilizar informação sobre o balanço mensal, que
 			engloba os custos salariais (em bruto), os custos fixos (excel) e o valor dos pagamentos.
@@ -141,4 +144,6 @@ Parte2
 assume-se a categorização nas classes alta (A), média-alta (B), média (C1), média-baixa
 (C2) e baixa (D). No entanto, podem ser feitas análises onde entram outras variáveis sóciodemográficas,
 como por exemplo, o género e idade		
-		
+		Objectivos:
+			utilizar funções MDX, Filter, ParallelPeriod, funções de navegação
+				03-CrescEnt-Urg-UltTri-Fact1.5K.mdx
