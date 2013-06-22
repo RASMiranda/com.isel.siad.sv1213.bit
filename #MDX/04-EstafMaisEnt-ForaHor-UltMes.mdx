@@ -1,0 +1,12 @@
+select 
+	([Data Tentativa].[Ano].[Ano],TAIL(NONEMPTY ({[Data Tentativa].[Ano - Dia].[Mês Número].members}))) on columns 
+	,NONEMPTY([Funcionário].[Nome].[Nome],[Measures].[Contagem de Entregas]) on rows
+	--,TopCount(NONEMPTY([Funcionário].[Nome].[Nome]),1,[Measures].[Contagem de Entregas]) on rows
+from [Operacoes]
+where
+(([Measures].[Contagem de Entregas])
+	,[Tipo Servico].[Tipo].&[Programado]
+	,{[Hora Tentativa].[Hora 24h].&[00:00]:[Hora Tentativa].[Hora 24h].&[08:00]
+	 ,[Hora Tentativa].[Hora 24h].&[18:00]:[Hora Tentativa].[Hora 24h].&[23:00]})	
+	
+

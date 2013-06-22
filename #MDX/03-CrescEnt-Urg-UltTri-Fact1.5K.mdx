@@ -1,0 +1,20 @@
+with member [Measures].[T2T Growth]
+as'
+IIF(
+	IsEmpty(ParallelPeriod([Data Tentativa].[Ano - Dia].[Trimestre],1,[Data Tentativa].[Ano - Dia].CurrentMember))
+	,"NA"
+	,(
+		[Measures].[Contagem de Entregas] 
+		- ([Measures].[Contagem de Entregas],ParallelPeriod([Data Tentativa].[Ano - Dia].[Trimestre],1,[Data Tentativa].[Ano - Dia].CurrentMember))
+	)/([Measures].[Contagem de Entregas],ParallelPeriod([Data Tentativa].[Ano - Dia].[Trimestre],1,[Data Tentativa].[Ano - Dia].CurrentMember))
+)' ,
+format_string='Percent'
+
+select 
+	NON EMPTY([Data Tentativa].[Ano].[Ano],[Data Tentativa].[Ano - Dia].[Trimestre].members) on columns
+	,([Morada Facturacao].[Concelho].[Concelho]
+		,Filter([Morada Facturacao].[Distrito - Número Da Porta].[Freguesia],[Measures].[Valor]>1500)
+	) on rows
+from [Operacoes] 
+where  
+	([Measures].[T2T Growth],[Tipo Servico].[Tipo].&[Urgente])
