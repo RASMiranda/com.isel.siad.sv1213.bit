@@ -1,0 +1,11 @@
+with member [Measures].[Loja Quota %]
+as
+'[Measures].[Contagem de Entregas]
+/Sum([Funcionário].[Localização - Loja].[Loja],[Measures].[Contagem de Entregas])'
+,format_string='Percent'
+
+select
+	NON EMPTY({[Funcionário].[Localização - Loja].[Loja]}) on columns ,
+	NON EMPTY({[Data Tentativa].[Ano].[Ano]}) on rows
+from [Operacoes] 
+where [Measures].[Loja Quota %]

@@ -1,0 +1,46 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b2edd9dd-e12a-42b4-ab66-65128705c726" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>com isel siad sv1213 bit ssas</ID>
+  <Name>com isel siad sv1213 bit ssas</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Dimensions />
+  <Cubes />
+  <DataSources />
+  <DataSourceViews />
+  <Accounts>
+    <Account dwd:design-time-name="33f7fb3e-c3f8-4caa-b46a-2e1be5bab850">
+      <AccountType>Income</AccountType>
+      <Aliases>
+        <Alias>Proveito</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="2be3d174-4fbb-4d2d-8cad-d592988c6537">
+      <AccountType>Expense</AccountType>
+      <Aliases>
+        <Alias>Custo</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="9fb8af8b-fcf0-4e2c-8800-6b08b2bd5552">
+      <AccountType>Liability</AccountType>
+    </Account>
+    <Account dwd:design-time-name="a693649c-1988-421a-b3dd-ba7f02c21b1a">
+      <AccountType>Balance</AccountType>
+    </Account>
+    <Account dwd:design-time-name="6a2c1764-a108-4426-a44f-ab905c1ca33c">
+      <AccountType>Flow</AccountType>
+    </Account>
+    <Account dwd:design-time-name="742c3ac5-5bbb-439c-be2a-d54672fa8250">
+      <AccountType>Asset</AccountType>
+    </Account>
+    <Account dwd:design-time-name="c0d22c23-1454-4ec2-9d17-33de9db0ec0b">
+      <AccountType>Statistical</AccountType>
+    </Account>
+  </Accounts>
+</Database>

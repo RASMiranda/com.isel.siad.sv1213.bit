@@ -1,0 +1,496 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="088b9928-4bd7-4113-b6ef-9438b57083fb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Funcionario</ID>
+  <Name>Funcionário</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-906" scrolltop="-4129" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7276" y="14129" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Funcionario" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6165" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800001518000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Operacoes_Funcionario" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-906</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4129</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="173">
+            <Shape Id="Keycol" Expanded="false">
+              <Attributes>
+                <Attribute Id="Keycol" />
+                <Attribute Id="Activo" />
+                <Attribute Id="Nome" />
+                <Attribute Id="Nome Do Chefe" />
+                <Attribute Id="Sobrenome" />
+                <Attribute Id="Sobrenome Do Chefe" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Nome Completo" Expanded="false">
+              <Attributes>
+                <Attribute Id="Nome Completo" />
+              </Attributes>
+              <Position x="241" y="20" />
+            </Shape>
+            <Shape Id="Função" Expanded="false">
+              <Attributes>
+                <Attribute Id="Função" />
+              </Attributes>
+              <Position x="462" y="20" />
+            </Shape>
+            <Shape Id="Função Do Chefe" Expanded="false">
+              <Attributes>
+                <Attribute Id="Função Do Chefe" />
+              </Attributes>
+              <Position x="683" y="20" />
+            </Shape>
+            <Shape Id="Loja" Expanded="false">
+              <Attributes>
+                <Attribute Id="Loja" />
+              </Attributes>
+              <Position x="462" y="68" />
+            </Shape>
+            <Shape Id="Localizacao" Expanded="false">
+              <Attributes>
+                <Attribute Id="Localizacao" />
+              </Attributes>
+              <Position x="683" y="68" />
+            </Shape>
+            <Shape Id="Nome Completo Do Chefe" Expanded="false">
+              <Attributes>
+                <Attribute Id="Nome Completo Do Chefe" />
+              </Attributes>
+              <Position x="462" y="116" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9de26c90-dd66-45c1-a9e5-947e8752e90b">
+    <DataSourceViewID>Operacoes</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="4c6e966b-5432-4b3f-b867-75cbad2b3476">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>2070</Language>
+  <Attributes>
+    <Attribute dwd:design-time-name="fc296019-938b-4c15-9d02-e262ecdf47e2">
+      <ID>Keycol</ID>
+      <Name>Keycol</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>18</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0c13aa0-9ef5-4cb6-8806-e0def81ecd66">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5f9f6cc-9020-49b3-b1a3-0f465f115622">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>keycol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="191b47c6-0453-4637-9fe9-9981a03e62cd">
+          <AttributeID>Nome</AttributeID>
+          <Name>Nome</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52e31976-7c8c-47e4-a6c6-98f233fac228">
+          <AttributeID>Sobrenome</AttributeID>
+          <Name>Sobrenome</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ff16c27-e0bd-48b0-856c-e62f64257b10">
+          <AttributeID>Activo</AttributeID>
+          <Name>Activo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3dfd7610-4279-4db7-82b1-38b486464af5">
+          <AttributeID>Nome Do Chefe</AttributeID>
+          <Name>Nome Do Chefe</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cab77760-19fb-4e44-b84a-b55677076c33">
+          <AttributeID>Sobrenome Do Chefe</AttributeID>
+          <Name>Sobrenome Do Chefe</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0bb358c2-f23d-45da-86e4-414d17e27920">
+          <AttributeID>Nome Completo</AttributeID>
+          <Name>Nome Completo</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c98168c8-9c1a-4026-8c43-f01ca8701748">
+      <ID>Função</ID>
+      <Name>Função</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="87c38a22-b03c-4303-a39f-d0fff15d7e0e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1220f603-5797-4025-be35-aa3687086d4b">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>chefeFuncao</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e63f6277-48cf-4c5a-8421-a4d69d669932">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5119bcb3-9ee6-4a6b-8c3c-a73b7f9e5d73">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>funcao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e117ee57-b492-4315-8606-4cb71ed4772a">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="349580e1-ce12-4f8a-ac28-bcba679c6c5e">
+          <TableID>Operacoes_Funcionario</TableID>
+          <ColumnID>funcao</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="91b80535-0b10-4cc6-b583-c5da2b4cd08f">
+          <AttributeID>Função Do Chefe</AttributeID>
+          <Name>Função Do Chefe</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c6314ce8-16ee-4473-87e6-aea010ba75d5">
+      <ID>Nome</ID>
+      <Name>Nome</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c064290a-6d0b-4035-933c-ab320340fd44">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbb0434e-df3c-4a60-bd6e-f86dd8ec9974">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>nome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d250cb3-807a-4556-b273-012ffa8efc09">
+      <ID>Sobrenome</ID>
+      <Name>Sobrenome</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e077b697-b095-4cc8-87a9-d235fce67ba7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="102e5aa6-dffc-4105-8e42-7b5d80a7f0b4">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>sobrenome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63b41cc0-efd0-4ef6-9fd7-65fb90f3cacf">
+      <ID>Activo</ID>
+      <Name>Activo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef7924f6-91ba-46b6-aa0a-f6e02d4b643b">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9940a7ae-48d2-46f4-9b46-b0f85acf6a63">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>activo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f628d3ef-3f69-435c-9f18-015278d463e1">
+      <ID>Loja</ID>
+      <Name>Loja</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41479afe-0a2c-4fa2-94b8-b6ce9fd963c9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4bbf4911-2efd-4895-9ac5-d6f2916dd307">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>localizacao</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6de1dfae-676d-4171-886b-9c8077896a01">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3daf6ba4-ea53-4038-b12b-797f5ddf04e8">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>lojaNome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="845d8f4c-de8e-48cd-a5c0-bb177024149a">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a326572f-e32b-4d53-a6eb-76d8434ae923">
+          <TableID>Operacoes_Funcionario</TableID>
+          <ColumnID>lojaNome</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9e636d7c-ab74-4e00-911f-0b03c67ed8e4">
+          <AttributeID>Localizacao</AttributeID>
+          <Name>Localização</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="667a59e1-92a6-460a-8856-99f548ad7b3e">
+      <ID>Localizacao</ID>
+      <Name>Localização</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09504dae-ba2b-4058-b519-13cef4a12346">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a10ae499-b582-4f98-9384-b49164687cc6">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>localizacao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3251df0b-441c-44a2-b266-e1713c1eeebe">
+      <ID>Nome Do Chefe</ID>
+      <Name>Nome Do Chefe</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5033a4f5-f562-44c5-8831-944b5889d5d7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3cbc20e-bf53-42ce-8f81-7b65e20eaf61">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>chefeNome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f2d162a-a97c-4a3b-bafd-ee7330495e49">
+      <ID>Sobrenome Do Chefe</ID>
+      <Name>Sobrenome Do Chefe</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e2c2beb-c0ba-4ed2-bc9a-e771d34d4c53">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5428013e-f5cb-4dcc-ab6e-c68f175172a7">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>chefeSobrenome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcead8ea-fe05-477e-9578-ad2b01b622b2">
+      <ID>Função Do Chefe</ID>
+      <Name>Função Do Chefe</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9e8c19a-5ce9-4829-9df6-4b8f73f01576">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00d3a602-561a-4074-874f-0c6fafc71370">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>chefeFuncao</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="200daaab-f908-42d5-a409-d1ffe1b07fdd">
+      <ID>Nome Completo</ID>
+      <Name>Nome Completo</Name>
+      <EstimatedCount>18</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a94208a-176b-4974-a757-2be3383898b6">
+          <DataType>WChar</DataType>
+          <DataSize>101</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4fbedc2-8599-4e76-9b3f-8e0c34b5eb59">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>nome_x0020_completo_x0020_do_x0020_chefe</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8bdff02d-4226-4b0f-b6f4-c2ed1aba60a2">
+          <DataType>WChar</DataType>
+          <DataSize>101</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f4c018c-9871-4ea6-867f-05e6de0b961c">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>nome_x0020_completo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="86e35d93-26ac-4df0-bd5e-c883e7e7176f">
+        <DataType>WChar</DataType>
+        <DataSize>101</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0311eb57-481c-4efa-a436-e25c6ed1966d">
+          <TableID>Operacoes_Funcionario</TableID>
+          <ColumnID>nome_x0020_completo</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="233983a3-9793-4655-94bf-509bbdd8f2e5">
+          <AttributeID>Nome Completo Do Chefe</AttributeID>
+          <Name>Nome Completo Do Chefe</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cbbfd121-45e8-4273-84b5-5f8bb93562a0">
+          <AttributeID>Loja</AttributeID>
+          <Name>Loja</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c44fdfc3-1fe9-4e0b-8eb8-c8e2ceaaa555">
+          <AttributeID>Função</AttributeID>
+          <Name>Função</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="959ffc12-46c3-48de-995a-4b07c2ae4ad4">
+      <ID>Nome Completo Do Chefe</ID>
+      <Name>Nome Completo Do Chefe</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa19b87d-237f-46d8-a221-9c453d592a88">
+          <DataType>WChar</DataType>
+          <DataSize>101</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50a575ee-dfff-41a5-ab8e-f39e20aa85e5">
+            <TableID>Operacoes_Funcionario</TableID>
+            <ColumnID>nome_x0020_completo_x0020_do_x0020_chefe</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c5a4a5ab-3c4d-44c3-b035-f85045dfc2c6">
+      <ID>Hierarchy</ID>
+      <Name>Por Função Do Chefe</Name>
+      <Levels>
+        <Level dwd:design-time-name="c79972c1-9136-4b34-bc32-408053b4fd1e">
+          <ID>Função Do Chefe</ID>
+          <Name>Função Do Chefe</Name>
+          <SourceAttributeID>Função Do Chefe</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="aa24e80e-f937-4b2d-af54-dd4d1c9135b5">
+          <ID>Função</ID>
+          <Name>Função</Name>
+          <SourceAttributeID>Função</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2f33c6e4-a29a-453a-b665-569a3421e460">
+          <ID>Nome Completo</ID>
+          <Name>Nome Completo</Name>
+          <SourceAttributeID>Nome Completo</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="be10aafc-3e74-4c55-bf0f-ff80cf1da8bb">
+      <ID>Hierarchy 1</ID>
+      <Name>Por Nome Completo Do Chefe</Name>
+      <Levels>
+        <Level dwd:design-time-name="4311bd8d-3e21-44ca-8179-2fc5d3a18c02">
+          <ID>Nome Completo Do Chefe</ID>
+          <Name>Nome Completo Do Chefe</Name>
+          <SourceAttributeID>Nome Completo Do Chefe</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="762508e8-4a95-4683-b278-9a759f50733c">
+          <ID>Nome Completo</ID>
+          <Name>Nome Completo</Name>
+          <SourceAttributeID>Nome Completo</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="9f800cb5-d196-43db-82f2-c4935349d68e">
+      <ID>Hierarchy 2</ID>
+      <Name>Localização - Loja</Name>
+      <Levels>
+        <Level dwd:design-time-name="177ea0f6-67a8-4c1d-b462-ba484ad67964">
+          <ID>Localização</ID>
+          <Name>Localização</Name>
+          <SourceAttributeID>Localizacao</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="45209d0a-4c1a-4868-b237-883de7fd1a9f">
+          <ID>Loja</ID>
+          <Name>Loja</Name>
+          <SourceAttributeID>Loja</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9245a3c7-b2d5-457c-ab23-515a143e4866">
+          <ID>Nome Completo</ID>
+          <Name>Nome Completo</Name>
+          <SourceAttributeID>Nome Completo</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

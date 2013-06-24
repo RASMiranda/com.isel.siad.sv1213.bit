@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="MIRANDA-LAPTOP\Rui Miranda" GeneratedFromPackageName="FinacialPackage" GeneratedFromPackageID="{41331ABC-603E-4A26-A6BE-9E356F26E51E}" GeneratedDate="19-06-2013 01:45:41"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;User ID=;Initial Catalog=BIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[InitialCatalog]" ValueType="String">
+		<ConfiguredValue>BIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Name]" ValueType="String">
+		<ConfiguredValue>BIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[Password]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[RetainSameConnection]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[ServerName]" ValueType="String">
+		<ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BIT].Properties[UserName]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;User ID=;Initial Catalog=DataStagingBIT;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[InitialCatalog]" ValueType="String">
+		<ConfiguredValue>DataStagingBIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Name]" ValueType="String">
+		<ConfiguredValue>BITDW.DataStagingBIT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[Password]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[RetainSameConnection]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[ServerName]" ValueType="String">
+		<ConfiguredValue>MIRANDA-LAPTOP\SQLSERVER2008R2</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BITDW.DataStagingBIT].Properties[UserName]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\Temp\custos.xls;Extended Properties="EXCEL 8.0;HDR=YES";</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[Description]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[ExcelFilePath]" ValueType="String">
+		<ConfiguredValue>c:\Temp\custos.xls</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[ExcelVersionNumber]" ValueType="Int32">
+		<ConfiguredValue>3</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[FirstRowHasColumnName]" ValueType="Boolean">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[InitialCatalog]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[Name]" ValueType="String">
+		<ConfiguredValue>Excel Custos</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[Password]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[ProtectionLevel]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[RetainSameConnection]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[ServerName]" ValueType="String">
+		<ConfiguredValue>c:\Temp\custos.xls</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Excel Custos].Properties[UserName]" ValueType="String">
+		<ConfiguredValue/>
+	</Configuration>
+</DTSConfiguration>

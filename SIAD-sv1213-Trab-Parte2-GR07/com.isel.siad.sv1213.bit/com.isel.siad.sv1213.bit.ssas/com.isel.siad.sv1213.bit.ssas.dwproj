@@ -1,0 +1,111 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>10.50.2550.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>com isel siad sv1213 bit ssas.database</Name>
+    <FullPath>com isel siad sv1213 bit ssas.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Financeiro.cube</Name>
+      <FullPath>Financeiro.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Financeiro.partitions</Name>
+          <FullPath>Financeiro.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Operacoes.cube</Name>
+      <FullPath>Operacoes.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Operacoes.partitions</Name>
+          <FullPath>Operacoes.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Rubrica.dim</Name>
+      <FullPath>Rubrica.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Meses.dim</Name>
+      <FullPath>Meses.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Data.dim</Name>
+      <FullPath>Data.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hora.dim</Name>
+      <FullPath>Hora.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Funcionario.dim</Name>
+      <FullPath>Funcionario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Morada.dim</Name>
+      <FullPath>Morada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Intervalo Idade Na Requisição.dim</Name>
+      <FullPath>Intervalo Idade Na Requisição.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Servico.dim</Name>
+      <FullPath>Tipo Servico.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Intervalo Rendimento Na Requisição.dim</Name>
+      <FullPath>Intervalo Rendimento Na Requisição.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cliente.dim</Name>
+      <FullPath>Cliente.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Data Staging BIT.ds</Name>
+      <FullPath>Data Staging BIT.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Financeiro.dsv</Name>
+      <FullPath>Financeiro.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Operacoes.dsv</Name>
+      <FullPath>Operacoes.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Data Staging BIT</Id>
+            <Name>Data Staging BIT</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=MIRANDA-LAPTOP\SQLSERVER2008R2;Integrated Security=SSPI;Initial Catalog=DataStagingBIT</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Data Staging BIT</Id>
+            <Name>Data Staging BIT</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <RemovePasswords>false</RemovePasswords>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

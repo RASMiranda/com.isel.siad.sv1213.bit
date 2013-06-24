@@ -1,0 +1,12 @@
+WITH MEMBER [Hora Tentativa].[Hora 24h].[O número de entregas médio por horas do dia no último mês] AS
+ROUND(AVG ([Hora Tentativa].[Hora 24h].[Hora 24h],[Measures].[Contagem de Entregas]),0)
+
+select 
+	([Data Tentativa].[Ano].[Ano],TAIL(NONEMPTY ({[Data Tentativa].[Ano - Dia].[Mês Número].members}))) on columns 
+	, [Hora Tentativa].[Hora 24h].[O número de entregas médio por horas do dia no último mês] on rows
+from [Operacoes]
+where 
+	[Measures].[Contagem de Entregas]
+	
+	
+

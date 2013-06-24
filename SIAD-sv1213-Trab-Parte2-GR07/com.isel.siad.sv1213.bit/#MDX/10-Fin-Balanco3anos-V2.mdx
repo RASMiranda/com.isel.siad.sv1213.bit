@@ -1,0 +1,14 @@
+with member [Measures].[Diferença]
+as'
+IIF(
+	IsEmpty(ParallelPeriod([Meses].[Ano - Mês Número].[Ano],1,[Meses].[Ano - Mês Número].CurrentMember))
+	,"NA"
+	,(
+		[Measures].[Valor]
+		- ([Measures].[Valor],ParallelPeriod([Meses].[Ano - Mês Número].[Ano],1,[Meses].[Ano - Mês Número].CurrentMember))
+	)
+)'
+select 
+	LastPeriods(3,[Meses].[Ano - Mês Número].[Ano].&[2012]) on columns
+	,{([Measures].[Valor]),([Measures].[Diferença])} on rows
+from [Financeiro]
