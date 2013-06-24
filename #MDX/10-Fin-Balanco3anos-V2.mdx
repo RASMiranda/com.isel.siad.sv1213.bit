@@ -1,0 +1,14 @@
+with member [Measures].[Diferença]
+as'
+IIF(
+	IsEmpty(ParallelPeriod([Meses].[Ano - Mês Número].[Ano],1,[Meses].[Ano - Mês Número].CurrentMember))
+	,"NA"
+	,(
+		[Measures].[Valor]
+		- ([Measures].[Valor],ParallelPeriod([Meses].[Ano - Mês Número].[Ano],1,[Meses].[Ano - Mês Número].CurrentMember))
+	)
+)'
+select 
+	NON EMPTY([Meses].[Ano - Mês Número].[Ano]) on columns
+	,{([Measures].[Valor]),([Measures].[Diferença])} on rows
+from [Financeiro]

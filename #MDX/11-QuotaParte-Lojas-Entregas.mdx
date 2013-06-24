@@ -1,0 +1,14 @@
+with member [Data Tentativa].[Ano - Dia].[Loja Quota Anual]
+as
+'[Data Tentativa].[Ano - Dia].[Ano]
+/Sum([Funcionário].[Localização - Loja].[Loja],[Data Tentativa].[Ano - Dia].[Ano])'
+,format_string='Percent'
+
+select 
+	{[Data Tentativa].[Ano - Dia].[Ano]
+	,[Data Tentativa].[Ano - Dia].[Loja Quota Anual]
+	} on columns
+	,[Funcionário].[Localização - Loja].[Loja] on rows
+from [Operacoes] 
+where  
+	[Measures].[Contagem de Entregas]
