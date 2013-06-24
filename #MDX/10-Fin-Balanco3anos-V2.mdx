@@ -9,6 +9,6 @@ IIF(
 	)
 )'
 select 
-	NON EMPTY([Meses].[Ano - Mês Número].[Ano]) on columns
+	LastPeriods(3,[Meses].[Ano - Mês Número].[Ano].&[2012]) on columns
 	,{([Measures].[Valor]),([Measures].[Diferença])} on rows
 from [Financeiro]
